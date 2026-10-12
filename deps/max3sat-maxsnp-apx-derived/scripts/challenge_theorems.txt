@@ -1,0 +1,47 @@
+/-! ## The theorems -/
+
+/-- **PCP theorem, gap form.** For a fixed fraction `num / den > 0`, every NP language has a
+polynomial-time gap reduction to 3-SAT with gap `num / den`. -/
+theorem pcp_gap : ∃ num den : Nat, 0 < num ∧
+    ∀ L : Language, InNP L → ∃ g : Word → SAT.CNF, GapReduction num den L g := by
+  sorry
+
+/-- **PCP theorem, verifier form.** `NP = PCP(O(log n), O(1))`: a language is in NP iff it has a
+probabilistically checkable proof system with `c * log n` random bits and `q` queries. -/
+theorem pcp_theorem (L : Language) : InNP L ↔ ∃ c q, InPCP c q L := by
+  sorry
+
+/-- The problems of the syntactic class MaxSNP₀ are in NPO: their solutions (structures of the
+solution signature on the universe of the instance) are polynomially bounded, and feasibility
+and value are computed by one polynomial-time function. -/
+theorem npo_maxSNP0 (ga sa : List Nat) (k : Nat) (φ : QF) : NPO (maxSNP0 ga sa k φ) := by
+  sorry
+
+/-- MaxSNP-hard problems cannot be approximated within every ratio `1 + 1 / (k + 1)` in
+polynomial time (even by a separate algorithm for each `k`) unless `P = NP`. -/
+theorem maxSNPHard_no_ptas {P : OptProblem} (hP : MaxSNPHard P)
+    (h : ∀ k, P.ApproximableWithin (k + 2) (k + 1)) : PEqNP := by
+  sorry
+
+/-- MaxSNP-hard problems have no polynomial-time approximation scheme unless `P = NP`. -/
+theorem maxSNPHard_not_hasPTAS {P : OptProblem} (hP : MaxSNPHard P) (h : P.HasPTAS) :
+    PEqNP := by
+  sorry
+
+/-- MAX-3-SAT is MaxSNP-complete. -/
+theorem max3SAT_maxSNPComplete : MaxSNPComplete max3SAT := by
+  sorry
+
+/-- 3-OCCURRENCE MAX-3-SAT is MaxSNP-complete. -/
+theorem max3SAT3_maxSNPComplete : MaxSNPComplete max3SAT3 := by
+  sorry
+
+/-- MAX-3-SAT is APX-complete. -/
+theorem max3SAT_apxComplete : APXComplete max3SAT := by
+  sorry
+
+/-- 3-OCCURRENCE MAX-3-SAT is APX-complete. -/
+theorem max3SAT3_apxComplete : APXComplete max3SAT3 := by
+  sorry
+
+end Complexity

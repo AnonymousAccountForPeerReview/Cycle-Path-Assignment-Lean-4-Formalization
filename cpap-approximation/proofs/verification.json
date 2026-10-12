@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-approximation",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.greedy_is_assignment",
+    "STACS2027.greedy_sq_load_bound",
+    "STACS2027.greedy_cost_bound",
+    "STACS2027.greedy_cost_integer_bound",
+    "STACS2027.rounding_is_assignment",
+    "STACS2027.randomized_rounding_cost_bound",
+    "STACS2027.conditional_rounding_cost_bound"
+  ],
+  "target_count": 7,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 150,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 5,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 75,
+    "default_targets": [
+      "Approximation",
+      "Solution",
+      "ApproximationAudit"
+    ],
+    "compiled_audit_modules": [
+      "ApproximationAudit",
+      "ApproximationAudit.Guards000"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "8dcfc63e0ddcad04d496c745b473225823f72d7886ee7788fe2123db1263f843",
+    "solution": "b2b8298483fa3aa8e0d486a78595c1cf5135068bd82866e0c9abb510e74ab361"
+  },
+  "comparison_output_sha256": "a06e0c0cf488b463e4274cba5dd2c186a918d5154a76d3da6f2e5d184f8a41c2"
+}

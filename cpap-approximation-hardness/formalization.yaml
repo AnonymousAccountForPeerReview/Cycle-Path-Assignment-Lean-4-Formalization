@@ -1,0 +1,406 @@
+version: v0.4
+project:
+  name: 'Cycle-path assignment: approximation hardness and reduction algorithms in Lean 4'
+  description: 'Formalizes Section 6 and Appendix D, together with the Section 5 reduction algorithms,
+    of "Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation". Theorem 11
+    proves MaxSNP-hardness and APX-hardness for every fixed k >= 5; Corollary 12 proves that a PTAS would
+    imply P = NP. The package proves the optimum identity C* + S* = 2m, the gadget L-reduction with alpha
+    = 5/3 and beta = 1, Lemma 10''s polarity transformation with alpha = beta = 1, and composition on
+    the paper''s source class. A polynomial-time L-reduction from the imported broader 3-OCCURRENCE MAX-3-SAT
+    language has alpha = 9 and beta = 1 after unit-clause normalization. The formalized PCP and MaxSNP/APX
+    source theorems are supplied by the bundled pcp dependency. Actual RAM programs provide the Section
+    5 gadget construction, compatible planar orientation, formula-only planar embedding, polarity transformation
+    and decoding, with bounded time and accessed addresses. The formula-only embedding takes RAM.ramInput
+    f under bounded occurrence and incidence planarity and uses at most 100000 * (input.length + variableBound
+    f + 1) steps and addresses. Polynomial-time maps are also proved in the foundation''s single-tape
+    machine model. Only propext, Classical.choice and Quot.sound are permitted.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.CC
+  - cs.DS
+  msc2020:
+  - 68Q17
+  - 68W25
+  - 05C38
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: Section 6 (Definition 9, Lemma 10, Theorem 11 and Corollary 12); Appendix D (L-reductions
+    and proofs); Section 5 and Appendix C (Theorem 8 RAM reduction, planar orientation and formula-only incidence embedding).
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: Optimization, approximation, and complexity classes
+  type: paper
+  id: doi:10.1016/0022-0000(91)90023-X
+  location: Journal of Computer and System Sciences 43(3), 425-440, 1991
+  relationship: background
+  note: L-reductions and the class MaxSNP, and the MaxSNP-completeness of 3-OCCURRENCE MAX-3-SAT as the
+    manuscript cites it; formalized in Max3SAT-MaxSNP-APX-Lean4 (Complexity.max3SAT3_maxSNPHard), on which
+    STACS2027.cpap_maxSNPHard rests.
+- title: Computational Complexity
+  type: book
+  location: Addison-Wesley, Reading, MA, 1994 (ISBN 978-0201530827)
+  relationship: background
+  note: The MaxSNP-completeness of 3-OCCURRENCE MAX-3-SAT (Theorem 13.10) as the manuscript cites it;
+    formalized in Max3SAT-MaxSNP-APX-Lean4.
+- title: Proof verification and the hardness of approximation problems
+  type: paper
+  id: doi:10.1145/278298.278306
+  location: Journal of the ACM 45(3), 501-555, 1998
+  relationship: background
+  note: The PCP theorem, from which Corollary 12 follows (with ANONYMIZED and ANONYMIZED, below); formalized
+    in Max3SAT-MaxSNP-APX-Lean4 (by OpenAI's gap amplification), whose Complexity.maxSNPHard_not_hasPTAS
+    and Complexity.maxSNPHard_no_ptas give STACS2027.cpap_no_ptas and STACS2027.cpap_not_approximable.
+- title: 'Probabilistic checking of proofs: a new characterization of NP'
+  type: paper
+  id: doi:10.1145/273865.273901
+  location: Journal of the ACM 45(1), 70-122, 1998
+  relationship: background
+  note: With the previous entry, the PCP theorem behind Corollary 12; formalized in Max3SAT-MaxSNP-APX-Lean4.
+- title: Time bounded random access machines
+  type: paper
+  id: doi:10.1016/S0022-0000(73)80029-7
+  location: Journal of Computer and System Sciences 7(4), 354-375, 1973
+  relationship: background
+  note: 'The unit-cost RAM (constants, addition, subtraction, indirect load and store, output) in which
+    Theorem 8''s O(n) bound is stated; the model is defined in ApproximationHardness/RAM/Model.lean and
+    copied into the Challenge, with its space-bounded runs (ExecB, ComputesIn: ApproximationHardness/RAM/Bounded.lean).'
+related_formalizations:
+- id: cpap-np-hardness (shared CPAP model and Section 5/Appendix C proof library)
+  relationship: builds-on
+  note: Required by Lake as the sibling path ../cpap-np-hardness (Apache-2.0). Its CPAP model, graph-record
+    encoding, explicit gadget construction, local cost bounds, truth states and global cost decomposition
+    are imported. The optional generated comparison specification reproduces the definitions it uses.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: 'The NP-completeness foundation, required by Lake at the commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+    (Apache-2.0). Its machine model (the block Symbol through NPComplete of its Challenge, whole, including
+    PolyTime), its CNF formulas and their unary code (Complexity.SAT: Word through encode, clauseBound,
+    variableBound) are used unchanged and copied verbatim into the Challenge; its structured stack language
+    and compiler (StackTableauProgram.Command, StackCompile.polyTime_of_stack) give the polynomial-time
+    single-tape machine of the instance map.'
+- id: Max3SAT-MaxSNP-APX-Lean4, commit 10079b2a14bd0df47d2a24364133f6008b9c207f
+  relationship: builds-on
+  note: 'Required by Lake (package pcp, Apache-2.0) in a derived packaging that shares the workspace with
+    the NP-completeness foundation: its 75 Complexity/ files that are byte-identical to NPCompleteness-Lean4
+    at 3e603e7 are taken from that package, and its 12 other Complexity/ modules are moved under the module
+    prefix ComplexityExt, because Lake resolves imports by module name (DERIVED.md, derive_pcp.sh and
+    verify_derived_pcp.sh in the package; declarations, namespaces and every other line are unchanged).
+    Its optimization problems, L-reductions, MaxSNP, APX, PTAS and 3-OCCURRENCE MAX-3-SAT (Complexity.PEqNP
+    through Complexity.APXHard) are copied verbatim into the Challenge; its theorems max3SAT3_maxSNPHard,
+    lReducible_max3SAT_max3SAT3, witnessGap, apxHard_of_lReducible_max3SAT, maxSNPHard_not_hasPTAS and
+    maxSNPHard_no_ptas, and its PT framework for polynomial time, are used. Commit 10079b2 restricts MaxSNP0
+    to structures of fixed signatures and MaxSNP to NPO problems (earlier commits admitted unbounded solution
+    relations). This project does not modify it.'
+- id: cpap-tractability, cpap-bounded-cost, cpap-approximation and cpap-minor-free (the Section 3, 4,
+    7 and 8 formalizations of the same manuscript)
+  relationship: other
+  note: Companion projects on the same foundation; not required.
+status:
+  scope: 'Proved: Section 6 and Appendix D''s optimum relation, L-reductions, Lemma 10, composition, MaxSNP-hardness,
+    APX-hardness and no-PTAS consequences. Their source-hardness chain uses the formalized PCP and approximation-hardness
+    development in the bundled pcp dependency and the shared CPAP/gadget library in cpap-np-hardness.
+    Section 5''s graph reduction, planar orientation and formula-only planar incidence embedding are actual
+    RAM programs with proved time and accessed-address bounds; the polarity and decoder programs and the
+    polynomial-time single-tape maps are proved as well. Source domains and normalization constants are
+    distinguished in the library and README. The default build checks ApproximationHardness, Solution
+    and exact axiom guards; Challenge.lean is generated separately for optional comparison and omitted
+    from the distribution.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.Embed.planarEmbedding_linear_ram
+    kind: theorem
+    statement: A fixed RAM program computes a planar incidence rotation from a bounded-occurrence formula
+      with planar incidence graph, with linear time and accessed-address bounds.
+    file: ApproximationHardness/Embed/PlanarEmbeddingRAM.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_lreduction
+    file: ApproximationHardness/LReduction.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_optimum
+    file: ApproximationHardness/LReduction.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.leOneLeTwo_lreduction
+    file: ApproximationHardness/Composition.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.threeOccurrence_cpap_lreduction
+    file: ApproximationHardness/Composition.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.gadget_reduction_linear_ram
+    file: ApproximationHardness/LinearRAM.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.orientation_linear_ram
+    file: ApproximationHardness/RunningTimes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.orientation_polyTime
+    file: ApproximationHardness/RunningTimes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.max3SAT3_lReducible_cpap
+    file: ApproximationHardness/Hardness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_maxSNPHard
+    file: ApproximationHardness/Hardness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_apxHard
+    file: ApproximationHardness/Hardness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_no_ptas
+    file: ApproximationHardness/Hardness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_not_approximable
+    file: ApproximationHardness/Hardness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: '- The cycle-path assignment problem and the Theorem 8 graph are the Section 5 formalization''s:
+    simple k-cycles are enumerated and identified by their edge sets, an assignment omits one vertex of
+    each, the cost is the number of edges shared by pairs of chosen paths (equal to the manuscript''s
+    sum over edges of binom(l(e), 2)), and the graph is built from the explicit gadget constructors of
+    Appendix C with the literal ports identified in formula order.
+
+    - MAX-(≤1,≤2)-SAT instances are those of Definition 7, with distinct variables in each clause, as
+    the Theorem 8 construction requires; Lemma 10''s output always has this property. 3-OCCURRENCE MAX-3-SAT
+    clauses are taken as sets: two or three distinct literals.
+
+    - The optima S* and C* are characterized (IsMaxSat, IsMinCost), and an L-reduction is recorded by
+    its two inequalities with α = αn/αd and β = βn/βd, written in the naturals without division or subtraction;
+    the decoding map g is the existential witness of the second inequality. Section 6''s polynomial-time
+    computability of the instance map f is proved in the foundation''s single-tape model (cpap_lreduction_polyTime):
+    the machine works on the foundation''s unary codes encode f and outputs a record list in the Section
+    5 formalization''s CPAP format, listing the graph''s edges in reverse order (a permutation, which
+    changes no cycle or cost). The decoding map g is also given explicitly (decodeAssign: a variable is
+    true when the chosen paths of clause gadgets use its two negative port edges at most as often, in
+    total, as its positive one), and the running times of Lemma 10''s map and of g are proved in both
+    models; the decoder reads its input τ as a list of chosen paths (pathsCode, encodePaths) and its output
+    is the bit string of the assignment on the variables 0, …, n − 1.
+
+    - Theorem 8''s "O(n) time" is proved on a unit-cost RAM defined here (ApproximationHardness/RAM/Model.lean)
+    rather than on an unspecified machine: structured programs (sequencing, branch on zero, while-loop
+    on a register) over the ANONYMIZED-ANONYMIZED instructions, one step per instruction and per test;
+    the input is the formula as numbers (clause count, then per clause its length and var, sign per literal),
+    the output the budget and the edge endpoints. The bound is ramConst k (m + n + 1) for every formula
+    with two- or three-literal clauses and ramLinConst k (n + 1) under the occurrence bound; the space
+    (the addresses read or written, input included; ComputesIn) is bounded too, by N + 3n and ramLinConst
+    k (n + 1), and so are the spaces of the Lemma 10 and decoding programs (C (n + 1)). No compilation
+    to a flat jump-based RAM is formalized. For the planar sentence of Theorem 8, the orientation of the
+    gadgets is computed (in O(N) RAM steps, N the input length, with O(N + n) memory, n = variableBound
+    f, because the program keeps two cells per variable number; and in polynomial time in the foundation''s
+    machine model) from a planar embedding of the incidence graph given as its node permutation (IsPlanarRotation);
+    Embed.planarEmbedding_linear_ram supplies an actual formula-only RAM program computing such an embedding
+    under BoundedOccurrence and incidence planarity, with time and accessed addresses at most 100000 *
+    (input.length + variableBound f + 1). The orientation is one bit per literal occurrence, in the order
+    of (placeFormula [] f).flatten, and the bound assumes the occurrence bounds of Definition 7 (BoundedOccurrence).
+
+    - Completeness is proved as c(τ) ≤ 2m − s(A) rather than the manuscript''s exact 2m − s(A); the relation
+    C* = 2m − S* follows from the two inequalities.
+
+    - Lemma 10 eliminates only the variables that occur three times with a single polarity, in one round,
+    instead of repeatedly eliminating every variable of a single polarity; the output satisfies the same
+    bounds, and the same inequalities hold.
+
+    - Lemma 10 also deletes the tautological clauses (a variable and its negation); the proof in the paper
+    does not, but then the target formula can violate Definition 7''s distinct variables per clause (φ
+    = (x ∨ ¬x ∨ y) ∧ (¬y ∨ w) ∧ (¬w ∨ y): nothing is eliminated, y is complemented, and the first clause
+    becomes (x ∨ ¬x ∨ ¬y)). A deviation from the paper''s proof text, documented in docs/paper-map.md.
+
+    - Theorem 11 and Corollary 12 are stated for CPAP(·, k) as an optimization problem on binary words
+    in the sense of Max3SAT-MaxSNP-APX-Lean4 (cpapProblem k): instances are the codes encode f of record
+    lists in the Section 5 formalization''s CPAP format with no budget record (the graph is given by its
+    edge list; isolated vertices are not represented, and change no cycle or cost), solutions are the
+    codes encodePaths ps of cycle-path assignments, values are costs. MaxSNP-hardness, APX-hardness (under
+    PTAS-reductions in the sense of ANONYMIZED and ANONYMIZED), PTAS and P = NP are those of that formalization,
+    for its single-tape machine model, which is the NP-completeness foundation''s. The source problem
+    is that formalization''s 3-OCCURRENCE MAX-3-SAT, whose clauses have at most three literals and may
+    repeat a literal or have fewer than two; a normalization (ApproximationHardness/Hardness/Normalize.lean)
+    maps it to the instances of Lemma 10, and the composed L-reduction has α = 9 rather than 5/3 (the
+    normalization gadget for unit clauses raises OPT by 2u ≤ 4 OPT). The manuscript''s α = 5/3 and β =
+    1 are proved for its own source, MAX-(≤1,≤2)-SAT and 3-OCCURRENCE MAX-3-SAT with two- or three-literal
+    clauses.'
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Theorem 11: for every fixed k ≥ 5, CPAP(G, k) is MaxSNP-hard'
+    lean: 'STACS2027.cpap_maxSNPHard : 5 ≤ k → MaxSNPHard (cpapProblem k)'
+    module: Solution
+    status: proved
+    note: Every problem of MaxSNP (an NPO problem L-reducible to a problem of the syntactic class MaxSNP0
+      for fixed input and solution signatures and a well-formed formula) is L-reducible to CPAP(·, k);
+      from the L-reduction below and the MaxSNP-hardness of 3-OCCURRENCE MAX-3-SAT proved in Max3SAT-MaxSNP-APX-Lean4.
+  - source: 'Theorem 11: ... and APX-hard'
+    lean: 'STACS2027.cpap_apxHard : 5 ≤ k → APXHard (cpapProblem k)'
+    module: Solution
+    status: proved
+    note: Every problem of APX PTAS-reduces to CPAP(·, k); from MAX-3-SAT L-reducing to it and the witness-recovering
+      PCP theorem of Max3SAT-MaxSNP-APX-Lean4.
+  - source: 'Theorem 11, proof (Appendix D): Lemma 10 yields both hardness claims'
+    lean: 'STACS2027.max3SAT3_lReducible_cpap : 5 ≤ k → LReducible max3SAT3 (cpapProblem k)'
+    module: Solution
+    status: proved
+    note: 'An L-reduction with α = 9 and β = 1 whose maps are polynomial-time single-tape machines of
+      the foundation''s machine model: normalization, Lemma 10 and the Theorem 8 construction; the decoding
+      map of Theorem 11 and Lemma 10''s recovery.'
+  - source: 'Corollary 12: unless P = NP, CPAP(G, k) admits no PTAS for any fixed k ≥ 5'
+    lean: STACS2027.cpap_no_ptas, STACS2027.cpap_not_approximable
+    module: Solution
+    status: proved
+    note: A PTAS (uniformly polynomial-time in the instance for each precision) gives P = NP, and so does
+      a family of polynomial-time algorithms with the ratios 1 + 1/(j+1), one for each j; from the PCP
+      theorem formalized in Max3SAT-MaxSNP-APX-Lean4.
+  - source: 'Theorem 11 and Appendix D: the construction of Theorem 8 is an L-reduction with α = 5/3 and
+      β = 1'
+    lean: 'STACS2027.cpap_lreduction : 5 ≤ k → LReductionToCPAP LeOneLeTwoCNF (formulaGraph k) k 5 3 1
+      1'
+    module: Solution
+    status: proved
+    note: Both inequalities, from the quantitative completeness and soundness of the gadget construction,
+      C* = 2m − S* and S* ≥ 3m/4.
+  - source: 'Appendix D: C* = 2m − S*'
+    lean: STACS2027.cpap_optimum
+    module: Solution
+    status: proved
+    note: Stated as C* + S* = 2m.
+  - source: 'Lemma 10: an L-reduction from 3-OCCURRENCE MAX-3-SAT with α = β = 1'
+    lean: STACS2027.leOneLeTwo_lreduction
+    module: Solution
+    status: proved
+    note: The output satisfies Definition 7; OPT(φ') = OPT(φ); recovery without loss.
+  - source: 'Theorem 11, hardness claims: the composition of Lemma 10 and the construction'
+    lean: STACS2027.threeOccurrence_cpap_lreduction
+    module: Solution
+    status: proved
+    note: An L-reduction from 3-OCCURRENCE MAX-3-SAT with α = 5/3 and β = 1.
+  - source: 'Corollary 12, the mechanism: an L-reduction transfers approximation ratios'
+    lean: STACS2027.approximation_transfer
+    module: ApproximationHardness.Composition
+    status: proved
+    note: A (1 + ε)-approximation of CPAP(G, k) decodes to a (1 − αβ ε)-approximation of the source. A
+      library theorem (not compared).
+  - source: Section 6 (an L-reduction's instance map is polynomial-time computable), for Theorem 11
+    lean: STACS2027.cpap_lreduction_polyTime
+    module: ApproximationHardness.RegisteredInstance
+    status: proved
+    note: A single-tape machine of the foundation's machine model computes, in polynomial time, a word
+      function whose output on encode f writes the Theorem 8 graph (reversed) for every Definition 7 formula
+      f. A library theorem; the compared max3SAT3_lReducible_cpap uses it.
+  - source: 'Theorem 8: transformed in O(n) time'
+    lean: STACS2027.gadget_reduction_linear_ram
+    module: Solution
+    status: proved
+    note: On the unit-cost RAM of ApproximationHardness/RAM/Model.lean, within C (n + 1) steps for every
+      Definition 7 formula, accessing only the memory addresses below C (n + 1) (RAM.ComputesIn), with
+      the Section 5 formalization's correctness of the graph. The planar sentence of Theorem 8 is proved
+      in the Section 5 formalization for some gadget orientation; its computation from a planar embedding
+      is the next two entries.
+  - source: 'Theorem 8 (planar formulas): fix a planar embedding and place each gadget accordingly'
+    lean: STACS2027.orientation_linear_ram
+    module: Solution
+    status: proved
+    note: From the node permutation rot of a planar embedding of the incidence graph, a RAM program computes,
+      within C (|ramInput f ++ rot| + 1) steps and the memory addresses below C (|ramInput f ++ rot| +
+      n + 1) (n = variableBound f; the program keeps two cells per variable number), endpoint bits with
+      which the oriented Theorem 8 graph is planar for every k. The embedding itself is an input. This
+      theorem takes the rotation as input; Embed.planarEmbedding_linear_ram supplies that rotation from
+      the formula alone.
+  - source: Theorem 8 (planar formulas), in the foundation's machine model
+    lean: STACS2027.orientation_polyTime
+    module: Solution
+    status: proved
+    note: A polynomial-time single-tape machine computes the same bits from encode f and the unary code
+      of rot.
+  - source: 'Appendix D, Lemma 10: the transformation (its time, implicit in an L-reduction)'
+    lean: STACS2027.polarize_linear_ram, STACS2027.polarize_polyTime_machine
+    module: ApproximationHardness.RunningTimes
+    status: proved
+    note: On ramInput f the RAM program outputs ramInput (polarize f) within C (n + 1) steps and addresses;
+      a polynomial-time single-tape machine maps encode f to encode (polarize f). Library theorems; the
+      second is used by max3SAT3_lReducible_cpap.
+  - source: 'Theorem 11: the decoding map g of the L-reduction (its time, implicit in an L-reduction)'
+    lean: STACS2027.decoder_linear_ram, STACS2027.decoder_polyTime
+    module: ApproximationHardness.RunningTimes
+    status: proved
+    note: From f and a valid choice of paths, the assignment read from the output satisfies S* − s(A)
+      ≤ c(τ) − C*; within C (n + 1) RAM steps and addresses, and in polynomial time in the foundation's
+      machine model. Library theorems; the second is used by max3SAT3_lReducible_cpap.
+  - source: 'Section 5, Theorem 8: formula-only planar incidence embedding'
+    lean: STACS2027.Embed.planarEmbedding_linear_ram
+    module: ApproximationHardness.Embed.PlanarEmbeddingRAM
+    status: proved
+    note: A fixed RAM program takes only RAM.ramInput f. Under BoundedOccurrence f and incidence planarity,
+      it outputs IsPlanarRotation within 100000 * (input.length + variableBound f + 1) steps and accessed
+      addresses.

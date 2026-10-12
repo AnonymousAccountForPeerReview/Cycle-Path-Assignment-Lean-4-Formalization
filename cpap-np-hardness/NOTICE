@@ -1,0 +1,22 @@
+Cycle-path assignment: shared model and NP-hardness (Lean 4)
+Author and maintainer: ANONYMIZED
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+Scope: the shared model of Section 2.2, Section 5 and Appendix C of
+"Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation".
+The sibling cpap-approximation-hardness supplies the Section 5 RAM reduction
+and formula-only planar embedding.
+
+This project imports the Lean development
+
+  NP-completeness of SAT, 3-SAT and their variants (the Cook–Levin theorem)
+  in Lean 4
+  Foundation owner: ANONYMIZED
+  Repository: NPCompleteness-Lean4
+  Commit: 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  License: Apache-2.0
+
+Lake fetches it at that commit. The optional generated Challenge.lean
+reproduces selected foundation declarations and documentation comments from
+the foundation's Challenge.lean, following its downstream attribution guidance.
+The generated comparison specification is omitted from this distribution.

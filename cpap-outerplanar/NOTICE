@@ -1,0 +1,44 @@
+Outerplanar structure and exact algorithms: Section 8, Appendices E and F
+Lemma 19, Theorems 20 and 21, Lemmas 24 and 25, Definition 26, Lemmas 27–35
+(Lean 4)
+Author and maintainer: ANONYMIZED
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+This project depends on, and does not contain, the Lean developments
+
+  Cycle-path assignment on minor-free graphs: Algorithm 4, Lemmas 23 and 25 and the
+  blockwise combination (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-minor-free
+  Location: cpap-minor-free/ in this repository (a Lake path dependency)
+  License: Apache-2.0
+
+  Cycle-path assignment is NP-hard for every fixed k >= 5 (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-np-hardness
+  Location: cpap-np-hardness/ in this repository (a Lake path dependency)
+  License: Apache-2.0
+
+  NP-completeness of SAT, 3-SAT and their variants (the Cook–Levin theorem)
+  in Lean 4
+  Author and maintainer: ANONYMIZED
+  Repository: NPCompleteness-Lean4
+  Commit: 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  License: Apache-2.0
+
+  Mathlib (The Lean mathematical library)
+  The Mathlib contributors
+  https://github.com/leanprover-community/mathlib4
+  Tag v4.35.0-rc2, commit 065356127b1dc0016f66b7283ce0ce2c4055aa55
+  License: Apache-2.0
+
+Lake fetches the foundation and Mathlib at those commits and takes the cpap-np-hardness and cpap-minor-free
+packages from this repository. The generated Challenge.lean specification reproduces verbatim the
+definitions of hypermaps and their planarity from the NP-completeness foundation
+(Complexity/Planarity.lean), the definitions of the cycle-path assignment problem from the
+cpap-np-hardness library and the definition of K4 from the cpap-minor-free library, as their
+documentation asks downstream developments to do, and imports three modules of Mathlib.
+
+Outerplanar/RAM/Model.lean and Outerplanar/RAM/Spec.lean are copies of the corresponding files
+of the cpap-approximation-hardness package of the same manuscript (same authors, Apache-2.0); see their
+module documentation.

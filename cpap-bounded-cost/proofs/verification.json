@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-bounded-cost",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.almostSatisfiable_iff_hasAssignment",
+    "STACS2027.almostFormula_size",
+    "STACS2027.zeroCostFormula_satisfiable_iff",
+    "STACS2027.zeroCostFormula_size",
+    "STACS2027.prefixClauses_length",
+    "STACS2027.prefixAuxiliaryVariables_count",
+    "STACS2027.mem_kCycleCore_iff",
+    "STACS2027.mem_vertices_kCycleCore_iff",
+    "STACS2027.isCycle_kCycleCore_iff",
+    "STACS2027.cycles_kCycleCore",
+    "STACS2027.hasAssignment_kCycleCore_iff",
+    "STACS2027.deletedOverlaps_spec",
+    "STACS2027.recoveredPath_spec",
+    "STACS2027.recoverAssignment_correct",
+    "STACS2027.recoverAssignment_zeroCost",
+    "STACS2027.permittedFormula_nil_satisfiable_iff",
+    "STACS2027.algorithm3_correct",
+    "STACS2027.almostSatisfiable_mono",
+    "STACS2027.exists_almostSatisfiable",
+    "STACS2027.isOptimalCost_iff_least_accepted",
+    "STACS2027.searchOptimum_correct"
+  ],
+  "target_count": 21,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 230,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 5,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 37,
+    "default_targets": [
+      "BoundedCost",
+      "Solution",
+      "BoundedCostAudit"
+    ],
+    "compiled_audit_modules": [
+      "BoundedCostAudit",
+      "BoundedCostAudit.Guards000"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "3598f56c38bd7ceb3c47bc193edd7619bc52912d04d183da96c0bd7d2353127f",
+    "solution": "e60e364a1373ea0f071dd1b466fd2fc110a6c2afcf7fa558015b4704e9cce6b8"
+  },
+  "comparison_output_sha256": "92b47c48e44aa7f77a807c24c470dadb39a3076aab90719486404cef7c445e26"
+}

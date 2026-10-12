@@ -1,0 +1,22 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "Complexity.pcp_gap",
+    "Complexity.pcp_theorem",
+    "Complexity.npo_maxSNP0",
+    "Complexity.maxSNPHard_no_ptas",
+    "Complexity.maxSNPHard_not_hasPTAS",
+    "Complexity.max3SAT_maxSNPComplete",
+    "Complexity.max3SAT3_maxSNPComplete",
+    "Complexity.max3SAT_apxComplete",
+    "Complexity.max3SAT3_apxComplete"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

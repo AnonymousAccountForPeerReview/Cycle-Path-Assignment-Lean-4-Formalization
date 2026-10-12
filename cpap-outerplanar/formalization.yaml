@@ -1,0 +1,375 @@
+version: v0.4
+project:
+  name: Outerplanar structure and exact cycle-path assignment algorithms in Lean 4
+  description: Formalization of Section 8 and Appendices E and F of the accompanying cycle-path assignment
+    paper. Proves the drawing/minor and block characterization of Lemma 19, the common-neighbour bound
+    of Lemma 24, global elimination orders and Lemma 25/Algorithm 4 for loop-free outerplanar graphs,
+    Theorem 20 from K23MinorFree, and the executable exact algorithms of Theorem 21 and Lemma 35. Definition
+    26 and Lemmas 27–34 are proved in the polygon/weak-dual representation, including full leaf-face deletion,
+    parent/child criteria, the DP recurrence and optimum, and the supporting cycle-count bounds. The contextual
+    planar-triangle Hall and zero-cost assignment claims are proved from PlanarGraph alone. For fixed
+    k≥3, the RAM endpoints bound execution by C(m+1) steps and accessed addresses by C(L+m+1), where m
+    counts input entries and L bounds labels. All delivered proofs use only propext, Classical.choice
+    and Quot.sound.
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - math.CO
+  - cs.CC
+  msc2020:
+  - 05C83
+  - 05C10
+  - 05C38
+  - 05C85
+  - 68W40
+  - 68Q10
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: Section 8 (Lemma 19, Theorems 20 and 21); Appendix E (Lemmas 24 and 25, Algorithm 4 and the
+    proof of Theorem 20); Appendix F (Definition 26, Lemmas 27–35 and the proof of Theorem 21)
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: A characterization of K_{2,4}-minor-free graphs
+  type: paper
+  id: doi:10.1137/140986517
+  location: SIAM Journal on Discrete Mathematics 30(2), 955-975, 2016
+  relationship: background
+  note: 'Lemma 19 as the manuscript cites it. Proved here (outerplanar_block_structure, compared), by
+    arguments of its own: the third sentence in combinatorial form by a longest cycle (twoConnectedK23_structure),
+    the equivalence of drawings with the excluded minors by an explicit construction, closure of drawings
+    under minors and face counts with Euler''s formula for hypermaps.'
+- title: Outerplanar graphs and weak duals
+  type: paper
+  location: Journal of the Indian Mathematical Society 38(1-4), 215-219, 1974
+  relationship: background
+  note: Cited by the manuscript for the weak dual of a 2-connected outerplanar graph being a tree. Proved
+    here in the polygon model (IsPolygon.weakDual_tree), a library theorem.
+- title: 'Algorithm 447: efficient algorithms for graph manipulation'
+  type: paper
+  id: doi:10.1145/362248.362272
+  location: Communications of the ACM 16(6), 372-378, 1973
+  relationship: background
+  note: The block decomposition by depth-first search and low points, which the algorithm and the proof
+    of Theorem 20 use (palm trees, heads); formalized here.
+related_formalizations:
+- id: cpap-minor-free
+  relationship: builds-on
+  note: Required by Lake at sibling path ../cpap-minor-free (Apache-2.0). Supplies Algorithm 4 assignment
+    and block interfaces and the K₄ base cases; this package proves all needed structural witnesses and
+    the full graph-class endpoints.
+- id: cpap-np-hardness
+  relationship: builds-on
+  note: Required by Lake at sibling path ../cpap-np-hardness (Apache-2.0). Supplies the shared CPAP model,
+    cost, enumeration, relabelling and planar gluing lemmas.
+- id: cpap-approximation-hardness
+  relationship: other
+  note: Not required. Its unit-cost random-access machine (ApproximationHardness/RAM/Model.lean) is copied
+    verbatim as Outerplanar/RAM/Model.lean, and ApproximationHardness/RAM/Spec.lean as Outerplanar/RAM/Spec.lean;
+    its definition of the optimum (IsMinCost) is repeated in Outerplanar/Defs.lean.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: Required by Lake at that commit (Apache-2.0), also through cpap-np-hardness and cpap-minor-free.
+    Its hypermaps and planar embeddings (Complexity/Planarity.lean) define outerplanar drawings; the hypermap
+    definitions are copied verbatim into the Challenge.
+- id: https://github.com/leanprover-community/mathlib4, tag v4.35.0-rc2, commit 065356127b1dc0016f66b7283ce0ce2c4055aa55
+  relationship: builds-on
+  note: 'Mathlib (Apache-2.0), required by Lake at that commit: finite sets, their sums, folds and symmetric
+    differences, Relation.ReflTransGen and List.sublistsLen in the weak-dual definitions and statements;
+    Finset.inf'', rational numbers and tactics in the proofs. The Challenge imports Mathlib.Algebra.BigOperators.Group.Finset.Defs,
+    Mathlib.Data.Finset.Prod and Mathlib.Data.List.Sublists.'
+status:
+  scope: 'Proved: Lemma 19''s drawing/minor equivalence and two-connected block alternative; Lemma 24;
+    the full loop-free outerplanar Lemma 25 and Algorithm 4; Theorem 20 from K23MinorFree; the actual
+    RAM programs of Theorem 21 and Lemma 35; Definition 26 and Lemmas 27–34 in the polygon/weak-dual model,
+    including root and nonroot leaf deletion, parent/child criteria and the full DP recurrence; the cycle-count
+    bounds in Lemma 35; and the contextual planar-triangle Hall and zero-cost assignment results from
+    PlanarGraph alone. Intermediate structure parameters are instantiated by proved witnesses. There are
+    16 selected comparison endpoints; the remaining library proofs are covered by axiom guards. The distributed
+    default proof build omits the generated Challenge statement specification.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.outerplanar_block_structure
+    file: Outerplanar/OuterplanarCharacterization.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.k23_perfect
+    file: Outerplanar/PerfectK23.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.k23_linear_ram
+    file: Outerplanar/LinearK23.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.outerplanar_linear_ram
+    file: Outerplanar/LinearK23.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.outerplanar_algorithm_perfect
+    file: Outerplanar/GeneralAlgorithm.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.TriangleMatching.planar_triangle_perfect_assignment
+    file: Outerplanar/PlanarTriangles.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.common_neighbours_le_two
+    file: Outerplanar/Minors.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.euler_face_count
+    file: Outerplanar/WeakDualFacts.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.cycle_subtree_bij
+    file: Outerplanar/WeakDualBij.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.cycle_subtree_bij_simpleCycles
+    file: Outerplanar/WeakDualBij.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.face_cycle_bound
+    file: Outerplanar/WeakDualCount.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.edge_cycle_bound
+    file: Outerplanar/WeakDualCount.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.enclosed_faces_bound
+    file: Outerplanar/NamedHoles.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.enclosing_cycle_count_bound
+    file: Outerplanar/NamedHoles.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.cycle_child_dichotomy
+    file: Outerplanar/NamedHoles.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.IsPolygon.leaf_face_deletion
+    file: Outerplanar/LeafFaceDeletion.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: Outerplanarity is a planar rotation-system drawing; minors are branch sets on the canonical
+    simple-edge interpretation. A two-connected outerplanar block is relabelled as a polygon with noncrossing
+    chords. The weak-dual and DP claims are proved there and connected to general graphs through structural
+    and relabelling proofs. Lemma 27's count uses r+n=m+1; Lemma 28 covers both root and nonroot leaves.
+    Lemmas 32–33 are abstract tree-DP statements instantiated by the polygon problem. For fixed k, RAM
+    time is C(m+1) in raw input-list size and accessed addresses are bounded by C(L+m+1); these give O(n)
+    time on simple minor-free graphs and O(n) memory for labels bounded by O(n). The unit-cost RAM has
+    unbounded natural registers and no multiplication instruction. The solver computes outer Hamiltonian
+    orders by ear elimination, uses memoized region paths and fixed optimal K₄ outputs, and reconstructs
+    optimal paths. The explicit k-dependent constants differ from the paper's bounds. Retained proposition-valued
+    specifications have proved witnesses; they are not unproved assumptions.
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Lemma 25 and Algorithm 4: every loop-free outerplanar graph has a global elimination order
+      whose assignment is valid and has zero cost'
+    lean: STACS2027.outerplanar_algorithm_perfect
+    module: Solution
+    status: proved
+    note: An elimination order is constructed for every loop-free OuterplanarDrawing, with ValidChoices
+      and exact zero cost for the literal algorithm4 output.
+  - source: 'Contextual triangle claim: every planar graph admits a perfect assignment for k = 3'
+    lean: STACS2027.TriangleMatching.planar_triangle_perfect_assignment
+    module: Solution
+    status: proved
+    note: Requires only the foundation's PlanarGraph predicate. Triangle-side Hall inequalities and the
+      matching construction are proved.
+  - source: 'Lemma 19: a graph is outerplanar if it has a planar drawing with every vertex on the outer
+      face; equivalently, it contains neither K₄ nor K_{2,3} as a minor; every 2-connected K_{2,3}-minor-free
+      graph is either outerplanar or isomorphic to K₄'
+    lean: STACS2027.outerplanar_block_structure
+    module: Solution
+    status: proved
+    note: Outerplanarity as OuterplanarDrawing (a planar rotation system, the foundation's hypermap planarity,
+      with every vertex of a component on one face); outerplanarDrawing_iff_minorFree and twoConnected_outerplanar_or_k4;
+      twoConnectedK23_structure (not compared) is the third sentence in combinatorial form.
+  - source: 'Theorem 20: every K_{2,3}-minor-free graph admits a perfect cycle-path assignment for k =
+      4'
+    lean: STACS2027.k23_perfect
+    module: Solution
+    status: proved
+    note: Requires K23MinorFree g. The intermediate TwoConnectedK23Structure parameter is discharged by
+      twoConnectedK23_structure.
+  - source: 'Theorem 21: for every fixed k ≥ 3, an optimal cycle-path assignment on a K_{2,3}-minor-free
+      graph with n vertices can be computed in O(n) time'
+    lean: STACS2027.k23_linear_ram
+    module: Solution
+    status: proved
+    note: On the unit-cost RAM, within C (m + 1) steps for the number m of input entries (O(n) for simple
+      graphs) and the memory addresses below C (L + m + 1); the program outputs exactly the algorithm's
+      answer (k23_linear_ram_solve, RAM.Main.k23Prog_computes).
+  - source: 'Lemma 35: for every fixed k ≥ 3, an optimal cycle-path assignment on an outerplanar graph
+      with n vertices can be computed in O(n) time'
+    lean: STACS2027.outerplanar_linear_ram
+    module: Solution
+    status: proved
+    note: Outerplanar as OuterplanarDrawing (Lemma 19's definition); time and memory as for Theorem 21.
+  - source: 'Lemma 24: in a K_{2,3}-minor-free graph, any two distinct vertices have at most two common
+      neighbors'
+    lean: STACS2027.common_neighbours_le_two
+    module: Solution
+    status: proved
+    note: Minors by branch sets on the simple graph of an edge list.
+  - source: 'Lemma 27 (1): r = m - n + 1'
+    lean: STACS2027.IsPolygon.euler_face_count
+    module: Solution
+    status: proved
+    note: As r + n = m + 1, in the polygon model; the chord–dual-edge bijection κ is IsPolygon.chord_dualEdge_bij
+      (not compared).
+  - source: The weak dual of a 2-connected outerplanar graph is a tree (ANONYMIZED, ANONYMIZED, ANONYMIZED;
+      cited in Appendix F)
+    lean: STACS2027.IsPolygon.weakDual_tree
+    module: Solution
+    status: proved
+    note: 'In the polygon model: connected with r - 1 edges. A library theorem, not compared.'
+  - source: 'Lemma 27 (2) and (3): ∂T ≠ ∅ for nonempty T; deg_{∂S}(v) ∈ {0, 2} for subtrees S'
+    lean: STACS2027.IsPolygon.bdry_ne_empty
+    module: Solution
+    status: proved
+    note: With IsPolygon.bdry_deg; not compared.
+  - source: 'Lemma 28: a leaf face has one chord, the rest of its boundary is a path of degree-two vertices'
+    lean: STACS2027.IsPolygon.leaf_face
+    module: Solution
+    status: proved
+    note: With root_leaf_unique_chord, root_leaf_inner_degree and face_path_of_edge, covers both non-root
+      leaves and the root leaf. Not compared.
+  - source: 'Lemma 28 (3): deletion of the leaf''s internal vertices'
+    lean: STACS2027.IsPolygon.leaf_face_deletion
+    module: Solution
+    status: proved
+    note: Exact all-cases bundled witness, with r ≥ 2 and an actual weak-dual degree-one leaf. New bounded
+      faces are proved equivalent to faces of the new positional embedding. Compared directly.
+  - source: 'Lemma 29: the restriction of ∂ to 𝒮 is a bijection onto 𝒞, and |∂S| = ∑ d_f - 2(|S| - 1)'
+    lean: STACS2027.IsPolygon.cycle_subtree_bij
+    module: Solution
+    status: proved
+    note: For the convex cycles, with inverse encl; IsPolygon.cycle_subtree_bij_simpleCycles (also compared)
+      for IsCycle.
+  - source: 'Supporting cycle-count bounds: at most 4^k simple k-cycles enclose a face, at most 2 · 4^k
+      contain an edge'
+    lean: STACS2027.IsPolygon.face_cycle_bound
+    module: Solution
+    status: proved
+    note: With IsPolygon.edge_cycle_bound (also compared); the simple k-cycles counted as the convex k-cycles.
+  - source: 'Proof of Lemma 35: a k-cycle encloses at most k-2 faces, each of perimeter at most k'
+    lean: STACS2027.IsPolygon.enclosed_faces_bound
+    module: Solution
+    status: proved
+    note: The retained proposition constant EnclosedFacesBound is proved by enclosedFacesBound_proved.
+      Compared directly.
+  - source: 'Proof of Lemma 35: at most 2^{M_k} cycle subtrees contain any given face'
+    lean: STACS2027.IsPolygon.enclosing_cycle_count_bound
+    module: Solution
+    status: proved
+    note: The retained proposition constant EnclosingCycleCountBound is proved by enclosingCycleCountBound_proved.
+      The counting proof uses the sharper generating-function bound, with separate triangle and quadrilateral
+      cases. Compared directly.
+  - source: 'Lemma 31: the selected-face dichotomy, top-face criterion, and parent-face boundary criterion'
+    lean: STACS2027.IsPolygon.cycle_child_dichotomy
+    module: Solution
+    status: proved
+    note: Part (1), compared. With top_face_iff_parent_not_enclosed and boundary_iff_parent_enclosed for
+      parts (2) and (3), using interval containment and the proved DP boundary notion.
+  - source: 'Lemma 30: the owned edge sets partition E'
+    lean: STACS2027.IsPolygon.own_spec
+    module: Solution
+    status: proved
+    note: Ownership as a function (IsPolygon.own), in the polygon model. Not compared.
+  - source: 'Lemmas 32 and 33: the cycles affecting a face are its own or boundary cycles; boundary cycles
+      of a child (via the separately proved criteria of Lemma 31)'
+    lean: STACS2027.TreeDP.Problem.top_eq_or_mem_boundary
+    module: Solution
+    status: proved
+    note: Abstract forms, with TreeDP.Problem.boundary_child. Not compared.
+  - source: 'Lemma 34: DP[v_f, α] is the least cost of the edges of G_{v_f} over the configurations of
+      Q_{v_f} extending α; DP[v_r, ∅] = OPT'
+    lean: STACS2027.IsPolygon.dp_table_correct
+    module: Solution
+    status: proved
+    note: In the polygon model; IsPolygon.dp_root_optimal for the root. A library theorem, not compared.
+  - source: Correctness of the algorithm of Theorem 21
+    lean: STACS2027.solve_optimal
+    module: Solution
+    status: proved
+    note: Requires k≥3 and K23MinorFree g. The intermediate structure parameter of Algo.solve_optimal
+      is discharged by twoConnectedK23_structure.

@@ -1,0 +1,37 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 300
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: "false"
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-github-cache: "false"
+          use-mathlib-cache: "false"
+      # Mathlib (required through Max3SAT-MaxSNP-APX-Lean4) comes from its official cache.
+      - run: lake exe cache get
+      - run: lake build
+      - run: python3 scripts/generate_challenge.py
+      - run: lake build Challenge
+      - run: python3 scripts/check_repository.py
+      - run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Install Comparator sandbox
+        run: sudo apt-get update && sudo apt-get install -y bubblewrap
+      - run: PATH="$(lean --print-prefix)/bin:$PATH" lake comparator --paranoid

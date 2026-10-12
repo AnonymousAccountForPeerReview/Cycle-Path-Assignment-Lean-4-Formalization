@@ -1,0 +1,535 @@
+{
+  "Challenge": {
+    "source": "cpap-minor-free/Challenge.lean",
+    "source_sha256": null,
+    "comparison_module": "Challenge",
+    "comparison_source": "stacs-section8/Challenge.lean",
+    "comparison_source_sha256": "44446679982f9f6a8e25be6a6a676f8e8a9a02c19cd446503580bdd6ddae8f15",
+    "distribution_status": "Generated comparison statement; not distributed."
+  },
+  "NPHardness.Acyclic": {
+    "source": "cpap-np-hardness/NPHardness/Acyclic.lean",
+    "source_sha256": "2573f72123642fdf3c48b54fcba6587151523d037c05c0cc95113a215b236c47",
+    "comparison_module": "Section5.Acyclic",
+    "comparison_source": "stacs-section5/Section5/Acyclic.lean",
+    "comparison_source_sha256": "c342af9c6575dfaf1ddf57b1f39dde385907cca657f6b4792e373e526df1b045"
+  },
+  "NPHardness.AssignmentFamilies": {
+    "source": "cpap-np-hardness/NPHardness/AssignmentFamilies.lean",
+    "source_sha256": "b9f035a019738283050f16bca57e313fb8802ebf82e14c79171268f5f04e7038",
+    "comparison_module": "Section5.AssignmentFamilies",
+    "comparison_source": "stacs-section5/Section5/AssignmentFamilies.lean",
+    "comparison_source_sha256": "613c0e86dcd7e7ded7f6436b9d350219ffaefff2950b0a9bc7dc78a3b4927adb"
+  },
+  "NPHardness.AssignmentRelabel": {
+    "source": "cpap-np-hardness/NPHardness/AssignmentRelabel.lean",
+    "source_sha256": "0fa252b7b2f2f73ac10f5141214c0f29606c18a3b0110426742f82c8edca95c1",
+    "comparison_module": "Section5.AssignmentRelabel",
+    "comparison_source": "stacs-section5/Section5/AssignmentRelabel.lean",
+    "comparison_source_sha256": "cc363ef622cec1d7b6ef43c365395d04aa038e1259a12ec8e5400ae440c731b0"
+  },
+  "NPHardness.AttachmentEdges": {
+    "source": "cpap-np-hardness/NPHardness/AttachmentEdges.lean",
+    "source_sha256": "e8ea0b748fb3217d41146a8523b2f61b975eb3824e55ef72483196d08094622b",
+    "comparison_module": "Section5.AttachmentEdges",
+    "comparison_source": "stacs-section5/Section5/AttachmentEdges.lean",
+    "comparison_source_sha256": "dfaeee6c9a471179eefe231ce26dc5dbd403c9ddd24c8cce18faecf7ae76266f"
+  },
+  "NPHardness.BoundedSAT": {
+    "source": "cpap-np-hardness/NPHardness/BoundedSAT.lean",
+    "source_sha256": "58ea7fa890c3132a8b738517ebef6d72c907986022de75c7f0e6fba898937210",
+    "comparison_module": "Section5.BoundedSAT",
+    "comparison_source": "stacs-section5/Section5/BoundedSAT.lean",
+    "comparison_source_sha256": "be4e9e96acaf1f34773b0838a63339206412a94d9ed0838f3f7f4a181685e02f"
+  },
+  "NPHardness.CPAP": {
+    "source": "cpap-np-hardness/NPHardness/CPAP.lean",
+    "source_sha256": "50c1ef6e485377e9d93e77f65c4f725844478dff6d5ccdf6364b0fbde6eec7f0",
+    "comparison_module": "Section5.CPAP",
+    "comparison_source": "stacs-section5/Section5/CPAP.lean",
+    "comparison_source_sha256": "f20320464bacb32118e0aadf480a461080e55cb31cf685e8a9db0bc40e9cd29e"
+  },
+  "NPHardness.ClauseRegions": {
+    "source": "cpap-np-hardness/NPHardness/ClauseRegions.lean",
+    "source_sha256": "f7441f3b387b53f99dd2f95451f641d1972e33aca161db307abf31bf5393ad5d",
+    "comparison_module": "Section5.ClauseRegions",
+    "comparison_source": "stacs-section5/Section5/ClauseRegions.lean",
+    "comparison_source_sha256": "886e3056f0c417078d3680c5a2d8490c4144b03302261b6ae7b1e134511239ea"
+  },
+  "NPHardness.ClauseThree5": {
+    "source": "cpap-np-hardness/NPHardness/ClauseThree5.lean",
+    "source_sha256": "d24c3ca86dc43bae6068716e8559553a08c8f30de2fabb8f38b939a47bbcc200",
+    "comparison_module": "Section5.ClauseThree5",
+    "comparison_source": "stacs-section5/Section5/ClauseThree5.lean",
+    "comparison_source_sha256": "dced965817c3799896f3518b520d2d8ffebcd0a05a6e2af28ddb6016fdea39b0"
+  },
+  "NPHardness.ClauseThreeGeneral": {
+    "source": "cpap-np-hardness/NPHardness/ClauseThreeGeneral.lean",
+    "source_sha256": "a64e5d68a1d27a0c4713458e07641b9143f22932373bc51a1e32f935f2c5fe9e",
+    "comparison_module": "Section5.ClauseThreeGeneral",
+    "comparison_source": "stacs-section5/Section5/ClauseThreeGeneral.lean",
+    "comparison_source_sha256": "607c7c1ee94251647afe28c37f19a824a1a78af52b4bfad9d02f9b3db7eb7c3b"
+  },
+  "NPHardness.ClauseTwo5": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwo5.lean",
+    "source_sha256": "49c0ca131a9839dd5f410accd9016f874fb05e87176daa132d87a89b1de96faa",
+    "comparison_module": "Section5.ClauseTwo5",
+    "comparison_source": "stacs-section5/Section5/ClauseTwo5.lean",
+    "comparison_source_sha256": "5aa2ad5e9f333ed8a07670aa72ccdd736d62fc5138c680babd905552ddb19653"
+  },
+  "NPHardness.ClauseTwo6": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwo6.lean",
+    "source_sha256": "98c941e4f6df4a6487ac03b434a3075586cf95ed57f3874b4bd359f3e7a1cf6a",
+    "comparison_module": "Section5.ClauseTwo6",
+    "comparison_source": "stacs-section5/Section5/ClauseTwo6.lean",
+    "comparison_source_sha256": "e6948ccc1560ef82c27a90d635581b04f5e91816941f519883565eb8ce7ee263"
+  },
+  "NPHardness.ClauseTwoGeneral": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoGeneral.lean",
+    "source_sha256": "08d708fab00826b4cd25ce19de6dd39e45aacd11a99ab0753b05be2b6714a150",
+    "comparison_module": "Section5.ClauseTwoGeneral",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoGeneral.lean",
+    "comparison_source_sha256": "613629eca04847d0027ff83ec69ae306f0199c06ea4370d16cc2ce764223ae72"
+  },
+  "NPHardness.ClauseTwoProfileArithmetic": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfileArithmetic.lean",
+    "source_sha256": "c2980bf0c68a7ed2fb61f0968c4ec9bdf5e8567213366f52e698a3c622502fe0",
+    "comparison_module": "Section5.ClauseTwoProfileArithmetic",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfileArithmetic.lean",
+    "comparison_source_sha256": "e2eec0be3074075a7ac790bfd8fe7f9aff2f0196dd95b8a46cf3684a9f697c9e"
+  },
+  "NPHardness.ClauseTwoProfileCertificates": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfileCertificates.lean",
+    "source_sha256": "87fa04ba61a1b5bd5443d8275d36ac6490527930bf37a7f98d06a432453eddde",
+    "comparison_module": "Section5.ClauseTwoProfileCertificates",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfileCertificates.lean",
+    "comparison_source_sha256": "c205a6759eeb52c662d7a4ad1b2f7d4a25082121cab197ab5e575926fbb797f4"
+  },
+  "NPHardness.ClauseTwoProfiles": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfiles.lean",
+    "source_sha256": "80e7fc86b7adb202021e5e181023c306a2bd245dcda6c639fc4ab519e04849d6",
+    "comparison_module": "Section5.ClauseTwoProfiles",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfiles.lean",
+    "comparison_source_sha256": "030776b6226de3c802e6bc8ddfa5340371d6ac912413c896db089faf6d172e1a"
+  },
+  "NPHardness.ClauseWitnessInterface": {
+    "source": "cpap-np-hardness/NPHardness/ClauseWitnessInterface.lean",
+    "source_sha256": "350974c4849c0aa690f2863eba52bd888da8804a183a0045311f82ae88ede1cc",
+    "comparison_module": "Section5.ClauseWitnessInterface",
+    "comparison_source": "stacs-section5/Section5/ClauseWitnessInterface.lean",
+    "comparison_source_sha256": "ca6c0eef152fff12377d96aa8996ff063f1a16b2253f1c7b7d5eb0f7e6a9ad15"
+  },
+  "NPHardness.CostSearch": {
+    "source": "cpap-np-hardness/NPHardness/CostSearch.lean",
+    "source_sha256": "628520546a7b62b991cbcb9ccc59bbb3a3bb289a5505bbd05c7c8f2197b7f3db",
+    "comparison_module": "Section5.CostSearch",
+    "comparison_source": "stacs-section5/Section5/CostSearch.lean",
+    "comparison_source_sha256": "dce96f8312a0ac53a42cde54b37b31ffa6cbb77bb28d1557ceb970a7aba6fc80"
+  },
+  "NPHardness.CycleExcursions": {
+    "source": "cpap-np-hardness/NPHardness/CycleExcursions.lean",
+    "source_sha256": "deea703d31f91d5dd85da879c674da1350657a846e906c9683edc211c33771ca",
+    "comparison_module": "Section5.CycleExcursions",
+    "comparison_source": "stacs-section5/Section5/CycleExcursions.lean",
+    "comparison_source_sha256": "b0f2eb9b3a19ac37afd789256b65b138ff9a983077e07c0b0dc5cddc8b179fe0"
+  },
+  "NPHardness.CycleRepresentatives": {
+    "source": "cpap-np-hardness/NPHardness/CycleRepresentatives.lean",
+    "source_sha256": "bac0b671c03c7d9db4a73300984c2562654365b413c22e0047c09da30e4f136b",
+    "comparison_module": "Section5.CycleRepresentatives",
+    "comparison_source": "stacs-section5/Section5/CycleRepresentatives.lean",
+    "comparison_source_sha256": "ddf34308c5b95d696fef44f5822a17006eaabd05cf7c5316c2abe3d6259a290d"
+  },
+  "NPHardness.CycleStructure": {
+    "source": "cpap-np-hardness/NPHardness/CycleStructure.lean",
+    "source_sha256": "cc07c6e369ca619d3cf576b3e8bfcba965369b88efcb126d2908c464d5a3997a",
+    "comparison_module": "Section5.CycleStructure",
+    "comparison_source": "stacs-section5/Section5/CycleStructure.lean",
+    "comparison_source_sha256": "2de7aff9122ccaff399bbdfd7f92e961f4353eac4794a89aad57e788e0f7d176"
+  },
+  "NPHardness.Enumerate": {
+    "source": "cpap-np-hardness/NPHardness/Enumerate.lean",
+    "source_sha256": "9629600a393803695ef055fdae2e18094c59662b9c3ee2460a73811a7a79d77e",
+    "comparison_module": "Section5.Enumerate",
+    "comparison_source": "stacs-section5/Section5/Enumerate.lean",
+    "comparison_source_sha256": "221cf3f52f7d874b83b68da68f26a9555e25b7565f5d9fdd3cf85fd063d5e673"
+  },
+  "NPHardness.ExcursionDistances": {
+    "source": "cpap-np-hardness/NPHardness/ExcursionDistances.lean",
+    "source_sha256": "1e12375c5fd476f85977c4cbc65f118651574f1c0ecfc701b773e89457fc7b00",
+    "comparison_module": "Section5.ExcursionDistances",
+    "comparison_source": "stacs-section5/Section5/ExcursionDistances.lean",
+    "comparison_source_sha256": "bd5ae979345d65071a10a3946e48bd044a5440de6d8c16ab38c8f6856de8a4f7"
+  },
+  "NPHardness.ExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionCost.lean",
+    "source_sha256": "da92231756dbc7f48fd6b42cdaaccc4c55cf9f861f557c1ed4b914be20ebb8fc",
+    "comparison_module": "Section5.ExpansionCost",
+    "comparison_source": "stacs-section5/Section5/ExpansionCost.lean",
+    "comparison_source_sha256": "1ad3fa27030f09e12b025cb8181df75abf918b972e6c33a96aba1446219cdf8b"
+  },
+  "NPHardness.ExpansionDisjoint": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionDisjoint.lean",
+    "source_sha256": "584c4b6f2b762b16b7e0342372c68d03e907f86ae8c556272f418202b36e4783",
+    "comparison_module": "Section5.ExpansionDisjoint",
+    "comparison_source": "stacs-section5/Section5/ExpansionDisjoint.lean",
+    "comparison_source_sha256": "eaddb7b307c5764cbe7ed06701f2fd24b76c8915dc7af901fdef476caf950e49"
+  },
+  "NPHardness.ExpansionPorts": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionPorts.lean",
+    "source_sha256": "78027d9e78eb3f1f9b9e66bfb946f64629f7cad35e151cb82d6d5e89a91686eb",
+    "comparison_module": "Section5.ExpansionPorts",
+    "comparison_source": "stacs-section5/Section5/ExpansionPorts.lean",
+    "comparison_source_sha256": "17003c76554a8ab927094f6baad15834d86cf4f06bb21a129492a2f3a90422fd"
+  },
+  "NPHardness.FamilyCost": {
+    "source": "cpap-np-hardness/NPHardness/FamilyCost.lean",
+    "source_sha256": "b411bcd41d5eba9f5aa14a1ecf5506b560d2a4ad26e9d2f01e0394d74f0ea915",
+    "comparison_module": "Section5.FamilyCost",
+    "comparison_source": "stacs-section5/Section5/FamilyCost.lean",
+    "comparison_source_sha256": "7fb1a250bd6c068d19cc0ae580fa1bff273d26772d5841c01d68fbb2e7c0c721"
+  },
+  "NPHardness.FiniteCycles": {
+    "source": "cpap-np-hardness/NPHardness/FiniteCycles.lean",
+    "source_sha256": "6fb172cd5556296260addcf9d90665f88a0e2177644c6df6defdc853e4479527",
+    "comparison_module": "Section5.FiniteCycles",
+    "comparison_source": "stacs-section5/Section5/FiniteCycles.lean",
+    "comparison_source_sha256": "6fb172cd5556296260addcf9d90665f88a0e2177644c6df6defdc853e4479527"
+  },
+  "NPHardness.GadgetExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/GadgetExpansionCost.lean",
+    "source_sha256": "0bea9563d230fe51c5af3d975f87e02c736cea12180fb717a520248aa219b276",
+    "comparison_module": "Section5.GadgetExpansionCost",
+    "comparison_source": "stacs-section5/Section5/GadgetExpansionCost.lean",
+    "comparison_source_sha256": "bfa0cf0fbbdead6c1b7cc80755ea0eba63a578268f7629dbb00f54a2a4824316"
+  },
+  "NPHardness.GadgetFamilies": {
+    "source": "cpap-np-hardness/NPHardness/GadgetFamilies.lean",
+    "source_sha256": "db3bc7d3058ef08d0e7a1ed8e18fa608dff11cdf3997ba69343c9a56f06ecaf5",
+    "comparison_module": "Section5.GadgetFamilies",
+    "comparison_source": "stacs-section5/Section5/GadgetFamilies.lean",
+    "comparison_source_sha256": "6fb6e793a34debdade57a40aea0ef968ebadf03f565f73fbd2b09a6ed51129b3"
+  },
+  "NPHardness.GadgetPortCost": {
+    "source": "cpap-np-hardness/NPHardness/GadgetPortCost.lean",
+    "source_sha256": "8fb248c61218c3c938f1295a1219cd17005bf3671dae8aea25e8e75f119baed9",
+    "comparison_module": "Section5.GadgetPortCost",
+    "comparison_source": "stacs-section5/Section5/GadgetPortCost.lean",
+    "comparison_source_sha256": "564918613c9a1b15397c4cbca356885e3f73dc0183299d96cae7222be9df0815"
+  },
+  "NPHardness.GadgetPrivateEdges": {
+    "source": "cpap-np-hardness/NPHardness/GadgetPrivateEdges.lean",
+    "source_sha256": "25c892145657188f8dac5544e13918705e21bbfcece1d580bc6ef35ea89fd740",
+    "comparison_module": "Section5.GadgetPrivateEdges",
+    "comparison_source": "stacs-section5/Section5/GadgetPrivateEdges.lean",
+    "comparison_source_sha256": "88bc4e795d0c70098dd673adf39d928b4d1cb8138d4a792a43ccd2e333a21682"
+  },
+  "NPHardness.GadgetProjection": {
+    "source": "cpap-np-hardness/NPHardness/GadgetProjection.lean",
+    "source_sha256": "c3fe6037cf2091ad6f29b9c07e9d3f5643d33c9fe877e6f724cecad43b529ad2",
+    "comparison_module": "Section5.GadgetProjection",
+    "comparison_source": "stacs-section5/Section5/GadgetProjection.lean",
+    "comparison_source_sha256": "df0b66fdddc9598187b9192f0dd29df8a3c7815d7e6d72306417d3fa43319ad2"
+  },
+  "NPHardness.GadgetRelabel": {
+    "source": "cpap-np-hardness/NPHardness/GadgetRelabel.lean",
+    "source_sha256": "5d8237bdc67a4be09f750fa6136f03025500235c3b4899fe883122ff7bc149dd",
+    "comparison_module": "Section5.GadgetRelabel",
+    "comparison_source": "stacs-section5/Section5/GadgetRelabel.lean",
+    "comparison_source_sha256": "9f95abcafbc313f950c945f4ed241e9d5bea38ba1468410edd1018a1fc4b7cf8"
+  },
+  "NPHardness.Gadgets": {
+    "source": "cpap-np-hardness/NPHardness/Gadgets.lean",
+    "source_sha256": "6622297a22f4ce581c820bf479170b926bb7dc9f8bd19ac4823ca2a280b2c995",
+    "comparison_module": "Section5.Gadgets",
+    "comparison_source": "stacs-section5/Section5/Gadgets.lean",
+    "comparison_source_sha256": "4a36554638b4aa4bdff21970f18db5a77a26c8b278dd884289f857f075c6946c"
+  },
+  "NPHardness.GlobalCost": {
+    "source": "cpap-np-hardness/NPHardness/GlobalCost.lean",
+    "source_sha256": "27699fbb1a2889f5ed636a92ae126b671e62f6ab118d833eb4097c057a01a2df",
+    "comparison_module": "Section5.GlobalCost",
+    "comparison_source": "stacs-section5/Section5/GlobalCost.lean",
+    "comparison_source_sha256": "178718ea2cf90339f08fac232ba3c2a57e41e6dc9b48a9886c8a22efb89fbb04"
+  },
+  "NPHardness.GlobalCycles": {
+    "source": "cpap-np-hardness/NPHardness/GlobalCycles.lean",
+    "source_sha256": "73b0a7804f71a4d728c0cb71f8b8015724d8b60aa180c2e1e10275f35166fb75",
+    "comparison_module": "Section5.GlobalCycles",
+    "comparison_source": "stacs-section5/Section5/GlobalCycles.lean",
+    "comparison_source_sha256": "fda6ece61222d8ca0f1673a90467b63682d7209f8453d02f3498bd77ea0f49b3"
+  },
+  "NPHardness.GlobalExcursions": {
+    "source": "cpap-np-hardness/NPHardness/GlobalExcursions.lean",
+    "source_sha256": "f03dc379637e01342169e747aa7be4606a58c6df7de283e3b859d361b0984c3c",
+    "comparison_module": "Section5.GlobalExcursions",
+    "comparison_source": "stacs-section5/Section5/GlobalExcursions.lean",
+    "comparison_source_sha256": "d52e4517c804265c190a0afec86b6902785aa8008632e27e3f6d96b82f4c4cc1"
+  },
+  "NPHardness.GlobalFamilies": {
+    "source": "cpap-np-hardness/NPHardness/GlobalFamilies.lean",
+    "source_sha256": "38875789c60082f9f2e34cefc223574b45704eacd9fc120587f176a522f45dee",
+    "comparison_module": "Section5.GlobalFamilies",
+    "comparison_source": "stacs-section5/Section5/GlobalFamilies.lean",
+    "comparison_source_sha256": "92b614694bbfc98651c2bdfcc162ef4ede34858a68e4e2e82c28b1c6a20e76b7"
+  },
+  "NPHardness.GlobalFamilyUnique": {
+    "source": "cpap-np-hardness/NPHardness/GlobalFamilyUnique.lean",
+    "source_sha256": "faef1a97b4e0aa33706c4aa2f8e81fb3ed0cb9caffcb93bbfbf2899d0987bcab",
+    "comparison_module": "Section5.GlobalFamilyUnique",
+    "comparison_source": "stacs-section5/Section5/GlobalFamilyUnique.lean",
+    "comparison_source_sha256": "1464facfc056ab20f7e6b6e6d7de51da510607aedb94e060b201b416c825e776"
+  },
+  "NPHardness.GlobalGraph": {
+    "source": "cpap-np-hardness/NPHardness/GlobalGraph.lean",
+    "source_sha256": "64efb7af171f8b2a08a75af867d2f83d30d9e431894c269e2c6b7888be5f4636",
+    "comparison_module": "Section5.GlobalGraph",
+    "comparison_source": "stacs-section5/Section5/GlobalGraph.lean",
+    "comparison_source_sha256": "2120cbaa1f6d9b152af04a5a9df9da4ff3f0aee93737aa1792a7f7c634863fb2"
+  },
+  "NPHardness.GlobalPorts": {
+    "source": "cpap-np-hardness/NPHardness/GlobalPorts.lean",
+    "source_sha256": "6f7d85220d847b9f18bcd538ff0f04ff2986f8be9d899c1266ea8e0076f98b0b",
+    "comparison_module": "Section5.GlobalPorts",
+    "comparison_source": "stacs-section5/Section5/GlobalPorts.lean",
+    "comparison_source_sha256": "8258847ab8fb4aa1c8fa1940bc480f89d0e46951ab1f7e5830a987cd587c060a"
+  },
+  "NPHardness.GlobalSeparation": {
+    "source": "cpap-np-hardness/NPHardness/GlobalSeparation.lean",
+    "source_sha256": "12e444abc94230eacb29211e14152d81f444f6089c1e99e850875af88fe3da3e",
+    "comparison_module": "Section5.GlobalSeparation",
+    "comparison_source": "stacs-section5/Section5/GlobalSeparation.lean",
+    "comparison_source_sha256": "78c3940e24e73e38b9b8c29a3f8646dfc2d2e415bcc1f3be255e927587be250b"
+  },
+  "NPHardness.GlobalSoundness": {
+    "source": "cpap-np-hardness/NPHardness/GlobalSoundness.lean",
+    "source_sha256": "fee507c2014d30b17ac1c73dacaf3beb03639b659f2bd100d7b70c890b08ac18",
+    "comparison_module": "Section5.GlobalSoundness",
+    "comparison_source": "stacs-section5/Section5/GlobalSoundness.lean",
+    "comparison_source_sha256": "5bfc0d84bc4d0fa15db7ac7195641e51f722067758a9cb0e3ba541c02a30b08b"
+  },
+  "NPHardness.GlobalVertices": {
+    "source": "cpap-np-hardness/NPHardness/GlobalVertices.lean",
+    "source_sha256": "abc8b190ad86ace158737346a5ab75be21415662adb03d476bdc9139686db6ed",
+    "comparison_module": "Section5.GlobalVertices",
+    "comparison_source": "stacs-section5/Section5/GlobalVertices.lean",
+    "comparison_source_sha256": "44c694b5379d1b6099560d78420da91a942761e3c8860c086f1cf1462f210909"
+  },
+  "NPHardness.GraphRelabel": {
+    "source": "cpap-np-hardness/NPHardness/GraphRelabel.lean",
+    "source_sha256": "0de729ded6619792c713aca0168c0d32e659a9ce84371c3d0e371cc22587f6ca",
+    "comparison_module": "Section5.GraphRelabel",
+    "comparison_source": "stacs-section5/Section5/GraphRelabel.lean",
+    "comparison_source_sha256": "acc8571e171e13ef5a4b059600168a6ca7c72844e880c20ea8d59a5c23f5b49f"
+  },
+  "NPHardness.LoadCost": {
+    "source": "cpap-np-hardness/NPHardness/LoadCost.lean",
+    "source_sha256": "14df837e30eec44889723bd1dfba3130da8740095fe6170a7537435a0513ac67",
+    "comparison_module": "Section5.LoadCost",
+    "comparison_source": "stacs-section5/Section5/LoadCost.lean",
+    "comparison_source_sha256": "4dc1ae7acc3e0749152a5116346f129fdb92fee7ea4a5d2fae99efd8d7a499cd"
+  },
+  "NPHardness.LocalAssignmentInterface": {
+    "source": "cpap-np-hardness/NPHardness/LocalAssignmentInterface.lean",
+    "source_sha256": "67e4841b90db54909e6881af399baaab7cbbfa59bb0d3bf8f5e5823becabf45c",
+    "comparison_module": "Section5.LocalAssignmentInterface",
+    "comparison_source": "stacs-section5/Section5/LocalAssignmentInterface.lean",
+    "comparison_source_sha256": "7d64e88dadd3004052e25f06e3c4328fb37776c96497da84c62d1ed721aec251"
+  },
+  "NPHardness.MappedAssignments": {
+    "source": "cpap-np-hardness/NPHardness/MappedAssignments.lean",
+    "source_sha256": "191c230f6afab50f5795a283ccb924a9208583a6444ec3311da25bf93cdd4fa0",
+    "comparison_module": "Section5.MappedAssignments",
+    "comparison_source": "stacs-section5/Section5/MappedAssignments.lean",
+    "comparison_source_sha256": "871fcdb560dd154e810c7aeb27f07306d19cbeee2740ee11572b15f65bcc9982"
+  },
+  "NPHardness.OccurrencePorts": {
+    "source": "cpap-np-hardness/NPHardness/OccurrencePorts.lean",
+    "source_sha256": "5c226f307674b851efd2efc72e6ef6b9b8db97bc62cb6467664e77d118621ca1",
+    "comparison_module": "Section5.OccurrencePorts",
+    "comparison_source": "stacs-section5/Section5/OccurrencePorts.lean",
+    "comparison_source_sha256": "537e511141177408b8defd9110ff7798de9d082c0a0a2a8be2fa7e4d9d6d86a5"
+  },
+  "NPHardness.OmittedVertex": {
+    "source": "cpap-np-hardness/NPHardness/OmittedVertex.lean",
+    "source_sha256": "600fcc5a507e0d689f57366348823b55b78416cd1f24efeabf2019481acae159",
+    "comparison_module": "Section5.OmittedVertex",
+    "comparison_source": "stacs-section5/Section5/OmittedVertex.lean",
+    "comparison_source_sha256": "0a45443a4de740c4fe8bb2441eb4a8509f8da885a1ef983ae77ab00cd88010de"
+  },
+  "NPHardness.PathProjection": {
+    "source": "cpap-np-hardness/NPHardness/PathProjection.lean",
+    "source_sha256": "861a77c47aa6cf799825034e016cb1aa78424706539d42732c2556027ce71e43",
+    "comparison_module": "Section5.PathProjection",
+    "comparison_source": "stacs-section5/Section5/PathProjection.lean",
+    "comparison_source_sha256": "5745e0d95f290cdc7921a6cf42503d2bb51449bb9f5574c4e608504d1976866e"
+  },
+  "NPHardness.PathRegions": {
+    "source": "cpap-np-hardness/NPHardness/PathRegions.lean",
+    "source_sha256": "a351d47e0b4b9bb1e050cb96b0ba9e3587134afc80833680f947c99393d9e3b5",
+    "comparison_module": "Section5.PathRegions",
+    "comparison_source": "stacs-section5/Section5/PathRegions.lean",
+    "comparison_source_sha256": "834cc179cd7d9ded379a3c1a978a5fd52143234ba2367b8a075e886c08b81d3f"
+  },
+  "NPHardness.PlacedWitnesses": {
+    "source": "cpap-np-hardness/NPHardness/PlacedWitnesses.lean",
+    "source_sha256": "54080efa733411a6b8958c9f8e5d0d12c09861a8ee0650f41c7adb69897752d0",
+    "comparison_module": "Section5.PlacedWitnesses",
+    "comparison_source": "stacs-section5/Section5/PlacedWitnesses.lean",
+    "comparison_source_sha256": "187ddef8c122ce365ad175fc0990dc929331cf571b890bd891ab76011197168a"
+  },
+  "NPHardness.SelectedPaths": {
+    "source": "cpap-np-hardness/NPHardness/SelectedPaths.lean",
+    "source_sha256": "298381f3f6da8397a8d91e30f1d8c12327fa702cdda2895f3927ac4c6ff12e14",
+    "comparison_module": "Section5.SelectedPaths",
+    "comparison_source": "stacs-section5/Section5/SelectedPaths.lean",
+    "comparison_source_sha256": "ef58f548533f60d06d8188674c7ea14cf98d1295d0ea6841469e582b5466457a"
+  },
+  "NPHardness.SimplePaths": {
+    "source": "cpap-np-hardness/NPHardness/SimplePaths.lean",
+    "source_sha256": "0d438a1c1b647afc215785ace82ddd3fdf20a4445f9663d15760adde98605393",
+    "comparison_module": "Section5.SimplePaths",
+    "comparison_source": "stacs-section5/Section5/SimplePaths.lean",
+    "comparison_source_sha256": "2cf38b9b54819cd365159f1c95b6a8cd7622cfff64d0ff5c7e206665591a26fa"
+  },
+  "NPHardness.Subdivision": {
+    "source": "cpap-np-hardness/NPHardness/Subdivision.lean",
+    "source_sha256": "e44b2d28ddad5126ca0f8753045a413547e786467e993bb1662af2514b71785e",
+    "comparison_module": "Section5.Subdivision",
+    "comparison_source": "stacs-section5/Section5/Subdivision.lean",
+    "comparison_source_sha256": "01f969da21486b0c47197408f0adaa386e3e8a042d4ba58edfa3aa7d6e066fd2"
+  },
+  "NPHardness.SubdivisionPrograms": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionPrograms.lean",
+    "source_sha256": "24c28919c0d052d80369b9443e2f38b6ae51db6f5a9f7066405530fe75e3a3d6",
+    "comparison_module": "Section5.SubdivisionPrograms",
+    "comparison_source": "stacs-section5/Section5/SubdivisionPrograms.lean",
+    "comparison_source_sha256": "9b6a46878d943a9f76f469862ac09b09bafdfc9aa70048a02f7b61e75a176f74"
+  },
+  "NPHardness.SubdivisionProjection": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionProjection.lean",
+    "source_sha256": "93a0bc1c20192decd7163e0e8366beafa90cd8b983d00a114d5c0e4b4d96de2e",
+    "comparison_module": "Section5.SubdivisionProjection",
+    "comparison_source": "stacs-section5/Section5/SubdivisionProjection.lean",
+    "comparison_source_sha256": "84c843b1f6fdbd745947d27d53215093500e93f26943c7582666d0f0608b30f2"
+  },
+  "NPHardness.SubdivisionSequence": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionSequence.lean",
+    "source_sha256": "f006e9572a3612c8d4ec20a0689446d21504614dceaf1d62085e495c1b7eb3aa",
+    "comparison_module": "Section5.SubdivisionSequence",
+    "comparison_source": "stacs-section5/Section5/SubdivisionSequence.lean",
+    "comparison_source_sha256": "ffae91d4ba654296057f482db00c8b0313f29a8586526e86f3b3953fde69a7bf"
+  },
+  "NPHardness.VariableDistances": {
+    "source": "cpap-np-hardness/NPHardness/VariableDistances.lean",
+    "source_sha256": "6cf617425dce6b34fecb1761ce96255c20493938cf0b82e1bb78a8caa3ff43fa",
+    "comparison_module": "Section5.VariableDistances",
+    "comparison_source": "stacs-section5/Section5/VariableDistances.lean",
+    "comparison_source_sha256": "c49c9e892c0f778300c1d8d36f850d87ed8225dc1027c3faff1aadd6aeb76d1f"
+  },
+  "NPHardness.VariableExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/VariableExpansionCost.lean",
+    "source_sha256": "9adc69f396bed15a84c14de17d22cb91b443c951ff14c3f471d19f4e551c0842",
+    "comparison_module": "Section5.VariableExpansionCost",
+    "comparison_source": "stacs-section5/Section5/VariableExpansionCost.lean",
+    "comparison_source_sha256": "57960edce4f14648815380582a85146817cf9f21d6332f7c5b9f5d74f1aa9a4b"
+  },
+  "NPHardness.VariableGeneral": {
+    "source": "cpap-np-hardness/NPHardness/VariableGeneral.lean",
+    "source_sha256": "dc8e801a1b6edaa1a868b07deaff3f47a46ef743d8d09fd87db6d723a818800c",
+    "comparison_module": "Section5.VariableGeneral",
+    "comparison_source": "stacs-section5/Section5/VariableGeneral.lean",
+    "comparison_source_sha256": "9809fa93ef5abc6d8fa09a0b6d4d3677cc8f3df9ef97171ff44397df4406217a"
+  },
+  "NPHardness.VertexGluing": {
+    "source": "cpap-np-hardness/NPHardness/VertexGluing.lean",
+    "source_sha256": "5e4800699af15445514d41ca331ab0083b5c64729a02efc061f64c9f45222452",
+    "comparison_module": "Section5.VertexGluing",
+    "comparison_source": "stacs-section5/Section5/VertexGluing.lean",
+    "comparison_source_sha256": "420408470e899973576d857f35bb063ca512f50514dbae66b8e336c5c4dfc6ce"
+  },
+  "MinorFree": {
+    "source": "cpap-minor-free/MinorFree.lean",
+    "source_sha256": "ca54737ad649f46dec9689352b268566f511601f967bb54ea16bb50f582ba2fe",
+    "comparison_module": "Section8",
+    "comparison_source": "stacs-section8/Section8.lean",
+    "comparison_source_sha256": "6e53b718634fc4033c03a663263c1d97ab5ffc4199a4b1eed7dd387c497176a3"
+  },
+  "MinorFree.Biclique": {
+    "source": "cpap-minor-free/MinorFree/Biclique.lean",
+    "source_sha256": "745a9bfe8a1d4def744bf41a9e7e40d23c593592c3716be1833b0c10c0341a32",
+    "comparison_module": "Section8.Biclique",
+    "comparison_source": "stacs-section8/Section8/Biclique.lean",
+    "comparison_source_sha256": "c74962a532d087fa87167acc03f11d754a6c930c4b89a9dc8f4ea3117910accf"
+  },
+  "MinorFree.BicliquePlanar": {
+    "source": "cpap-minor-free/MinorFree/BicliquePlanar.lean",
+    "source_sha256": "e5c7be098a9319c2dc1ade15c132f65c5f79e3924402ebbf797bc09d62ad57f3",
+    "comparison_module": "Section8.BicliquePlanar",
+    "comparison_source": "stacs-section8/Section8/BicliquePlanar.lean",
+    "comparison_source_sha256": "6d902bc6ababf64d9ac3d16da93317640987d60bedc7d098b2346546e11917b4"
+  },
+  "MinorFree.Blocks": {
+    "source": "cpap-minor-free/MinorFree/Blocks.lean",
+    "source_sha256": "4b16fbe57fd1926afaa7b3da26b10814830d194d76cf8347868ca6392650d4aa",
+    "comparison_module": "Section8.Blocks",
+    "comparison_source": "stacs-section8/Section8/Blocks.lean",
+    "comparison_source_sha256": "b5cdbd528c8bea04e5625f26cf8d17abbe144efe1f82903b68c92fbd76a81fc7"
+  },
+  "MinorFree.Elimination": {
+    "source": "cpap-minor-free/MinorFree/Elimination.lean",
+    "source_sha256": "7e9a1b16fd943f35e5230bbe511660c682a169b265a0ce3fec8d16f034d58a1e",
+    "comparison_module": "Section8.Elimination",
+    "comparison_source": "stacs-section8/Section8/Elimination.lean",
+    "comparison_source_sha256": "711f312ebcff3202a7a5acd7febde022d2acde72b802440b09096bf7023ac888"
+  },
+  "MinorFree.FourCycles": {
+    "source": "cpap-minor-free/MinorFree/FourCycles.lean",
+    "source_sha256": "c24a9b8ed0ee1196d7b876055d12313b040ff93445187118db9ab75329e39e24",
+    "comparison_module": "Section8.FourCycles",
+    "comparison_source": "stacs-section8/Section8/FourCycles.lean",
+    "comparison_source_sha256": "4112f4e0f34319d19b40a887b81f007e046f33f3c23559b730eb2c711d47fabf"
+  },
+  "MinorFree.K4": {
+    "source": "cpap-minor-free/MinorFree/K4.lean",
+    "source_sha256": "ba550801b761b0a9bf33e1a915868e0c32acc82728671b7e43645d74f1142cad",
+    "comparison_module": "Section8.K4",
+    "comparison_source": "stacs-section8/Section8/K4.lean",
+    "comparison_source_sha256": "8f63b4910f8e936fa7455c76b55b3d5c7f60d021519633aa9472f4e8c1a7cdc4"
+  },
+  "MinorFree.LoadBounds": {
+    "source": "cpap-minor-free/MinorFree/LoadBounds.lean",
+    "source_sha256": "77e19c714ee78a63f5712ea8eeedf1f231f0c78692cfbc148740ca1ffc3445ee",
+    "comparison_module": "Section8.LoadBounds",
+    "comparison_source": "stacs-section8/Section8/LoadBounds.lean",
+    "comparison_source_sha256": "d28cc37d31e4a72a2d38f7200fa38c3ce2bbf43b19c8573ce59955b0130f010d"
+  },
+  "MinorFree.Paper": {
+    "source": "cpap-minor-free/MinorFree/Paper.lean",
+    "source_sha256": "d83035a093dd54c2acd43ac2c5254935f8c37e0ec240f434abcc67582777dbc5",
+    "comparison_module": "Section8.Paper",
+    "comparison_source": "stacs-section8/Section8/Paper.lean",
+    "comparison_source_sha256": "c4226b5981b87c1983088ce0e1d85c82b27e936fc7f97cb52117e8e884595aba"
+  },
+  "MinorFreeAudit": {
+    "source": "cpap-minor-free/MinorFreeAudit.lean",
+    "source_sha256": "6c58cefd6d39eee27c37dae65223353757b1e6dc573705e1271c888fd1a704c7",
+    "comparison_module": "Section8Audit",
+    "comparison_source": "stacs-section8/Section8Audit.lean",
+    "comparison_source_sha256": "0d0d53f0e1311c09e54ee0044966228060fd7fb0d1662ffc097af73143c7edce"
+  },
+  "MinorFreeAudit.Guards000": {
+    "source": "cpap-minor-free/MinorFreeAudit/Guards000.lean",
+    "source_sha256": "2fe213a2fae40b889eb34d6158684533c335cf4be155cf1a4de6f169ad4a157e",
+    "comparison_module": "Section8Audit.Guards000",
+    "comparison_source": "stacs-section8/Section8Audit/Guards000.lean",
+    "comparison_source_sha256": "57c5c6516669d1e545043730fe0df096e09c19ee8c2d15f0b65e11b07850f2f8"
+  },
+  "Solution": {
+    "source": "cpap-minor-free/Solution.lean",
+    "source_sha256": "b552080c169280b3e511236fc46655f3730d1bc0f8afda58f754d1aac9f3af10",
+    "comparison_module": "Solution",
+    "comparison_source": "stacs-section8/Solution.lean",
+    "comparison_source_sha256": "af6cb5a231482b7964606f172c81079f29befdfd81ef491b405aec85985f4e85"
+  }
+}

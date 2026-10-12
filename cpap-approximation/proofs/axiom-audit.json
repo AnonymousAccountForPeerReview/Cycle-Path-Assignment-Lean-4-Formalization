@@ -1,0 +1,985 @@
+{
+  "method": "Kernel #print axioms with exact #guard_msgs assertions",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "guard_modules": [
+    "ApproximationAudit.Guards000"
+  ],
+  "declarations": [
+    {
+      "declaration": "STACS2027.sum_map_mul_left",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_mul_right",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_congr",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_eq_zero",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.two_mul_le_sq_add",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.four_mul_le_sq_add",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cauchy_schwarz",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.quadratic_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.le_six_of_quadratic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.two_pairCount_add",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounded_nil",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.rounded_cons",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.rounded_congr",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounded_add",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounded_mul_left",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounded_const",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounded_sq_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedCost_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.chooseMin",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.greedyFrom",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.greedy",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.GreedyRun",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.chooseMin_mem",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.chooseMin_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedyFrom_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.GreedyRun.valid",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.GreedyRun.cost_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycleOptions_nonempty",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_cycles_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.load_le_sq",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_sq_load_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_cost_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_cost_integer_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pathLoad",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.pathLoad_eq_overlap_sum",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cost_snoc_pathLoad",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.load_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.load_le_load_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pathLoad_le_pathLoad_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_pathLoad_eq",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_load_eq_length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.total_load",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_sq_load",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_sq_load_assignment",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.cost_increase",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.algorithm1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.algorithm1_assignment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.total_load_eq",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.sum_sq_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.greedy_cost_le_product",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.cauchy_schwarz_loads",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.greedy_load_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.greedy_load_norm_integer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.greedy_guarantee",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.greedy_guarantee_integer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.fractional_solution_iff",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.Paper.fractional_load_eq",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.Paper.relaxation_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.rounding_guarantee",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.conditional_expectation_average",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.fixing_a_path",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.algorithm2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.algorithm2_assignment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.derandomized_guarantee",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.optionLoad",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.fractionalLoad",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.meanLoad",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.meanLoadSum",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.varianceLoad",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.expectedSquares",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.roundFrom",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.conditionalRounding",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.RoundingRun",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.rounded",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.expectedCost",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.FractionalSolution",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.relaxationObjective",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.OptimalFractional",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.integralSolution",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.CycleInstance",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.CycleInstance.optionsIn",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.CycleInstance.tail",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.indicator",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_indicator_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.variance_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.variance_sum_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_fractionalLoad",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.int_sum_map_sub",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.int_sum_map_mul_left",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.int_natCast_sum",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.relaxationObjective_eq",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.integralSolution_fst",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.integralSolution_fractional",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.integralSolution_load",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.fractional_le_integral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.OptionsIn.choices",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.roundingRun_cost_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.OptionsIn",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.OptionsIn.tail",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.OptionsIn.head",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.FractionalSolution.tail",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.FractionalSolution.head",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.count_le_one_of_nodup",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.count_sq_of_nodup",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.optionLoad_le_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.optionLoad_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_optionLoad",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.fractionalLoad_cons",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.varianceLoad_cons",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.meanLoad_snoc",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.meanLoad_cons_mem",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.average_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedSquares_snoc",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedSquares_le_of_meanLoadSum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.average_identity_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedSquares_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.RoundingRun.expectedSquares_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.RoundingRun.valid",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.roundFrom_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.conditionalRounding_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedSquares_nil",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.expectedSquares_start",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycleEdges_length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycleInstance_of_cycles",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounding_options_nonempty",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.fractional_length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycles_k_ge",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.conditional_rounding_cost_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.randomized_rounding_cost_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.conditionalRounding_cycles_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.RoundingRun.valid_cycles",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.greedy_is_assignment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.rounding_is_assignment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.unitWeights",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.weightedSum_nil_left",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.weightedSum_nil_right",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.weightedSum_cons",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.weightedSum_congr",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_add",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_mul_left",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_const",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_sum_swap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_ge_min",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.unitWeights_length",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.unitWeights_sum",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_zeros",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.weightedSum_unitWeights",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ]
+}

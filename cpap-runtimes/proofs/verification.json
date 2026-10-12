@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-runtimes",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.Runtimes.TwoSat.exists_linear_twoSat",
+    "STACS2027.Runtimes.ZeroCost.zeroCost_ram",
+    "STACS2027.Runtimes.C4.fourCycles_ram_semantic",
+    "STACS2027.Runtimes.C4.fourCycles_ram_paper_semantic",
+    "STACS2027.Runtimes.C4.fourCycles_ram_simple_semantic",
+    "STACS2027.Runtimes.Flow.cpap4_flow_ram_semantic",
+    "STACS2027.Runtimes.Flow.sortedNetworkConstruction",
+    "STACS2027.Runtimes.Flow.cpap4_flow_ram_almostLinear",
+    "STACS2027.Runtimes.Flow.cpap4_flow_single",
+    "STACS2027.Runtimes.Flow.cpap4_flow_single_almostLinear",
+    "STACS2027.Runtimes.Flow.triangle_ram_semantic",
+    "STACS2027.Runtimes.Flow.triangle_ram_almostLinear",
+    "STACS2027.Runtimes.Flow.triangle_single",
+    "STACS2027.Runtimes.Flow.triangle_single_almostLinear",
+    "STACS2027.Runtimes.cpap4_enum_ram_explicit_semantic",
+    "STACS2027.Runtimes.cpap4_enum_ram_semantic",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_ram",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_ram_fpt",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_triangle",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_triangle_almostLinear",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_ram_all",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_ram_all_almostLinear",
+    "STACS2027.Runtimes.Greedy.greedy_ram",
+    "STACS2027.Runtimes.Greedy.greedy_guarantee_ram",
+    "STACS2027.Runtimes.QPRam.relaxSolver_ram_optimal",
+    "STACS2027.Runtimes.generalCycleEnumerationRam",
+    "STACS2027.Runtimes.Flow.polynomialMinCostFlowSolverExists_of_almostLinear",
+    "STACS2027.Runtimes.fourCycleAssignment_single",
+    "STACS2027.Runtimes.BoundedCost.almostTwoSatFptSolverExists_of_citedFlow",
+    "STACS2027.Runtimes.BoundedCost.boundedCost_ram_all_from_citedFlow",
+    "STACS2027.Runtimes.BoundedCost.optimalCost_ram_fpt_from_citedFlow"
+  ],
+  "target_count": 31,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 5922,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 29,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 3859,
+    "default_targets": [
+      "Runtimes",
+      "Solution",
+      "RuntimesAudit"
+    ],
+    "compiled_audit_modules": [
+      "RuntimesAudit",
+      "RuntimesAudit.Guards000",
+      "RuntimesAudit.Guards001",
+      "RuntimesAudit.Guards002",
+      "RuntimesAudit.Guards003",
+      "RuntimesAudit.Guards004"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_output_sha256": "ee349baf5d85559717fedc9159fda9a40e9439d64edaf31fa4c225ffb7ed3fb2"
+}

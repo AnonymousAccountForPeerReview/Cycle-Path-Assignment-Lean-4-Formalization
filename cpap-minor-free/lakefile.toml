@@ -1,0 +1,28 @@
+name = "cpap-minor-free"
+version = "0.0.0"
+defaultTargets = ["MinorFree", "Solution", "MinorFreeAudit"]
+
+# The NP-completeness foundation NPCompleteness-Lean4, pinned to commit
+# 3e603e795b44fedcf7d6dd65b7d1e30547ead925.
+[[require]]
+name = "np-completeness"
+git = "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4"
+rev = "3e603e795b44fedcf7d6dd65b7d1e30547ead925"
+
+# The Section 5 formalization of the same manuscript (the cycle-path assignment
+# problem and the proofs of its NP-hardness), in this repository.
+[[require]]
+name = "cpap-np-hardness"
+path = "../cpap-np-hardness"
+
+[[lean_lib]]
+name = "MinorFree"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "MinorFreeAudit"
+
+[[lean_lib]]
+name = "Challenge"

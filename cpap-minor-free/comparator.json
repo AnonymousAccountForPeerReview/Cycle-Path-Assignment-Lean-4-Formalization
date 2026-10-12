@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "STACS2027.algorithm4_perfect",
+    "STACS2027.k4_cycle_assignments",
+    "STACS2027.hasAssignment_blocks",
+    "STACS2027.perfect_assignment_of_blocks",
+    "STACS2027.cost_lower_bound",
+    "STACS2027.biclique_planar_family"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

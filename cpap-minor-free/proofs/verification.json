@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-minor-free",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.algorithm4_perfect",
+    "STACS2027.k4_cycle_assignments",
+    "STACS2027.hasAssignment_blocks",
+    "STACS2027.perfect_assignment_of_blocks",
+    "STACS2027.cost_lower_bound",
+    "STACS2027.biclique_planar_family"
+  ],
+  "target_count": 6,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 129,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 5,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 84,
+    "default_targets": [
+      "MinorFree",
+      "Solution",
+      "MinorFreeAudit"
+    ],
+    "compiled_audit_modules": [
+      "MinorFreeAudit",
+      "MinorFreeAudit.Guards000"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "232755c976850535cafb8a1b793941f12edf473856a50dd57cc194aaae585b9a",
+    "solution": "3b40215dab2644e405383010f4a7a87db68bc51d83d23b34f5baaf04352945f3"
+  },
+  "comparison_output_sha256": "d5a7a6d3b07af71f19d28fc40ae9501367ebc7e171c9f6b5ad354435982dba22"
+}

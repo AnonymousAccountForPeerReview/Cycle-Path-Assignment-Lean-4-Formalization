@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "STACS2027.planarLeOneLeTwoSAT_np_complete",
+    "STACS2027.cpap_np_hard",
+    "STACS2027.planarCPAP_np_hard"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

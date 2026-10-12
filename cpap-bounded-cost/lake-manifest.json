@@ -1,0 +1,30 @@
+{
+ "version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages": [
+  {
+   "type": "path",
+   "scope": "",
+   "name": "«cpap-np-hardness»",
+   "manifestFile": "lake-manifest.json",
+   "inherited": false,
+   "dir": "../cpap-np-hardness",
+   "configFile": "lakefile.toml"
+  },
+  {
+   "url": "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "3e603e795b44fedcf7d6dd65b7d1e30547ead925",
+   "name": "«np-completeness»",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "3e603e795b44fedcf7d6dd65b7d1e30547ead925",
+   "inherited": false,
+   "configFile": "lakefile.toml"
+  }
+ ],
+ "name": "«cpap-bounded-cost»",
+ "lakeDir": ".lake",
+ "fixedToolchain": false
+}

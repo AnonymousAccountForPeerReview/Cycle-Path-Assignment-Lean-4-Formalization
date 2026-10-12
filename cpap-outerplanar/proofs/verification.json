@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-outerplanar",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.outerplanar_block_structure",
+    "STACS2027.k23_perfect",
+    "STACS2027.k23_linear_ram",
+    "STACS2027.outerplanar_linear_ram",
+    "STACS2027.outerplanar_algorithm_perfect",
+    "STACS2027.TriangleMatching.planar_triangle_perfect_assignment",
+    "STACS2027.common_neighbours_le_two",
+    "STACS2027.IsPolygon.euler_face_count",
+    "STACS2027.IsPolygon.cycle_subtree_bij",
+    "STACS2027.IsPolygon.cycle_subtree_bij_simpleCycles",
+    "STACS2027.IsPolygon.face_cycle_bound",
+    "STACS2027.IsPolygon.edge_cycle_bound",
+    "STACS2027.IsPolygon.enclosed_faces_bound",
+    "STACS2027.IsPolygon.enclosing_cycle_count_bound",
+    "STACS2027.IsPolygon.cycle_child_dichotomy",
+    "STACS2027.IsPolygon.leaf_face_deletion"
+  ],
+  "target_count": 16,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 4699,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 27,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 3512,
+    "default_targets": [
+      "Outerplanar",
+      "Solution",
+      "OuterplanarAudit"
+    ],
+    "compiled_audit_modules": [
+      "OuterplanarAudit",
+      "OuterplanarAudit.Guards000",
+      "OuterplanarAudit.Guards001",
+      "OuterplanarAudit.Guards002",
+      "OuterplanarAudit.Guards003"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "a324fade31f99ab751a8e8a1df83530e4097a28b47bb56fbff10ce6d5a5c2f8d",
+    "solution": "69f14d34c029a03d12c738bcf30a4df8ce1507cc4318e415354542dee268eeb5"
+  },
+  "comparison_output_sha256": "47c9f5ee182484919c56c55629e42ae46f4f7919f5cc33ce8f393cc1b62fcd2f"
+}

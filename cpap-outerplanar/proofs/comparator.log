@@ -1,0 +1,25 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+[anonymous]:thmDecl STACS2027.RAM.P2.stageB_spec: lean4lean took 1364
+[anonymous]:thmDecl STACS2027.RAM.P3.betaBody_spec: lean4lean took 1002
+[anonymous]:thmDecl _private.AppendixG.RAM.R1Prog.0.STACS2027.RAM.R1.FillMem.app._proof_1_8: lean4lean took 1320
+[anonymous]:thmDecl STACS2027.RAM.EarR.allocs_spec: lean4lean took 1357
+checked 21589 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-leche: accepted 21588 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: accepted 21588 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

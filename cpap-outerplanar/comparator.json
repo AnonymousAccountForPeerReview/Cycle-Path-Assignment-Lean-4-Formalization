@@ -1,0 +1,29 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "STACS2027.outerplanar_block_structure",
+    "STACS2027.k23_perfect",
+    "STACS2027.k23_linear_ram",
+    "STACS2027.outerplanar_linear_ram",
+    "STACS2027.outerplanar_algorithm_perfect",
+    "STACS2027.TriangleMatching.planar_triangle_perfect_assignment",
+    "STACS2027.common_neighbours_le_two",
+    "STACS2027.IsPolygon.euler_face_count",
+    "STACS2027.IsPolygon.cycle_subtree_bij",
+    "STACS2027.IsPolygon.cycle_subtree_bij_simpleCycles",
+    "STACS2027.IsPolygon.face_cycle_bound",
+    "STACS2027.IsPolygon.edge_cycle_bound",
+    "STACS2027.IsPolygon.enclosed_faces_bound",
+    "STACS2027.IsPolygon.enclosing_cycle_count_bound",
+    "STACS2027.IsPolygon.cycle_child_dichotomy",
+    "STACS2027.IsPolygon.leaf_face_deletion"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

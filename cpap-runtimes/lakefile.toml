@@ -1,0 +1,47 @@
+name = "cpap-runtimes"
+version = "0.0.0"
+defaultTargets = ["Runtimes", "Solution", "RuntimesAudit"]
+
+# The outerplanar formalization of the same manuscript: the unit-cost RAM, its bounded runs
+# (`ExecB`, `ComputesIn`) and its verification library, the graph input and the relabelling
+# phases; through it the Section 5 and Section 8 formalizations, the NP-completeness
+# foundation NPCompleteness-Lean4 and Mathlib.
+[[require]]
+name = "cpap-outerplanar"
+path = "../cpap-outerplanar"
+
+# The Section 3 formalization: the min-cost flow networks of Theorem 2 and of the corollary
+# for triangles.
+[[require]]
+name = "cpap-tractability"
+path = "../cpap-tractability"
+
+# The Section 4 formalization: the 2-CNF encodings of Theorem 4 and Corollary 5, Almost 2-SAT,
+# Algorithm 3.
+[[require]]
+name = "cpap-bounded-cost"
+path = "../cpap-bounded-cost"
+
+# The Section 7 formalization: Algorithm 1 and Theorem 14, the convex relaxation of
+# Section 7.2 and its optimal fractional solutions.
+[[require]]
+name = "cpap-approximation"
+path = "../cpap-approximation"
+
+# Mathlib, pinned to the release tag of the toolchain; lake-manifest.json records its commit.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0-rc2"
+
+[[lean_lib]]
+name = "Runtimes"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "RuntimesAudit"
+
+[[lean_lib]]
+name = "Challenge"

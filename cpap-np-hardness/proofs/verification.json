@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-np-hardness",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.planarLeOneLeTwoSAT_np_complete",
+    "STACS2027.cpap_np_hard",
+    "STACS2027.planarCPAP_np_hard"
+  ],
+  "target_count": 3,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 3173,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 5,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 442,
+    "default_targets": [
+      "NPHardness",
+      "Solution",
+      "NPHardnessAudit"
+    ],
+    "compiled_audit_modules": [
+      "NPHardnessAudit",
+      "NPHardnessAudit.Guards000",
+      "NPHardnessAudit.Guards001",
+      "NPHardnessAudit.Guards002"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "ef52da1ab51811f88cfadf9768317a0f4124ed53ff61cadee1c2ba73f287822c",
+    "solution": "26cf648d5bf8f6a4d10260ae5c1692a3899c40c4f9833967d859e29c0015eca8"
+  },
+  "comparison_output_sha256": "8c3f1b3645975c26a7f0181837400e22c8609ecd3bc578be43dbc9bb95bc1075"
+}

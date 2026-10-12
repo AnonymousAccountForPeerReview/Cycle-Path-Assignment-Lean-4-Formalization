@@ -1,0 +1,227 @@
+version: v0.4
+project:
+  name: 'Approximation algorithms for cycle-path assignment: Lemma 13 and Theorems 14, 17, 18, in Lean
+    4'
+  description: 'A Lean 4 formalization of Section 7 of the accompanying paper "Cycle-Path Assignment
+    for Local Differential Privacy: Complexity and Approximation". The cycle-path assignment problem CPAP(G,
+    k) asks for one path of k - 2 edges in every simple k-cycle of a graph G minimizing the sum over edges
+    of binom(l(e), 2), l(e) being the number of chosen paths through e. Section 7 gives two approximation
+    algorithms on the t enumerated k-cycles: the greedy Algorithm 1, which assigns each cycle a path of
+    minimum current load-sum, with ALG ≤ (3 + 2√2) OPT + (1 + √2)(k − 2) t (Lemma 13, Theorem 14); and
+    a convex relaxation with independent randomized rounding, E[c(τ)] ≤ OPT + (k − 2) t / k (Theorem 17),
+    derandomized by conditional expectation as Algorithm 2 with the same bound (Theorem 18). The compared
+    theorems prove the guarantees for every run of each algorithm (any tie-breaking) against every assignment,
+    the irrational constants replaced by the equivalent polynomial inequalities (S − S'')² ≤ 4 S S'' and
+    (A − B)² ≤ 4 A B with A = 2 ALG + Q, B = 2 OPT + Q, Q = (k − 2) t, plus the integer form 2 ALG ≤ 12
+    OPT + 5 Q), the fractional solution given with a common denominator D and its optimality quantified
+    over all fractional solutions of the instance, and the expectation of the rounding as the finite sum
+    over the product distribution. The cycles, paths and cost are those of the formalization of Section
+    5 of the same manuscript, on which this project depends and whose definitions it copies verbatim.
+    The graph-level cost bounds require duplicate-free edge lists. Lemma 16 (polynomial-time solvability
+    of the relaxation) and Lemma 15 (Algorithm 1 runs in O(kt + Υ_k) time) are proved in the companion
+    cpap-runtimes package by an exact rational solver and an executed greedy program. The proof uses
+    only the axioms propext, Classical.choice and Quot.sound.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - cs.CC
+  msc2020:
+  - 68W25
+  - 90C27
+  - 05C38
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: 'the accompanying paper: Section 7 (Algorithms 1 and 2, Lemma 13, Theorems 14, 17 and 18;
+    companion running-time results in Lemmas 15 and 16)'
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: Load balancing in the L_p norm
+  type: paper
+  id: doi:10.1109/SFCS.1995.492494
+  location: Proceedings of the 36th Annual Symposium on Foundations of Computer Science (FOCS 1995), 383-391
+  relationship: background
+  note: The greedy machine-job load-balancing analysis that the manuscript's proof of Lemma 13 follows;
+    the inequality is proved directly here and the cited analysis is not used.
+- title: The polynomial solvability of convex quadratic programming
+  type: paper
+  location: USSR Computational Mathematics and Mathematical Physics 20(5), 223-228, 1980
+  relationship: background
+  note: 'Lemma 16: the relaxation is solvable in polynomial time. The cited algorithm is not implemented;
+    cpap-runtimes proves an exact rational solver (STACS2027.Runtimes.QPRam.relaxSolver_ram_optimal).
+    The approximation theorems here take an optimal fractional solution as given.'
+related_formalizations:
+- id: cpap-np-hardness (the sibling CPAP model and NP-hardness formalization)
+  relationship: builds-on
+  note: Required by Lake at ../cpap-np-hardness (Apache-2.0). Its definition of the cycle-path assignment problem
+    (the enumerated simple k-cycles, the selected paths, the cost and the edge load) is used unchanged
+    and copied verbatim into the Challenge, in the manner its documentation prescribes for downstream
+    developments; its properties of the selected paths and its load form of the cost are the base of the
+    analysis here.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: The NP-completeness foundation, required by Lake at the commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+    through cpap-np-hardness (Apache-2.0). Nothing of it is used directly.
+- id: cpap-tractability, cpap-bounded-cost, cpap-approximation-hardness and cpap-minor-free (the Section 3, 4, 6 and 8 formalizations
+    of the same manuscript)
+  relationship: other
+  note: Companion projects on the same foundation; not required.
+status:
+  scope: 'Proved: the seven compared theorems, on the enumerated k-cycles; graph-level cost bounds require
+    duplicate-free edge lists. Algorithm 1 and
+    every run of it (any tie-breaking) is a cycle-path assignment; Lemma 13 and Theorem 14 hold for every
+    run against every assignment, in the polynomial forms (S − S'')² ≤ 4 S S'' and (2 ALG + Q − (2 OPT
+    + Q))² ≤ 4 (2 ALG + Q)(2 OPT + Q), and in integers 2 ALG ≤ 12 OPT + 5 Q. For an optimal fractional
+    solution with common denominator D of the relaxation: independent randomized rounding has k D^t E[c(τ)]
+    ≤ D^t (k OPT + (k − 2) t) (Theorem 17), and Algorithm 2 and every run of it is an assignment with
+    k c(τ) ≤ k OPT + (k − 2) t (Theorem 18). All restated in the manuscript''s terms in Approximation/Paper.lean.
+    The companion cpap-runtimes package supplies Lemma 16''s exact polynomial-time relaxation solver
+    (QPRam.relaxSolver_ram_optimal), Lemma 15''s executed greedy program (Greedy.greedy_ram), and the
+    actual fixed-length cycle enumerator generalCycleEnumerationRam. The paper states Algorithm 2''s correctness
+    and cost guarantee without a separate running-time theorem. Sections 3, 4, 5, 6 and 8 are formalized
+    in companion projects.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.greedy_is_assignment
+    file: Approximation/Theorems.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.greedy_sq_load_bound
+    file: Approximation/GreedyBound.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.greedy_cost_bound
+    file: Approximation/GreedyBound.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.greedy_cost_integer_bound
+    file: Approximation/GreedyBound.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.rounding_is_assignment
+    file: Approximation/Theorems.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.randomized_rounding_cost_bound
+    file: Approximation/Theorems.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.conditional_rounding_cost_bound
+    file: Approximation/Theorems.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: '- The cycle-path assignment problem is the Section 5 formalization''s: simple k-cycles
+    are enumerated and identified by their edge sets, an assignment omits one vertex of each, the cost
+    is the number of edges shared by pairs of chosen paths (equal to the manuscript''s sum over edges
+    of binom(l(e), 2)).
+
+    - Lemma 13 and Theorem 14 are stated without square roots, as (S − S'')² ≤ 4 S S'' and (A − B)² ≤
+    4 A B with A = 2 ALG + Q, B = 2 OPT + Q, which for S ≥ S'' (A ≥ B) are S/S'' ≤ (1 + √2)² = 3 + 2√2
+    (A/B ≤ 3 + 2√2), exactly the inequality 2 ALG + Q ≤ (3 + 2√2)(2 OPT + Q) of the manuscript''s proof;
+    an integer form 2 ALG ≤ 12 OPT + 5 Q is added.
+
+    - The guarantees are proved for every run of each algorithm with any tie-breaking (GreedyRun, RoundingRun),
+    and against every assignment qs, OPT being the special case of an optimal qs; the canonical runs greedy
+    and conditionalRounding break ties by position.
+
+    - The fractional solution has a common denominator D with natural-number numerators; the relaxation
+    objective is scaled by 2 D² (an integer), and optimality is quantified over all fractional solutions
+    of the same option lists with any denominator, compared after clearing denominators. Theorem 17''s
+    expectation is the finite sum over the product distribution of the independent choices, scaled by
+    D^t.
+
+    - Algorithm 2''s p_{C,e} is optionLoad, D times the sum of x*_{C,P} over the options P containing
+    e (P.count e is 0 or 1 for a path of a simple cycle), as the manuscript describes it.
+
+    - This package takes the enumerated cycles and an optimal fractional solution as given. cpap-runtimes
+    proves Lemma 15''s executed greedy program and Lemma 16''s exact polynomial-time relaxation solver,
+    and generalCycleEnumerationRam supplies a uniform fixed-length cycle enumerator. The manuscript''s
+    cited algorithms remain cited. The paper gives Algorithm 2''s correctness and cost guarantee without
+    a separate running-time theorem.'
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: Algorithm 1 (greedy cycle-path assignment)
+    lean: STACS2027.greedy_is_assignment
+    module: Solution
+    status: proved
+    note: greedy is a run; every run (any tie-breaking) is a cycle-path assignment.
+  - source: 'Lemma 13: ∑_e l(e)² ≤ (3 + 2√2) ∑_e l*(e)²'
+    lean: STACS2027.greedy_sq_load_bound
+    module: Solution
+    status: proved
+    note: As (S − S')² ≤ 4 S S', against every assignment.
+  - source: 'Theorem 14: ALG ≤ (3 + 2√2) OPT + (1 + √2)(k − 2) t'
+    lean: STACS2027.greedy_cost_bound, STACS2027.greedy_cost_integer_bound
+    module: Solution
+    status: proved
+    note: As (A − B)² ≤ 4 A B with A = 2 ALG + Q, B = 2 OPT + Q; and 2 ALG ≤ 12 OPT + 5 Q.
+  - source: Algorithm 2 (deterministic rounding by conditional expectation)
+    lean: STACS2027.rounding_is_assignment
+    module: Solution
+    status: proved
+    note: conditionalRounding is a run; every run is a cycle-path assignment.
+  - source: 'Theorem 17: E[c(τ)] ≤ OPT + (k − 2) t / k'
+    lean: STACS2027.randomized_rounding_cost_bound
+    module: Solution
+    status: proved
+    note: As k D^t E[c(τ)] ≤ D^t (k OPT + (k − 2) t), for an optimal fractional solution with denominator
+      D.
+  - source: 'Theorem 18: c(τ) ≤ OPT + (k − 2) t / k'
+    lean: STACS2027.conditional_rounding_cost_bound
+    module: Solution
+    status: proved
+    note: As k c(τ) ≤ k OPT + (k − 2) t, for every run of Algorithm 2.
+  - source: 'Lemma 16: the relaxation is solvable in polynomial time for fixed k'
+    lean: STACS2027.Runtimes.QPRam.relaxSolver_ram_optimal
+    module: Runtimes
+    status: proved
+    note: Proved in cpap-runtimes by an exact rational solver; the ANONYMIZED, ANONYMIZED and ANONYMIZED
+      algorithm remains cited. This package takes its optimal fractional output as given.
+  - source: 'Lemma 15: Algorithm 1 runs in O(kt + Υ_k) time'
+    lean: STACS2027.Runtimes.Greedy.greedy_ram
+    module: Runtimes
+    status: proved
+    note: Formalized in cpap-runtimes on the supplied cycle list; general cycle enumeration retains the
+      parameter Υ_k.

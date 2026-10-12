@@ -1,0 +1,20 @@
+The bounded-cost FPT algorithm for cycle-path assignment: 2-CNF encodings and Algorithm 3 (Lean 4)
+Author and maintainer: ANONYMIZED
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+This project depends on, and does not contain, the Lean developments
+
+  Cycle-path assignment is NP-hard for every fixed k >= 5 (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-np-hardness
+  Location: cpap-np-hardness/ in this repository (a Lake path dependency)
+  License: Apache-2.0
+
+  NP-completeness of SAT, 3-SAT and their variants (the Cook–Levin theorem)
+  in Lean 4
+  Author and maintainer: ANONYMIZED
+  Repository: NPCompleteness-Lean4
+  Commit: 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  License: Apache-2.0
+
+Lake resolves cpap-np-hardness at ../cpap-np-hardness and the foundation at the pinned commit recorded above. Temporary Challenge specifications reproduce the required foundational definitions and documentation as prescribed by the upstream foundation. They are generated for comparison and omitted from the distribution and default proof build.

@@ -1,0 +1,159 @@
+version: v0.4
+project:
+  name: 'Cycle-path assignment: shared model and NP-hardness in Lean 4'
+  description: 'Formalizes the shared CPAP model of Section 2.2 and the NP-hardness results of Section
+    5 and Appendix C of "Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation".
+    Definition 1 chooses one path of k - 2 edges per simple k-cycle and measures cost by the sum of binom(l(e),
+    2). For every fixed k >= 5, cpap_np_hard and planarCPAP_np_hard prove NP-hardness on general and planar
+    graphs using polynomial-time reductions in the pinned foundation''s single-tape machine model. planarLeOneLeTwoSAT_np_complete
+    proves the planar bounded-occurrence SAT source NP-complete. The explicit Appendix C gadgets, Theorem
+    8''s correctness for every endpoint order, planarity for a compatible order, linear size and a bounded-work
+    linear word-machine construction are proved in the library. The sibling cpap-approximation-hardness
+    supplies the Section 5 linear RAM implementation and formula-only planar embedding. Only propext,
+    Classical.choice and Quot.sound are permitted.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.CC
+  - cs.DS
+  - cs.LO
+  msc2020:
+  - 68Q17
+  - 05C38
+  - 05C10
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: Section 2.2 (Definition 1); Section 5 (Theorems 6 and 8, Definition 7, planar bounded-occurrence
+    SAT and Figure 4); Appendix C (Definition 22, gadget construction and proof of Theorem 8).
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: 'Partition into cliques for cubic graphs: planar case, complexity and approximation'
+  type: paper
+  id: doi:10.1016/j.dam.2007.10.015
+  location: Discrete Applied Mathematics 156(12) (2008), 2270-2278
+  relationship: background
+  note: The manuscript's reference for the NP-hardness of planar (≤1,≤2)-SAT. That result is not assumed
+    here; it is proved with a different reduction, built on the foundation's planar 3-SAT grid.
+- title: A simplified NP-complete satisfiability problem
+  type: paper
+  id: doi:10.1016/0166-218X(84)90081-7
+  location: Discrete Applied Mathematics 8(1) (1984), 85-89
+  relationship: background
+  note: Occurrence-bounded satisfiability through rings of implications between copies of a variable,
+    the idea of the planar source reduction's occurrence rings.
+- title: Planar formulae and their uses
+  type: paper
+  id: doi:10.1137/0211025
+  location: SIAM Journal on Computing 11(2) (1982), 329-343
+  relationship: background
+  note: Planar 3-SAT. The foundation's grid formula, which the planar source reduction transforms, follows
+    its plan.
+related_formalizations:
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: Required by Lake at that commit (Apache-2.0). Its machine model, NP, reductions, CNF code, (≤1,≤2)
+    restriction and planarity are used unchanged and copied verbatim into the Challenge, as its docs/FOUNDATION.md
+    asks. Its ANONYMIZED–ANONYMIZED emitter, finite-program compiler, planar grid and planar 3-SAT verifier
+    are reused in the proofs.
+status:
+  scope: 'Proved: the shared CPAP model and load-cost identity; the explicit Appendix C gadgets, cycle
+    structure and local optima for every k >= 5; Theorem 8 correctness for every endpoint identification,
+    planarity for compatible choices, preprocessing on the foundation''s full bounded-occurrence domain,
+    linear size and bounded-work linear word-machine construction with supplied endpoint data; planar
+    bounded-occurrence SAT NP-completeness, NP-hardness for the paper''s distinct-variable formulation,
+    and general/planar CPAP NP-hardness. The sibling cpap-approximation-hardness discharges the formula-only
+    planar embedding and actual linear RAM reduction and orientation bounds. The default build checks
+    the library, Solution and exact axiom guards; Challenge.lean is generated separately for optional
+    comparison and omitted from the distribution.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.planarLeOneLeTwoSAT_np_complete
+    file: NPHardness/PlanarSourceHardness.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap_np_hard
+    file: NPHardness/CPAPHardness.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.planarCPAP_np_hard
+    file: NPHardness/PlanarTargetHardness.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: '- Machine model, NP, reductions, encoding and planarity: as in the NP-completeness foundation
+    NPCompleteness-Lean4 (see its fidelity notes). In particular, planarity is the genus-zero hypermap
+    (rotation-system) definition, and words coding no instance are in none of the languages.
+
+    - Planar (≤1,≤2)-SAT: the foundation''s (≤1,≤2) restriction with a planar incidence graph. Like the
+    foundation''s restriction it does not require distinct variables in a clause, unlike Planar-(≤1,≤2)-SAT
+    as the manuscript defines it; the library proves NP-hardness of Planar-(≤1,≤2)-SAT exactly as defined
+    as well (Paper.planarLeOneLeTwoCNF_np_hard).
+
+    - CPAP instances are lists of records under the foundation''s CNF code: a clause of two positive literals
+    is an edge, an empty clause a unit of budget. The graph is the list of these edges; each simple k-cycle
+    is counted once, by its edge set.
+
+    - The cost of an assignment is the number of edges shared by pairs of chosen paths, counted with multiplicity;
+    it equals the manuscript''s sum over edges of binom(l(e), 2) (cpap_objective).
+
+    - CPAP is shown NP-hard, not NP-complete; the manuscript does not claim membership.
+
+    - Theorem 8''s O(n) time is proved as a bound on the number of edges and as a transition bound for
+    a word machine that reads the endpoint identifications as data, not as a single-tape bound; the compared
+    hardness theorems use polynomial-time single-tape reductions.
+
+    - Definition 22 identifies endpoints in an arbitrary order. Correctness is proved for every order
+    and planarity for a compatible order; a fixed order can create a K_{3,3} subdivision (Paper.fixed_endpoints_K33).'
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Theorem 6: for every fixed k >= 5, CPAP(G, k) is NP-hard on planar graphs'
+    lean: 'STACS2027.planarCPAP_np_hard : 5 ≤ k → NPHard (PlanarCPAP k)'
+    module: Solution
+    status: proved
+    note: Gadget gluing along the planar incidence graph of the planar source, with the endpoint rule
+      computed by the reduction; the target language requires planarity of the written graph itself.
+  - source: 'Theorem 6, last sentence: CPAP(G, k) is NP-hard on general graphs'
+    lean: 'STACS2027.cpap_np_hard : 5 ≤ k → NPHard (CPAP k)'
+    module: Solution
+    status: proved
+    note: Gadget gluing from the foundation's (≤1,≤2)-SAT.
+  - source: 'ANONYMIZED et al. (2008), cited for Theorem 6: Planar-(≤1,≤2)-SAT is NP-hard'
+    lean: 'STACS2027.planarLeOneLeTwoSAT_np_complete : NPComplete PlanarLeOneLeTwoSAT'
+    module: Solution
+    status: proved
+    note: In NP by the foundation's planar 3-SAT verifier with occurrence checks; NP-hard by occurrence
+      rings on the foundation's planar grid formula.
+  - source: Theorem 8 (correctness and planarity of the construction)
+    lean: STACS2027.Paper.gadget_reduction_planar, Paper.gadget_reduction_any_endpoints, Paper.gadget_reduction_full_domain
+    module: NPHardness.Paper
+    status: proved
+    note: 'The library proves correctness for every endpoint order and planarity for compatible choices.
+      cpap-approximation-hardness proves orientation_linear_ram and Embed.planarEmbedding_linear_ram:
+      a fixed formula-only RAM program under BoundedOccurrence and incidence planarity computes a planar
+      rotation with time and accessed addresses linear in input.length + variableBound f + 1. The planar
+      NP-hardness reduction here also computes endpoint data on its own source family.'

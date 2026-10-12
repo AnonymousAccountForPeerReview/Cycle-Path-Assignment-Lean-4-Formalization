@@ -1,0 +1,43 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+[anonymous]:thmDecl STACS2027.Embed.RAMSolver.twoBranchProgram_rep_addr: lean4lean took 1513
+[anonymous]:thmDecl STACS2027.clauseTwo_core_rank_certificate: lean4lean took 10322
+[anonymous]:thmDecl _private.Section6.RAM.Decode.Linear.0.STACS2027.RAM.decCost_le._proof_1_1: lean4lean took 1781
+[anonymous]:thmDecl OAI.UniqueGamesTheorem.Foundations.Complexity.FinalCNFTemplate.resolve_query_value: lean4lean took 2578
+[anonymous]:thmDecl STACS2027.variableSkeleton_enumeration: lean4lean took 2856
+[anonymous]:thmDecl STACS2027.clauseThree_rank_certificate: lean4lean took 2792
+[anonymous]:thmDecl STACS2027.clauseThree_no_quadrangles: lean4lean took 2752
+[anonymous]:thmDecl STACS2027.clauseThree_no_triangles: lean4lean took 2368
+[anonymous]:thmDecl STACS2027.clauseThree5_enumeration: lean4lean took 5341
+[anonymous]:thmDecl STACS2027.clauseTwo5_enumeration: lean4lean took 9198
+[anonymous]:thmDecl STACS2027.clauseTwo_short_profile_certificate: lean4lean took 6279
+[anonymous]:thmDecl STACS2027.clauseTwo6_enumeration: lean4lean took 18722
+[anonymous]:thmDecl STACS2027.clauseThree5_no_zero: lean4lean took 1915
+[anonymous]:thmDecl STACS2027.RAM.orLit_mem: lean4lean took 1101
+[anonymous]:thmDecl STACS2027.clauseTwo5_no_zero: lean4lean took 1720
+[anonymous]:thmDecl STACS2027.clauseTwo6_no_zero: lean4lean took 2505
+[anonymous]:thmDecl STACS2027.clauseTwo6_blocked_search: lean4lean took 4441
+[anonymous]:thmDecl STACS2027.clauseTwo5_blocked_search: lean4lean took 3254
+[anonymous]:thmDecl STACS2027.clauseThree5_blocked_search: lean4lean took 1111
+[anonymous]:thmDecl STACS2027.clauseThreeEmbedding_valid: lean4lean took 2475
+[anonymous]:thmDecl STACS2027.clauseTwoEmbedding_valid: lean4lean took 6784
+[anonymous]:thmDecl STACS2027.Embed.RAMSolver.solverProgram_floor_certificate: lean4lean took 5024
+checked 45501 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-leche: accepted 45500 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: accepted 45500 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

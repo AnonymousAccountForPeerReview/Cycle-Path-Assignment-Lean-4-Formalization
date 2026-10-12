@@ -1,0 +1,4 @@
+Challenge.lean matches its selected source declarations.
+5922 axiom guards cover every named declaration of the 320 Runtimes modules
+329 Lean sources obey the source rules
+All static checks passed.

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "STACS2027.cpap4_iff_flow",
+    "STACS2027.fourCycleNetwork_size",
+    "STACS2027.cpap3_iff_flow",
+    "STACS2027.triangleNetwork_size"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

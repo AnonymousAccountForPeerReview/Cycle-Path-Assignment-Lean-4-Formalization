@@ -1,0 +1,3 @@
+Challenge.lean matches its selected source declarations.
+3173 axiom guards cover every named NPHardness declaration
+All static checks passed.

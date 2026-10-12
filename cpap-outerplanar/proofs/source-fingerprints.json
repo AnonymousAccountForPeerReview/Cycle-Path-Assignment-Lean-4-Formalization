@@ -1,0 +1,2047 @@
+{
+  "Outerplanar": {
+    "source": "cpap-outerplanar/Outerplanar.lean",
+    "source_sha256": "e49277bcf372b47b68c4324b2b46a9b3862e4710391d8c3de6e9da3bd14fa041",
+    "comparison_module": "AppendixG",
+    "comparison_source": "stacs-appendixG/AppendixG.lean",
+    "comparison_source_sha256": "f34d3efba6b4eae84ebdf1b8fa63b7eee1109d19853d04a4944d51e2f49f6fe4"
+  },
+  "Outerplanar.Algo.Combine": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Combine.lean",
+    "source_sha256": "a7e219554a67d0a64c4a379f96241614d09b0a43b66e7384e432b03e719af98c",
+    "comparison_module": "AppendixG.Algo.Combine",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Combine.lean",
+    "comparison_source_sha256": "1cf685e27d0c2b5fa6a51fd6bd65d65bcff641282e04ffc61a1134c6c2946b2c"
+  },
+  "Outerplanar.Algo.Digits": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Digits.lean",
+    "source_sha256": "9343965df15011c34919f0140892d2ae624f9e2c3fb57c77e20d17038336fe85",
+    "comparison_module": "AppendixG.Algo.Digits",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Digits.lean",
+    "comparison_source_sha256": "82eb86c16dfc2dd19a17683310c6cde24f6daf2d40c90afaed89e389186c6c06"
+  },
+  "Outerplanar.Algo.Ear": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Ear.lean",
+    "source_sha256": "e8c84c9ed09b8430e824024df81a339b0236d2d971c268ad9f0961c46e9b4860",
+    "comparison_module": "AppendixG.Algo.Ear",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Ear.lean",
+    "comparison_source_sha256": "bff4ddded82461306895a268f7c955f5ec06342ad2803a6a084b867cc60ca52f"
+  },
+  "Outerplanar.Algo.EarCorrect": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarCorrect.lean",
+    "source_sha256": "4ad6189c475070565d43391c9e23473ae07b2d35d4ecfd4e6b6bbe1ea7fec89c",
+    "comparison_module": "AppendixG.Algo.EarCorrect",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarCorrect.lean",
+    "comparison_source_sha256": "4a77a6f231e9c9dd9ee8474ce17d4cf4256752eb7c76cb60dfc56a9b5df341e4"
+  },
+  "Outerplanar.Algo.EarCycle": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarCycle.lean",
+    "source_sha256": "33006e2db0a1dc3fa72f9811fee3af7cb82b338f717ae4f0e8132a3e22f05710",
+    "comparison_module": "AppendixG.Algo.EarCycle",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarCycle.lean",
+    "comparison_source_sha256": "b758fb92df8597ba0e3d74bd5ac00928f26a3dd06238fc683ae7db7384578b57"
+  },
+  "Outerplanar.Algo.EarInv": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarInv.lean",
+    "source_sha256": "81efc392d77d4d4f5d868ae561cae7e620d916735f8f301667521532a5030892",
+    "comparison_module": "AppendixG.Algo.EarInv",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarInv.lean",
+    "comparison_source_sha256": "3c84bc469099dfacf5c2ebad531e70ce8beb7bcdfa2f11d97a02a6185a67c095"
+  },
+  "Outerplanar.Algo.EarPeel": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarPeel.lean",
+    "source_sha256": "43a36e9c33598022c62b34a804218ae2883b2c9cf4699511c4e953bb053dc86b",
+    "comparison_module": "AppendixG.Algo.EarPeel",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarPeel.lean",
+    "comparison_source_sha256": "0ab22016310ca6b423f3b447d617b01f24ffb67baa62689a696e40890c4402f2"
+  },
+  "Outerplanar.Algo.EarState": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarState.lean",
+    "source_sha256": "aa5305054ef398df6b8b92c77fafccf87a1d3f38e0896093a2a31736a803a09b",
+    "comparison_module": "AppendixG.Algo.EarState",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarState.lean",
+    "comparison_source_sha256": "780ea43d5d800ea05bc10106a04f85268eb4738c691eb7255e7c7206f87cb2ae"
+  },
+  "Outerplanar.Algo.EarStatic": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/EarStatic.lean",
+    "source_sha256": "3c8c282a01879442aaef6c5cb0459e06ffd32256221961f20e0f27f98fdea914",
+    "comparison_module": "AppendixG.Algo.EarStatic",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/EarStatic.lean",
+    "comparison_source_sha256": "efa268291852f7517a5877784854f51dcecf1e9913968b7e7849c1478fd516e7"
+  },
+  "Outerplanar.Algo.FaceWalk": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/FaceWalk.lean",
+    "source_sha256": "9df98e4536d727215412fd7baf803cf5ebfe48c56c6f308c4a6d1702f44a8ae1",
+    "comparison_module": "AppendixG.Algo.FaceWalk",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/FaceWalk.lean",
+    "comparison_source_sha256": "1ed74d7eb3646d6368ccf262e2f31fed5786a14ddcc9dd5f2ac5626218581b68"
+  },
+  "Outerplanar.Algo.Graph": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Graph.lean",
+    "source_sha256": "5ba3db4a031447e5ebf994e45aaa9ecdc7920de015098ad7523e25f9d7dd002c",
+    "comparison_module": "AppendixG.Algo.Graph",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Graph.lean",
+    "comparison_source_sha256": "c21b7b60a8f188b718dbe7edccc26474f148b39c05514114ab25d6c095543949"
+  },
+  "Outerplanar.Algo.K4Out": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/K4Out.lean",
+    "source_sha256": "929ba9d12f334ea621df6ff54191540f4c1dcf4c37bad20d0e51b02af988b17c",
+    "comparison_module": "AppendixG.Algo.K4Out",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/K4Out.lean",
+    "comparison_source_sha256": "828383fca821524242341ccc1974cf6ca486ed290ba2ba5c1916552e92af1390"
+  },
+  "Outerplanar.Algo.LowPoint": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/LowPoint.lean",
+    "source_sha256": "08ecf21068b35d65036e47425606267662d7c9fca84289289fc8ec7addf8fdc3",
+    "comparison_module": "AppendixG.Algo.LowPoint",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/LowPoint.lean",
+    "comparison_source_sha256": "cdf53295315a5ed6412c52c8945004d6c964ea21b0e2ac6ca42b810e4a44ad7d"
+  },
+  "Outerplanar.Algo.Poly": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Poly.lean",
+    "source_sha256": "cf79630e0d1dd1c9ae81c906a280dd81675bd0babce3b359405087e8856e1eeb",
+    "comparison_module": "AppendixG.Algo.Poly",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Poly.lean",
+    "comparison_source_sha256": "33ec6b05c75bde93589cf037c4858dbfb172140e2bd4cc3f1ac4682e04b3e118"
+  },
+  "Outerplanar.Algo.PolyBacktrack": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyBacktrack.lean",
+    "source_sha256": "35673ea8fdf8b91c85162cba85a8cfb8b0423bb271d4ce77a469c8f3f1516809",
+    "comparison_module": "AppendixG.Algo.PolyBacktrack",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyBacktrack.lean",
+    "comparison_source_sha256": "350e907e6253e252927df53e875c9d38953cc9241c515b01d5ede38099c69008"
+  },
+  "Outerplanar.Algo.PolyBounds": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyBounds.lean",
+    "source_sha256": "96318d349c1f54eb4663f063713b474490674405e8ef4a95fc50384f13746f9a",
+    "comparison_module": "AppendixG.Algo.PolyBounds",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyBounds.lean",
+    "comparison_source_sha256": "d3826e369f2620610afce0f5734fe4295b723b781fcc6b2bb249ba7daf892a67"
+  },
+  "Outerplanar.Algo.PolyDP": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyDP.lean",
+    "source_sha256": "4ed92dd3eb18d273bedd9fb3cea8ca8a4e6b048c6b4b922cdbd75975b652e93a",
+    "comparison_module": "AppendixG.Algo.PolyDP",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyDP.lean",
+    "comparison_source_sha256": "3856c3707660c071fc060bd366e50c354559c3b46af19634a20321f7de909ca6"
+  },
+  "Outerplanar.Algo.PolyEnum": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyEnum.lean",
+    "source_sha256": "eb25ca40c0445298a4a334cd320f13a23ba6097a57b9eb7befc0da43ebe749a5",
+    "comparison_module": "AppendixG.Algo.PolyEnum",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyEnum.lean",
+    "comparison_source_sha256": "3ee3a3d5555b120d6ac6b8843f5e50b0cda1fc0a9a2c0f131af0255eab20264d"
+  },
+  "Outerplanar.Algo.PolyFacts": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyFacts.lean",
+    "source_sha256": "7d59e3cd1fcc1cd211e6170c920defae2c7d7a4d67b3d6ff57af85ce1f6f4f75",
+    "comparison_module": "AppendixG.Algo.PolyFacts",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyFacts.lean",
+    "comparison_source_sha256": "d3830d8366646c7f27ea33b53a8f18252dbec4d6b132ab033b99f85b4b2ed7b0"
+  },
+  "Outerplanar.Algo.PolyOut": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyOut.lean",
+    "source_sha256": "da5e3b6129c842c8ac3368156c82557f2bf298f221adb56f43cead5e8a1235fc",
+    "comparison_module": "AppendixG.Algo.PolyOut",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyOut.lean",
+    "comparison_source_sha256": "1f72864315e68de3cbb00385da6a98486747594a57b6482471908490eccb4b17"
+  },
+  "Outerplanar.Algo.PolyPool": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyPool.lean",
+    "source_sha256": "b357f36e609a877a278ca1a6e86a2c9263e061e41d7ff2792bfc56949f708ab6",
+    "comparison_module": "AppendixG.Algo.PolyPool",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyPool.lean",
+    "comparison_source_sha256": "978fc56ab3e37b1a004acc95d403af06d5ad9ef0a40708e6cffeff0135cc2d27"
+  },
+  "Outerplanar.Algo.PolyRP": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/PolyRP.lean",
+    "source_sha256": "590f6c5e65711a8686da29e55a8b8fec5874cb6acd3f48accc55cfa32753462d",
+    "comparison_module": "AppendixG.Algo.PolyRP",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/PolyRP.lean",
+    "comparison_source_sha256": "bab63a05a7e2854922adc92f40eeb0c4071166918a2aac514131f9f3c15f45f0"
+  },
+  "Outerplanar.Algo.Solve": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/Solve.lean",
+    "source_sha256": "ec4ebe1f2eed90eecae49f29e0b64779913212049143134cfd69daacc027f4ff",
+    "comparison_module": "AppendixG.Algo.Solve",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/Solve.lean",
+    "comparison_source_sha256": "e5fd3f3d1316a5efb98da93a5e5b36e8bb396483138a5213680f8bb0243c332c"
+  },
+  "Outerplanar.Algo.SolveCorrect": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/SolveCorrect.lean",
+    "source_sha256": "e08b56f3b0acc85bac35ef3b21b4e94627d5d68dddef8566e27240ad51a96e8e",
+    "comparison_module": "AppendixG.Algo.SolveCorrect",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/SolveCorrect.lean",
+    "comparison_source_sha256": "89ca335293900cbc915ae8c8ca8f6b9e554f1af29ca2b951ab313c1216e7be59"
+  },
+  "Outerplanar.Algo.SolveOptimal": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/SolveOptimal.lean",
+    "source_sha256": "18d7a6e39c286c22941322ee0bc1557a87cd51efd9efe94c2dfe8b12f86949fc",
+    "comparison_module": "AppendixG.Algo.SolveOptimal",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/SolveOptimal.lean",
+    "comparison_source_sha256": "c5e044b16e80b8a1f7041a1e60019c7b5fe5ba4186602c13fd951310ea2ccef0"
+  },
+  "Outerplanar.Algo.TreeDPArgmin": {
+    "source": "cpap-outerplanar/Outerplanar/Algo/TreeDPArgmin.lean",
+    "source_sha256": "b482feae81ca2502847bf8724380149aeede813570eb50c83acba20968e86087",
+    "comparison_module": "AppendixG.Algo.TreeDPArgmin",
+    "comparison_source": "stacs-appendixG/AppendixG/Algo/TreeDPArgmin.lean",
+    "comparison_source_sha256": "ac65ff0e114cfd487e5c61a6b88914eac33508ceb614c8f1256da167424a8886"
+  },
+  "Outerplanar.BlockConn": {
+    "source": "cpap-outerplanar/Outerplanar/BlockConn.lean",
+    "source_sha256": "4cf60176ad580517cb5019a411c50d7b5f5c4dc91557ea857c9d479b2a8a7ab4",
+    "comparison_module": "AppendixG.BlockConn",
+    "comparison_source": "stacs-appendixG/AppendixG/BlockConn.lean",
+    "comparison_source_sha256": "bab77ac3339658a4f0f302a2d534c62d43c622c8749beae8655738b013dab0ad"
+  },
+  "Outerplanar.BlockTheory": {
+    "source": "cpap-outerplanar/Outerplanar/BlockTheory.lean",
+    "source_sha256": "3b24eba28ae09968490a11bd4a14e7a369086864d0940ba3c8aa7b6ef4535d34",
+    "comparison_module": "AppendixG.BlockTheory",
+    "comparison_source": "stacs-appendixG/AppendixG/BlockTheory.lean",
+    "comparison_source_sha256": "fd622471c0cda674a02dc3610aadfe352cc65edc4533c7c28567c3357633bd98"
+  },
+  "Outerplanar.Convex": {
+    "source": "cpap-outerplanar/Outerplanar/Convex.lean",
+    "source_sha256": "e4d8007d2360af17cb4db8cc4aca75e90de461caf004d73556de792e512cb28e",
+    "comparison_module": "AppendixG.Convex",
+    "comparison_source": "stacs-appendixG/AppendixG/Convex.lean",
+    "comparison_source_sha256": "3b6bfbb6f1688cfaa6db0e8869277e0c2714ffaff3e3b52d6191c3249c979ce8"
+  },
+  "Outerplanar.DFS": {
+    "source": "cpap-outerplanar/Outerplanar/DFS.lean",
+    "source_sha256": "6d2f4814950a9cbb670ac2f8242af8c5e582618b12129a2126c8f12deb4880b7",
+    "comparison_module": "AppendixG.DFS",
+    "comparison_source": "stacs-appendixG/AppendixG/DFS.lean",
+    "comparison_source_sha256": "01712c12126267456d00d7aabb67cc085c300953b116230a10edc02ee5e6075c"
+  },
+  "Outerplanar.DPCorrect": {
+    "source": "cpap-outerplanar/Outerplanar/DPCorrect.lean",
+    "source_sha256": "1772be175312f51cdf525d2af2ec0314089fae4ba7b2d3746fe843a95ceeaed3",
+    "comparison_module": "AppendixG.DPCorrect",
+    "comparison_source": "stacs-appendixG/AppendixG/DPCorrect.lean",
+    "comparison_source_sha256": "eb9ea5c057f6c866b4a6a5038d2193b8b2fc932b8c1ae0713fd7deea341c9d91"
+  },
+  "Outerplanar.Defs": {
+    "source": "cpap-outerplanar/Outerplanar/Defs.lean",
+    "source_sha256": "0eaac49e729b503afeb470c9ef3894e2aa810bf368919f0acb1940fe20cc0cbe",
+    "comparison_module": "AppendixG.Defs",
+    "comparison_source": "stacs-appendixG/AppendixG/Defs.lean",
+    "comparison_source_sha256": "f93566539d5596feb2da1d1cf0cbe7179132d6d45ab37f0318e71e4c7dc79966"
+  },
+  "Outerplanar.Degenerate": {
+    "source": "cpap-outerplanar/Outerplanar/Degenerate.lean",
+    "source_sha256": "11b4a5bec333c7c3893809c95ab08ac777e5c9620c4804e11c56d3c903ca47f4",
+    "comparison_module": "AppendixG.Degenerate",
+    "comparison_source": "stacs-appendixG/AppendixG/Degenerate.lean",
+    "comparison_source_sha256": "09a9a9e2c3c7682a78fe1e60237b07cc44678f78dc9899bffe04faad59fd4c14"
+  },
+  "Outerplanar.EarAway": {
+    "source": "cpap-outerplanar/Outerplanar/EarAway.lean",
+    "source_sha256": "d2eaf629766a15bf1fc834a0e36af756f43b002403c7312c8087478e0515e281",
+    "comparison_module": "AppendixG.EarAway",
+    "comparison_source": "stacs-appendixG/AppendixG/EarAway.lean",
+    "comparison_source_sha256": "599a1ee21a5183ed3ca8782ece7b8c8ed4b682f28735ebb67c1537977052c63a"
+  },
+  "Outerplanar.Enumerate": {
+    "source": "cpap-outerplanar/Outerplanar/Enumerate.lean",
+    "source_sha256": "c9dd40163c83a60131f2c0643e640b4a64448cc939cc357f75a14f28dcf470b8",
+    "comparison_module": "AppendixG.Enumerate",
+    "comparison_source": "stacs-appendixG/AppendixG/Enumerate.lean",
+    "comparison_source_sha256": "20f4c812bd1a0d2eaeac4cbe2b552ed9ec915e669f712b29f065a757bf8329a3"
+  },
+  "Outerplanar.FaceTransport": {
+    "source": "cpap-outerplanar/Outerplanar/FaceTransport.lean",
+    "source_sha256": "65ba19aeb7406b1c0d3a65b53e18cfb057849c44be9d085104ce9a0151c1121d",
+    "comparison_module": "AppendixG.FaceTransport",
+    "comparison_source": "stacs-appendixG/AppendixG/FaceTransport.lean",
+    "comparison_source_sha256": "1b518f3e2dcbc85324bab97015510e751059a76f7977f152a82af52cb8dc1919"
+  },
+  "Outerplanar.Faces": {
+    "source": "cpap-outerplanar/Outerplanar/Faces.lean",
+    "source_sha256": "a5670c314ec9ca75360bdddf525bfe711a6a9735ca03f2b90fe65a462d77810e",
+    "comparison_module": "AppendixG.Faces",
+    "comparison_source": "stacs-appendixG/AppendixG/Faces.lean",
+    "comparison_source_sha256": "3cae29cb821f2e4b2bfbee8bebf1e952ca86bdc1c85269ea9ee7097522b33e9f"
+  },
+  "Outerplanar.GeneralAlgorithm": {
+    "source": "cpap-outerplanar/Outerplanar/GeneralAlgorithm.lean",
+    "source_sha256": "9e29526caeafd5f6c477ceddec2d14ba9757acc7c99b220cf46a1b0bd87bb2f3",
+    "comparison_module": "AppendixG.GeneralAlgorithm",
+    "comparison_source": "stacs-appendixG/AppendixG/GeneralAlgorithm.lean",
+    "comparison_source_sha256": "b0c16721607dddd5df37e47b6869e162f33cfb8dbca72025dfef70a745fb3011"
+  },
+  "Outerplanar.GeneralDegenerate": {
+    "source": "cpap-outerplanar/Outerplanar/GeneralDegenerate.lean",
+    "source_sha256": "0130d28c98274f4e77db3747e4b4848dd9a349b7a2543c8e22934f23a5f93032",
+    "comparison_module": "AppendixG.GeneralDegenerate",
+    "comparison_source": "stacs-appendixG/AppendixG/GeneralDegenerate.lean",
+    "comparison_source_sha256": "7e806204210dfefb31f0e2fc94a0a9a78ec1f4cc19e5aad84ae6b49c483f7bbe"
+  },
+  "Outerplanar.HypermapEuler": {
+    "source": "cpap-outerplanar/Outerplanar/HypermapEuler.lean",
+    "source_sha256": "4e0a6c490221a5a430a9561b1462680a5f83795530a034b7e1944a06d8f22d98",
+    "comparison_module": "AppendixG.HypermapEuler",
+    "comparison_source": "stacs-appendixG/AppendixG/HypermapEuler.lean",
+    "comparison_source_sha256": "ce48ebbc013ff62f40c0db69187394178d861598cd80f42f0ac6f29ca52ca687"
+  },
+  "Outerplanar.HypermapEulerFaces": {
+    "source": "cpap-outerplanar/Outerplanar/HypermapEulerFaces.lean",
+    "source_sha256": "903a331c0b94b05fc9ba6df3a427b8067f0cfeff4adc74a55ed5792f2290cf97",
+    "comparison_module": "AppendixG.HypermapEulerFaces",
+    "comparison_source": "stacs-appendixG/AppendixG/HypermapEulerFaces.lean",
+    "comparison_source_sha256": "fcc94916404d999663bd5c69a89de4d6b59392398529ee85bbb42d1f5c9476a6"
+  },
+  "Outerplanar.HypermapEulerMove": {
+    "source": "cpap-outerplanar/Outerplanar/HypermapEulerMove.lean",
+    "source_sha256": "15023239f5aaa694763ca8a31e9ce1c9946c47ed41f66249d31a8152c0b267a7",
+    "comparison_module": "AppendixG.HypermapEulerMove",
+    "comparison_source": "stacs-appendixG/AppendixG/HypermapEulerMove.lean",
+    "comparison_source_sha256": "dd4807725d4a4af41a7249fdaf5119e3bc8e8cd8db34873f915ec078e1a206fe"
+  },
+  "Outerplanar.LeafDelete": {
+    "source": "cpap-outerplanar/Outerplanar/LeafDelete.lean",
+    "source_sha256": "8db373b569ae84217fabf7118fac2d7d5cdc4d99d41c26022405e286c2beb97c",
+    "comparison_module": "AppendixG.LeafDelete",
+    "comparison_source": "stacs-appendixG/AppendixG/LeafDelete.lean",
+    "comparison_source_sha256": "6febcfb1232269fe423a83f20f0d707132c030147f7827a460b3dfa53fa328b1"
+  },
+  "Outerplanar.LeafFaceDeletion": {
+    "source": "cpap-outerplanar/Outerplanar/LeafFaceDeletion.lean",
+    "source_sha256": "843107c1fff371e50cd1bafcd430ed4d55474624722fa5c40d3bc3854791ce30",
+    "comparison_module": "AppendixG.LeafFaceDeletion",
+    "comparison_source": "stacs-appendixG/AppendixG/LeafFaceDeletion.lean",
+    "comparison_source_sha256": "1029d96f89ce75eee72b75cecd7a11dbc22f7b0957be39d71c94e8a7a680c98b"
+  },
+  "Outerplanar.LinearK23": {
+    "source": "cpap-outerplanar/Outerplanar/LinearK23.lean",
+    "source_sha256": "f23579847390db4cf651c403fbd60bd3d029cd1d50cc68b8e5c217a03fdf916e",
+    "comparison_module": "AppendixG.LinearK23",
+    "comparison_source": "stacs-appendixG/AppendixG/LinearK23.lean",
+    "comparison_source_sha256": "60b7d7792f37063bfe8b5a98f93c531e20a91ca371a01b71d4db1369b02071d5"
+  },
+  "Outerplanar.Minors": {
+    "source": "cpap-outerplanar/Outerplanar/Minors.lean",
+    "source_sha256": "669e7efdea6a39b697c45c873c894ab101076ca6b0795cdeed83b39616605993",
+    "comparison_module": "AppendixG.Minors",
+    "comparison_source": "stacs-appendixG/AppendixG/Minors.lean",
+    "comparison_source_sha256": "4cab2c33a8669e075d4ba1ef3831ac62927cb12bf288ffba001b715e51c10386"
+  },
+  "Outerplanar.NamedHoles": {
+    "source": "cpap-outerplanar/Outerplanar/NamedHoles.lean",
+    "source_sha256": "88a2f74972c41e31bdad8ab6d9ff4c79b72c3b49f28a0d13e7b987d0f7f80107",
+    "comparison_module": "AppendixG.NamedHoles",
+    "comparison_source": "stacs-appendixG/AppendixG/NamedHoles.lean",
+    "comparison_source_sha256": "371a1d98159c49cc92adbcbb4849a13f37c5a4bde61e0d33774134c7dd3f9207"
+  },
+  "Outerplanar.NeighbourConeMinor": {
+    "source": "cpap-outerplanar/Outerplanar/NeighbourConeMinor.lean",
+    "source_sha256": "7f9ee8a496af81fd88081b9b5f0c9aaa9876b4460e78fc13ee95c9747058d98a",
+    "comparison_module": "AppendixG.NeighbourConeMinor",
+    "comparison_source": "stacs-appendixG/AppendixG/NeighbourConeMinor.lean",
+    "comparison_source_sha256": "2912eb2da89d51a39abfd43b3f1f8c24abd2ef51d280e3ee864bb42019f45c04"
+  },
+  "Outerplanar.OuterplanarBasic": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarBasic.lean",
+    "source_sha256": "80df136639fad81ba3c1c529e5a94cae1dc2d7a077e298ebb7a5c95866439f95",
+    "comparison_module": "AppendixG.OuterplanarBasic",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarBasic.lean",
+    "comparison_source_sha256": "001f3db5183e8156d010dafba56a61c12fe0388494a597029aaa89a2198f11a6"
+  },
+  "Outerplanar.OuterplanarCharacterization": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarCharacterization.lean",
+    "source_sha256": "28c12cb5f89e6203d65a9d621efb24054d48bd6d3928fc2e44ad876253bd6721",
+    "comparison_module": "AppendixG.OuterplanarCharacterization",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarCharacterization.lean",
+    "comparison_source_sha256": "6c380f61c06d31b9c824ec5568547afbf71edaa5b78dd9d05fb091cffdb792ad"
+  },
+  "Outerplanar.OuterplanarConstruct": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstruct.lean",
+    "source_sha256": "d43e331ec501c054c4fd68ba4af78e103477c022a2602838021abc56e92dd97a",
+    "comparison_module": "AppendixG.OuterplanarConstruct",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstruct.lean",
+    "comparison_source_sha256": "06b3cad14827589bdbac2f1a5af9aed980c13e773f2883813cdc361475c60dcf"
+  },
+  "Outerplanar.OuterplanarConstructGlue": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructGlue.lean",
+    "source_sha256": "035d9c529e1e36c6d0ce56cac26efcc4ecf1a2c4582ffc1b574d639353cd500c",
+    "comparison_module": "AppendixG.OuterplanarConstructGlue",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructGlue.lean",
+    "comparison_source_sha256": "06dc0554df4ba8411425a068ca2360a04bf8f7d503d5855c5d8f87a4f7f12efc"
+  },
+  "Outerplanar.OuterplanarConstructGlueSph": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructGlueSph.lean",
+    "source_sha256": "d983737f0b89626907b062b7a978a432c40b3ebfaa1d2fcb118d2eeb43ee1091",
+    "comparison_module": "AppendixG.OuterplanarConstructGlueSph",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructGlueSph.lean",
+    "comparison_source_sha256": "59834db56a5263c05d781187f812c684bad8b8c3317bdff158fdc0da587a7f5a"
+  },
+  "Outerplanar.OuterplanarConstructHam": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructHam.lean",
+    "source_sha256": "1f8b6eef51062d5b352149505a05f7870a396ab9c2104f21df3a009a0ee54b83",
+    "comparison_module": "AppendixG.OuterplanarConstructHam",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructHam.lean",
+    "comparison_source_sha256": "e8f9f9bf312eaecce5f1952d523c041a032857ef21d4b28705de2c524073fe29"
+  },
+  "Outerplanar.OuterplanarConstructInduction": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructInduction.lean",
+    "source_sha256": "2fca49a5085399ca804b0d6ffa9781f62aa8fa9b141218abede2309f163d56f3",
+    "comparison_module": "AppendixG.OuterplanarConstructInduction",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructInduction.lean",
+    "comparison_source_sha256": "cb77161db6acaa4cffd86bf3b5a6faf2d4a2b47d094cad6259a22e7ea52766ad"
+  },
+  "Outerplanar.OuterplanarConstructPoly": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructPoly.lean",
+    "source_sha256": "55972b8aed5f3d69aacac049aae5a2bd1966b02765a3fb50ed9f34140669b446",
+    "comparison_module": "AppendixG.OuterplanarConstructPoly",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructPoly.lean",
+    "comparison_source_sha256": "cd8b5bc055c8883e0c6cf83f201afec436d10dbdef2e0148ae591e075be42098"
+  },
+  "Outerplanar.OuterplanarConstructPolyRot": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructPolyRot.lean",
+    "source_sha256": "1460ed5a8066d69e94f267d100a0ce7c31512390d89952543fd2286eb36d163d",
+    "comparison_module": "AppendixG.OuterplanarConstructPolyRot",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructPolyRot.lean",
+    "comparison_source_sha256": "d9411673f46b14a38519e32d973d282fcc5b091bde5c2184317dd9547b759498"
+  },
+  "Outerplanar.OuterplanarConstructRot": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructRot.lean",
+    "source_sha256": "052d6f99f57bbf429f8a0233a22f15c5a45e80dd2a62888c34abd7b36f599d11",
+    "comparison_module": "AppendixG.OuterplanarConstructRot",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructRot.lean",
+    "comparison_source_sha256": "afbed27610e01f05bb7e093741feeb5218ece071c83859c4413c9c1ee47cffd1"
+  },
+  "Outerplanar.OuterplanarConstructSph": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructSph.lean",
+    "source_sha256": "44bc034cec6f3bb6336711ac4882be980ed17e1358d9b28f139a4933638659b9",
+    "comparison_module": "AppendixG.OuterplanarConstructSph",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructSph.lean",
+    "comparison_source_sha256": "cd016c6c2cfb60fe8c99f961e8c19c37c92c0cc426ff17e555ccf7ce34b11219"
+  },
+  "Outerplanar.OuterplanarConstructSum": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarConstructSum.lean",
+    "source_sha256": "48e4bf177cf1c12e7f25c1a5c046858916188b800bd12b57f7a46ef6ade9ed71",
+    "comparison_module": "AppendixG.OuterplanarConstructSum",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarConstructSum.lean",
+    "comparison_source_sha256": "831f89ccc5d0b728bbb5bd52dc6394d6e1e369d06fdbc8efaa42cb9ed1031cf0"
+  },
+  "Outerplanar.OuterplanarDef": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarDef.lean",
+    "source_sha256": "01b95b0a84df9f6a14db564a2716ccde088465f0d7ad5beccb13b42c82fbb95f",
+    "comparison_module": "AppendixG.OuterplanarDef",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarDef.lean",
+    "comparison_source_sha256": "6479a4f807f4b5afc3901ac15b20a818e022c069e8355cbc4afb36225d590167"
+  },
+  "Outerplanar.OuterplanarK4K23": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarK4K23.lean",
+    "source_sha256": "87e41b4ccf98af4350866a209ff920045e7cfb9f2317d143d35734a867e4cbcc",
+    "comparison_module": "AppendixG.OuterplanarK4K23",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarK4K23.lean",
+    "comparison_source_sha256": "1461007c9a5aad37be0822ca47f2c543b4befb5f4b681b31be3abb7703b5be2e"
+  },
+  "Outerplanar.OuterplanarMinor": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarMinor.lean",
+    "source_sha256": "8d248529b77ba097ea6214beacc09b349bcde5bda8008f719e754c4bc2540b66",
+    "comparison_module": "AppendixG.OuterplanarMinor",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarMinor.lean",
+    "comparison_source_sha256": "63ad23c86030b35a4d985afa7d0027353e2818a579eaf37c603a39b75cbe8d3c"
+  },
+  "Outerplanar.OuterplanarMinorContract": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarMinorContract.lean",
+    "source_sha256": "bcbd71a0da833135ad1a66953a13611f3a9b784250311d31d0b42c227f14e1c7",
+    "comparison_module": "AppendixG.OuterplanarMinorContract",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarMinorContract.lean",
+    "comparison_source_sha256": "73f89ea53606d1b2510b6ccb04a2519bb1fff044d4f86b94c267383895280898"
+  },
+  "Outerplanar.OuterplanarMinorDelete": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarMinorDelete.lean",
+    "source_sha256": "e09a3b950a5935795ad8191469a9698edbee49f7d34262914385c8b9232f9ac2",
+    "comparison_module": "AppendixG.OuterplanarMinorDelete",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarMinorDelete.lean",
+    "comparison_source_sha256": "51aac9224b87a1de8d4d9f345494fc03808104191b9e3bd05a3ff3dc5967d7d3"
+  },
+  "Outerplanar.OuterplanarMinorLists": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarMinorLists.lean",
+    "source_sha256": "66d9c58d91f12b017497099d9e5a2b22cefe7d5598ada37fe3d71572d4096d77",
+    "comparison_module": "AppendixG.OuterplanarMinorLists",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarMinorLists.lean",
+    "comparison_source_sha256": "ce68aa11ee81c2533df94542dde29d615079958f2030e2153f112f31c22c8ea4"
+  },
+  "Outerplanar.OuterplanarSym": {
+    "source": "cpap-outerplanar/Outerplanar/OuterplanarSym.lean",
+    "source_sha256": "14440534a83c5143e79573dc4b4146213bd75c95fc60e8185f5777fc6aeb1f84",
+    "comparison_module": "AppendixG.OuterplanarSym",
+    "comparison_source": "stacs-appendixG/AppendixG/OuterplanarSym.lean",
+    "comparison_source_sha256": "55f19c441de0376fbe10005c6ca8986debc937a0704aabb9b1803abb0208e342"
+  },
+  "Outerplanar.Palm": {
+    "source": "cpap-outerplanar/Outerplanar/Palm.lean",
+    "source_sha256": "2561522ea381f080674fdef94d85e4db615d421c2de270a825dd815b9b376adf",
+    "comparison_module": "AppendixG.Palm",
+    "comparison_source": "stacs-appendixG/AppendixG/Palm.lean",
+    "comparison_source_sha256": "8b34376e13a7ca6d540cdeff4b3cbdb6bd28b7ed00cf07af0c7f4f3e33929b45"
+  },
+  "Outerplanar.PerfectK23": {
+    "source": "cpap-outerplanar/Outerplanar/PerfectK23.lean",
+    "source_sha256": "31691d3740baca901e6a0ab37ead5ea89de327d9ff0cadd15b0c8c15470990a4",
+    "comparison_module": "AppendixG.PerfectK23",
+    "comparison_source": "stacs-appendixG/AppendixG/PerfectK23.lean",
+    "comparison_source_sha256": "c9d57b88e9b524f585f43c0197f77f6ec5bc11089ed037742821e69be4169cec"
+  },
+  "Outerplanar.PlanarConeObstructions": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarConeObstructions.lean",
+    "source_sha256": "8ff11ca4f23a5bc9e7bad076d65989952d4929b4c4c3817586bebeaf382e3672",
+    "comparison_module": "AppendixG.PlanarConeObstructions",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarConeObstructions.lean",
+    "comparison_source_sha256": "ccf37a20b2d8d4fafc34a9b85b40a1e6ad1eac661aa71ba65a4e39fa92693188"
+  },
+  "Outerplanar.PlanarLightEdge": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarLightEdge.lean",
+    "source_sha256": "acbf9625c4b2393842e269b24bd0e71ec3e4b897d888ef60334a70883712a7b2",
+    "comparison_module": "AppendixG.PlanarLightEdge",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarLightEdge.lean",
+    "comparison_source_sha256": "29c2c0d058694bbee52751e18c6a94a1e3a1278da2624cc0ecfe0b6eac9ed74e"
+  },
+  "Outerplanar.PlanarMinor": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarMinor.lean",
+    "source_sha256": "3e4be39a6ccfd42e5c6f7b42109313015f9e4c37d15778dc6e692a0e41ca2175",
+    "comparison_module": "AppendixG.PlanarMinor",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarMinor.lean",
+    "comparison_source_sha256": "5c2920662aa01ec4d93cd294db0c1036106b54d861818d241093044ed1d50881"
+  },
+  "Outerplanar.PlanarMinorClosure": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarMinorClosure.lean",
+    "source_sha256": "8dc7401d74d8a8409831df31294f0f806888973a3e181d718d98194e03afe770",
+    "comparison_module": "AppendixG.PlanarMinorClosure",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarMinorClosure.lean",
+    "comparison_source_sha256": "fff0fa6f4d218cfafeff5b2d2585be8ca96a8dafd8813223f02159db9cbaad7f"
+  },
+  "Outerplanar.PlanarNeighbour": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarNeighbour.lean",
+    "source_sha256": "75b218abcbd19abeaf99ca54e437e9b95b49d4faf5bac64a7992bc15142ca7e1",
+    "comparison_module": "AppendixG.PlanarNeighbour",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarNeighbour.lean",
+    "comparison_source_sha256": "a0978eff88d5d4f80e23edcd088a4a4560d02e9b9a3864a7120557c6b6726590"
+  },
+  "Outerplanar.PlanarTriangleCardinality": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarTriangleCardinality.lean",
+    "source_sha256": "3db2171b9931024237614831333ccf058844add0f396d010d7a40c36535b2460",
+    "comparison_module": "AppendixG.PlanarTriangleCardinality",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarTriangleCardinality.lean",
+    "comparison_source_sha256": "c7e8b5d7624234b6d45df17f17cfb2d99a0534dee28264938af9031e0d83b224"
+  },
+  "Outerplanar.PlanarTriangles": {
+    "source": "cpap-outerplanar/Outerplanar/PlanarTriangles.lean",
+    "source_sha256": "debe9b8d8557eac59c2f4601ac3d1171360fa00c30f3cd4bb65c55a2bfb4b568",
+    "comparison_module": "AppendixG.PlanarTriangles",
+    "comparison_source": "stacs-appendixG/AppendixG/PlanarTriangles.lean",
+    "comparison_source_sha256": "31724edee7d9e34476f235c05c4912fbe598535db8703db52c11286213952872"
+  },
+  "Outerplanar.Polygon": {
+    "source": "cpap-outerplanar/Outerplanar/Polygon.lean",
+    "source_sha256": "245426a699646021c1ed4db603202f63becfd1d385feae0594a6287c37ef3006",
+    "comparison_module": "AppendixG.Polygon",
+    "comparison_source": "stacs-appendixG/AppendixG/Polygon.lean",
+    "comparison_source_sha256": "66f9efd5dd682dd4d473c44422ea9b15f8cc2ee7ed2ce13f30dbde868b96ee8e"
+  },
+  "Outerplanar.RAM.Block": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Block.lean",
+    "source_sha256": "6a6373e48428cd23b6bb6e00fbb155d51df21deaa6f006e191a9ab0db4d1b3bc",
+    "comparison_module": "AppendixG.RAM.Block",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Block.lean",
+    "comparison_source_sha256": "30a2b2af4094c33fb31ef005f5fcb364b2cfbbd57994a0dedfc7b5f12342a739"
+  },
+  "Outerplanar.RAM.BlockAbs": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BlockAbs.lean",
+    "source_sha256": "74abfe4958077905cf857dfef46a0617827021d2cdbd2e02fe69f675a3cb6024",
+    "comparison_module": "AppendixG.RAM.BlockAbs",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BlockAbs.lean",
+    "comparison_source_sha256": "ea48426ed3de0092ede1053de1a7cdad6cae924771b6756a823c0ab8fc011418"
+  },
+  "Outerplanar.RAM.BlockPoly": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BlockPoly.lean",
+    "source_sha256": "7c78e7c0058a45589cdfa35f287fb917112281c413d16bbc0fe72a915691cd16",
+    "comparison_module": "AppendixG.RAM.BlockPoly",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BlockPoly.lean",
+    "comparison_source_sha256": "13d9f8452ab9022c870884d3d0fabbaae03f8bd4f174fb3d595b98761a34ad7c"
+  },
+  "Outerplanar.RAM.BlockPre": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BlockPre.lean",
+    "source_sha256": "edd00784895628a5d36b6b828253e5b20a641e4eef1184a54c49b287f511824b",
+    "comparison_module": "AppendixG.RAM.BlockPre",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BlockPre.lean",
+    "comparison_source_sha256": "90c9e0e824e070b7b36ecfca72e4ae72347dcc1a26b42e756c422e812e62fb3c"
+  },
+  "Outerplanar.RAM.BlockProg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BlockProg.lean",
+    "source_sha256": "3d091616dad907559cfa1feada8223da986fe49d745c32a9eaac0229b8460d65",
+    "comparison_module": "AppendixG.RAM.BlockProg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BlockProg.lean",
+    "comparison_source_sha256": "4cba179cc3f65aec78f5c6f6566f5cd5d9d7774dbaf7d1ee27aa70db3b118056"
+  },
+  "Outerplanar.RAM.Bounded": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Bounded.lean",
+    "source_sha256": "d919561a191841016e576fd89fb1090ef9ff4914dd884c580f9c5e999b3775e3",
+    "comparison_module": "AppendixG.RAM.Bounded",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Bounded.lean",
+    "comparison_source_sha256": "40f34789f85e47d0ec8b113ac7a79f4d6e266059c2deae2f11eed913f617261f"
+  },
+  "Outerplanar.RAM.BoundedAll": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BoundedAll.lean",
+    "source_sha256": "89e8b8d1e293d00c85de6cc5970a6ea4a6a7165119888d9eb4524830b81c358f",
+    "comparison_module": "AppendixG.RAM.BoundedAll",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BoundedAll.lean",
+    "comparison_source_sha256": "2a5654c65c72db3fe6833e2d73c95732c1a2b7839100ef941773da64638a7237"
+  },
+  "Outerplanar.RAM.BoundedDemo": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BoundedDemo.lean",
+    "source_sha256": "313d644e629e7fe82953d7002c2b25c4159fa9c41579e4826d83463abae61809",
+    "comparison_module": "AppendixG.RAM.BoundedDemo",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BoundedDemo.lean",
+    "comparison_source_sha256": "db208c58938944dae843007e10bcc45804b1fa132429a0fbe90b3d95eb7ae0e1"
+  },
+  "Outerplanar.RAM.BoundedHT": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BoundedHT.lean",
+    "source_sha256": "2cd5c025556b8c5226065bff99157e072485a9220ab1f7bcb762e53700fdde7e",
+    "comparison_module": "AppendixG.RAM.BoundedHT",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BoundedHT.lean",
+    "comparison_source_sha256": "c37c0895e8c6414f56207c790244b452411784d44a6b45b80726d28812118838"
+  },
+  "Outerplanar.RAM.BoundedLib": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/BoundedLib.lean",
+    "source_sha256": "c35015204cc6726ce35a9396610bd1df0fcd334076074e5b27b528712d0a014f",
+    "comparison_module": "AppendixG.RAM.BoundedLib",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/BoundedLib.lean",
+    "comparison_source_sha256": "fb000000faa3692cb82f3880d444d36fa690bb610e7dfd88d7c3501fe42803e8"
+  },
+  "Outerplanar.RAM.EarBlocks": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarBlocks.lean",
+    "source_sha256": "f2a42dde48e352825884d33a3ec947293d169f6d8e8eb2ae284bcf6272187cb0",
+    "comparison_module": "AppendixG.RAM.EarBlocks",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarBlocks.lean",
+    "comparison_source_sha256": "c8b00ecf39de9d8e11c1ccfa8b5b27aa892b7ee0e37085537f9e3c78d5caf3cd"
+  },
+  "Outerplanar.RAM.EarElim": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarElim.lean",
+    "source_sha256": "32cf734b0d1a5412accad372d70c8d4d6e0cc4b1d8912deb6815c50f54c7d561",
+    "comparison_module": "AppendixG.RAM.EarElim",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarElim.lean",
+    "comparison_source_sha256": "d75a5234bda532f81360dc97c0910f06083216aa85645aa56837fd4ff4bb34e1"
+  },
+  "Outerplanar.RAM.EarInit": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarInit.lean",
+    "source_sha256": "932c6905c63fa39a4599bc575ff8e5829d1bb5a5e16c3ef0ab755a6e871dc554",
+    "comparison_module": "AppendixG.RAM.EarInit",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarInit.lean",
+    "comparison_source_sha256": "aaf0f2530edcb51e6fa234d2e5f6c08d58d401595aa105690b2fbb1370aa62dd"
+  },
+  "Outerplanar.RAM.EarLL": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarLL.lean",
+    "source_sha256": "3648bd165fc68926067a3234bc673679f83a5bf7f28499aba02028169ce82de5",
+    "comparison_module": "AppendixG.RAM.EarLL",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarLL.lean",
+    "comparison_source_sha256": "0ea073d16b91c2a36a5f2c64bc981f9a0636db21d7c23ea0528e6802301b4c62"
+  },
+  "Outerplanar.RAM.EarLoop": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarLoop.lean",
+    "source_sha256": "a87773bcdac3c6407f2f8fd0dcba8e210366438b50aadc47aadb0ebe28a48c3e",
+    "comparison_module": "AppendixG.RAM.EarLoop",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarLoop.lean",
+    "comparison_source_sha256": "5786df630345c11d09b02d8af43966f7bfbb78d2e762925b177fa017e121ebb9"
+  },
+  "Outerplanar.RAM.EarMain": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarMain.lean",
+    "source_sha256": "e57448f22e65fa829729b291dcd94ed2f719f5da6ad7cb4e4176062d9e636d48",
+    "comparison_module": "AppendixG.RAM.EarMain",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarMain.lean",
+    "comparison_source_sha256": "d6e6fbbf3b195d3e20c9dfb69a06f61342a520eae3ca38f9d231b86e7b97efc0"
+  },
+  "Outerplanar.RAM.EarPeelR": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarPeelR.lean",
+    "source_sha256": "19b0d10d75f0921a900a32d44c835b04149a72f7466aeb427f14f0d6750b7cf7",
+    "comparison_module": "AppendixG.RAM.EarPeelR",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarPeelR.lean",
+    "comparison_source_sha256": "404316d89d30a2ee12aa32ae826970fff1caeed09f940131f0b1811db188301d"
+  },
+  "Outerplanar.RAM.EarProg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarProg.lean",
+    "source_sha256": "ef4640f93d891e45266cc4e734a784169f9dd7756df5dd7e685d17f6f2f55535",
+    "comparison_module": "AppendixG.RAM.EarProg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarProg.lean",
+    "comparison_source_sha256": "5f3232999fa3e190c4bcf728a71de166a073260aa09fa561d8f8de9a585d0d2a"
+  },
+  "Outerplanar.RAM.EarRecon": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarRecon.lean",
+    "source_sha256": "e2faa45fd3865046cea42bbe7a191902636cda7a3b420160622dcab06ff438b5",
+    "comparison_module": "AppendixG.RAM.EarRecon",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarRecon.lean",
+    "comparison_source_sha256": "088326914a986819a71457e19a6e8ac33a0946e6a59fd6a61c5bc6f86f91c732"
+  },
+  "Outerplanar.RAM.EarScan": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarScan.lean",
+    "source_sha256": "1aa4e835b63af0eed127adde77999aaad51b7b48d461187126897c2bda0ec5c1",
+    "comparison_module": "AppendixG.RAM.EarScan",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarScan.lean",
+    "comparison_source_sha256": "a5b3279ab12d73fef6a614e63c26b646db813830ed7587dab0ef1bca70dea0ea"
+  },
+  "Outerplanar.RAM.EarSpecR": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/EarSpecR.lean",
+    "source_sha256": "4a129d50b85d4a63ff5b717bc5043142828791e44df526b19f2464bac7360590",
+    "comparison_module": "AppendixG.RAM.EarSpecR",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/EarSpecR.lean",
+    "comparison_source_sha256": "259ad5d9685763d0bd030ae1fbff09e535a4573ad9caa26583d65c0b4afdde2e"
+  },
+  "Outerplanar.RAM.Frame": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Frame.lean",
+    "source_sha256": "2c40fc958458cb1258de429f868b00c9a8f1b5599aa8e8b558c61bc66f147ac1",
+    "comparison_module": "AppendixG.RAM.Frame",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Frame.lean",
+    "comparison_source_sha256": "e267d25d72a5107863d7b43d59d6a038b57dd7565fbafc01d7442a62a924a5f3"
+  },
+  "Outerplanar.RAM.HT": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/HT.lean",
+    "source_sha256": "da0d10fd840753f2966685f181d2cac519c2d1cdb0fefa67d91a3006ae9aed14",
+    "comparison_module": "AppendixG.RAM.HT",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/HT.lean",
+    "comparison_source_sha256": "f5be282e113f0f85fa8948060bf3833b4d3de4fc6fa813a6360cd5b6227e69ed"
+  },
+  "Outerplanar.RAM.Iface": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Iface.lean",
+    "source_sha256": "67e28db28a999d8d1214759ee09b74d9c7ecb19719ae4c721f1015c93206e1be",
+    "comparison_module": "AppendixG.RAM.Iface",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Iface.lean",
+    "comparison_source_sha256": "f843ca1f19b83a8245f527d87557d6064fe1dd2597056c8ca59b35294d555bbc"
+  },
+  "Outerplanar.RAM.Layout": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Layout.lean",
+    "source_sha256": "dcc74464244205fa5b9df75116e971fdf76c84465636c0f617a929f890be1582",
+    "comparison_module": "AppendixG.RAM.Layout",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Layout.lean",
+    "comparison_source_sha256": "b4da4b0dc0ab4b0d4780ad5ca2996caa728c3ac567134ee7844ac0c32d6cc210"
+  },
+  "Outerplanar.RAM.Lib": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Lib.lean",
+    "source_sha256": "2d9cf2f7570edd17567abbf27e8d44d0325b485496e3046aafb1276bd99e76ae",
+    "comparison_module": "AppendixG.RAM.Lib",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Lib.lean",
+    "comparison_source_sha256": "7a563e09f6df1f57603ffde4f1467726b4e95f80281e0e51e71ff38e48d87c17"
+  },
+  "Outerplanar.RAM.Main": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Main.lean",
+    "source_sha256": "0e7ff8a6368c3d118360569144acc67a80f2fbc4f79e0b672bdb29ceecf0d80a",
+    "comparison_module": "AppendixG.RAM.Main",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Main.lean",
+    "comparison_source_sha256": "c2b4e673bb5004599cdf32c003c7ce0744e93266e315546a13a7e223dae480cb"
+  },
+  "Outerplanar.RAM.MainGood": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/MainGood.lean",
+    "source_sha256": "796bec1632258ddc7ebd4e8ac9567b4b743e3fb34643fee74d6f262d13cb1bcf",
+    "comparison_module": "AppendixG.RAM.MainGood",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/MainGood.lean",
+    "comparison_source_sha256": "7c80f613cbed380e0d62c56bdb1dec9df91a016f06c83ac53a4ea6c289caa3f3"
+  },
+  "Outerplanar.RAM.MainLoop": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/MainLoop.lean",
+    "source_sha256": "868bffca236fef2c92adb9a99282d9e80cdfdf5a62dc07692e86821808c8279e",
+    "comparison_module": "AppendixG.RAM.MainLoop",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/MainLoop.lean",
+    "comparison_source_sha256": "162755f09648b14c2fdc60b71756e278a14a108760b4314b69e6ddcd7adb35ea"
+  },
+  "Outerplanar.RAM.Model": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Model.lean",
+    "source_sha256": "cb9782ab00ff75159f7ea3e941e3ff038bfb3ac885255469955f02c98039700c",
+    "comparison_module": "AppendixG.RAM.Model",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Model.lean",
+    "comparison_source_sha256": "09c75810733c7bb4e7828ed0da7b3bfda75bb164dd59a716d3fcebe87d15eda2"
+  },
+  "Outerplanar.RAM.PairIds": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PairIds.lean",
+    "source_sha256": "bae8c66f91e35f49b7330242ddb3a8dd895c8e2f4878e400f9c769ce51c50ab0",
+    "comparison_module": "AppendixG.RAM.PairIds",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PairIds.lean",
+    "comparison_source_sha256": "a2ba7dec7fdb116ef19f80e479b7db1b83de87ff1af2766c95effe27c285bb88"
+  },
+  "Outerplanar.RAM.PairIdsRank": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PairIdsRank.lean",
+    "source_sha256": "9f4da51aafccaa3c452cb54e7f062668e3fe2b8073f38428211bf4baf8870722",
+    "comparison_module": "AppendixG.RAM.PairIdsRank",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PairIdsRank.lean",
+    "comparison_source_sha256": "e2632643a438ff132039dfd336ee8f8f504f32d8d047abc857487dcbd3756963"
+  },
+  "Outerplanar.RAM.PairIdsSorted": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PairIdsSorted.lean",
+    "source_sha256": "812c2fba1d5dc18665c443e929136d4933ce7be1f566789cf4a0a6750bd42e3a",
+    "comparison_module": "AppendixG.RAM.PairIdsSorted",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PairIdsSorted.lean",
+    "comparison_source_sha256": "d24a94d752055ff11d801c802c944b00932971768947d355819f4331e4661717"
+  },
+  "Outerplanar.RAM.PairIdsSpec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PairIdsSpec.lean",
+    "source_sha256": "a47cf25f34ba2be49ed6990e3180a73419058a27969036b5a5ae4f0aa6b838d9",
+    "comparison_module": "AppendixG.RAM.PairIdsSpec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PairIdsSpec.lean",
+    "comparison_source_sha256": "a576a66a9be76939bc42dc69b5c077242e3ac5c7df3b6580616285ac551660f5"
+  },
+  "Outerplanar.RAM.Poly1": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1.lean",
+    "source_sha256": "d5a78cba4eb7e23e7c7b4fff2948f27f4d82ca14449fd3673070ca20d5d4761d",
+    "comparison_module": "AppendixG.RAM.Poly1",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1.lean",
+    "comparison_source_sha256": "42210501ade9593f151986552b961ab854dc73d904894018d34ec7f08299ee77"
+  },
+  "Outerplanar.RAM.Poly1Csr": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Csr.lean",
+    "source_sha256": "bc4b574ab481ca8e3d89522ba4a6d50ba150881717a1588f18a67091be7f1b5c",
+    "comparison_module": "AppendixG.RAM.Poly1Csr",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Csr.lean",
+    "comparison_source_sha256": "7b50e68c5283325c1ff3e15365b094ddc049ad5e21fe930c0adc1fcbac962cdd"
+  },
+  "Outerplanar.RAM.Poly1Enum": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Enum.lean",
+    "source_sha256": "d9d4cb6cfcdd1f797fdbe7ab5eb2d57b8bf6f8094b494a38728b7a53d0033338",
+    "comparison_module": "AppendixG.RAM.Poly1Enum",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Enum.lean",
+    "comparison_source_sha256": "8250d40dec907d3053ece7af95175c18d81f12f550c5f182f1a213300072e38a"
+  },
+  "Outerplanar.RAM.Poly1Face": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Face.lean",
+    "source_sha256": "c7c3f4bea297338452afa150fced2cbe36697d60e54326b33fb36d3806d752fd",
+    "comparison_module": "AppendixG.RAM.Poly1Face",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Face.lean",
+    "comparison_source_sha256": "a62a9f96e2d6bf1b6810dd88b71fd8bddb3aa1b13183f7576a4d0f57965768c3"
+  },
+  "Outerplanar.RAM.Poly1Grow": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Grow.lean",
+    "source_sha256": "87886a541d85a7fa2dce79440488373681df90ee9c7efecbfa9bb2f980989743",
+    "comparison_module": "AppendixG.RAM.Poly1Grow",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Grow.lean",
+    "comparison_source_sha256": "036ae3b88b982dde83c734e083aa9d54e06dba14660720dc8e85d662b848c067"
+  },
+  "Outerplanar.RAM.Poly1Lib": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Lib.lean",
+    "source_sha256": "eb2f94bbcc8ccd9689a8ebe94d1cfabbc5512581a020d077d73cb1dd9c08611c",
+    "comparison_module": "AppendixG.RAM.Poly1Lib",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Lib.lean",
+    "comparison_source_sha256": "6b3399be0a6cdc6e90c6689965f7ce9c6af000b90a3bfd57a76827ab7f1a584e"
+  },
+  "Outerplanar.RAM.Poly1Order": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Order.lean",
+    "source_sha256": "25cfefffad88b2d3a58d2d60a55d6b69311a0d801986b12e78dd67ca30388845",
+    "comparison_module": "AppendixG.RAM.Poly1Order",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Order.lean",
+    "comparison_source_sha256": "f4120402f5b008ba509e9ffaea031d26fc8359a06cb469482cfc437ba88a5c18"
+  },
+  "Outerplanar.RAM.Poly1Slot": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Slot.lean",
+    "source_sha256": "1aba2ecaabcd3dbc75fd8a6b1001cc8c04330503bdc9264a1cf8fddf502ac38d",
+    "comparison_module": "AppendixG.RAM.Poly1Slot",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Slot.lean",
+    "comparison_source_sha256": "9370c58fdafb1173a707d7d7742f512d04435757dd106eedda90db600a6e3d14"
+  },
+  "Outerplanar.RAM.Poly1Sort": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Sort.lean",
+    "source_sha256": "edc025a83ba5fe36a7fe5bf68d15bd1b27a6bd708d1a0389093adcca88174d0c",
+    "comparison_module": "AppendixG.RAM.Poly1Sort",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Sort.lean",
+    "comparison_source_sha256": "31576b292e420ad47e4b3021584632d6cd3b5e309ae226a18810fb6acc68abb7"
+  },
+  "Outerplanar.RAM.Poly1Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly1Spec.lean",
+    "source_sha256": "7f92758009f612fe1aac4a4e7a53d6ff9e02640359fa2d27b68346f96c543371",
+    "comparison_module": "AppendixG.RAM.Poly1Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly1Spec.lean",
+    "comparison_source_sha256": "dd3296812ef21cbbe5e37aad732ccca07f74eb558c078dcda9de8c5bb4bc7e06"
+  },
+  "Outerplanar.RAM.Poly2": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2.lean",
+    "source_sha256": "019403ce78e63f992df2b02c4e8680040578e89b3a1cea9c9de09fc6487c8a05",
+    "comparison_module": "AppendixG.RAM.Poly2",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2.lean",
+    "comparison_source_sha256": "0259bc2b037cfaafb28dc303d8cfce632f65e61c5c15734cfc76236cfd55c3c0"
+  },
+  "Outerplanar.RAM.Poly2Bnd": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Bnd.lean",
+    "source_sha256": "ea8b9579574f817b7f347f928a33c8a0d429fb7850684a0cb7f1494b43eecb00",
+    "comparison_module": "AppendixG.RAM.Poly2Bnd",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Bnd.lean",
+    "comparison_source_sha256": "fff0cc2966bc28a7e5c7a3d8a3178e331a332b83876a1d34f16e37e09c72665a"
+  },
+  "Outerplanar.RAM.Poly2Ext": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Ext.lean",
+    "source_sha256": "bbff64f1ae6ba4a48e6550aea783cdd4ec8729013822e9a2a96927b83a6ee31f",
+    "comparison_module": "AppendixG.RAM.Poly2Ext",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Ext.lean",
+    "comparison_source_sha256": "6dbaafc9de376b642ce5c52775484c1f3d18f01f4e6b0a210bd8717b39a96ae2"
+  },
+  "Outerplanar.RAM.Poly2Grp": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Grp.lean",
+    "source_sha256": "522378fdba6210c57b1672dc1150234b9a8adf34ebec433b7ef28aa4450254a0",
+    "comparison_module": "AppendixG.RAM.Poly2Grp",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Grp.lean",
+    "comparison_source_sha256": "89561f797ec272c78d40f7f3c557585a77e3a2bb1d3bc0ce85b7d2e01ff81607"
+  },
+  "Outerplanar.RAM.Poly2Lib": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Lib.lean",
+    "source_sha256": "0734d054e438bfdd839c96f77364506461df0274bcac6b0ea0b88df7023d6815",
+    "comparison_module": "AppendixG.RAM.Poly2Lib",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Lib.lean",
+    "comparison_source_sha256": "2007ae3a0e790df0ba601dfc431b734fda298e141f48a22d2977e673c7da60f1"
+  },
+  "Outerplanar.RAM.Poly2Pool": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Pool.lean",
+    "source_sha256": "ce92812357c41c7fd49deef0837f445572130c0fb80a6138789f9b2f958b36d2",
+    "comparison_module": "AppendixG.RAM.Poly2Pool",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Pool.lean",
+    "comparison_source_sha256": "a4b4b80c27871e1d5bd947ada35f7ea834e581101dccffb667a0f954157a7f55"
+  },
+  "Outerplanar.RAM.Poly2Reg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Reg.lean",
+    "source_sha256": "f5bfe269884c76c3bcdd63b2970d3e994e938211e3bc2d28f37bad7ad46d8e75",
+    "comparison_module": "AppendixG.RAM.Poly2Reg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Reg.lean",
+    "comparison_source_sha256": "eef38021bd3554c03f2f1b5d5cd3a89f006211c09fbdfa699ec7e8dd4eac54e2"
+  },
+  "Outerplanar.RAM.Poly2Scan": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Scan.lean",
+    "source_sha256": "f5c99f7c85f0f84d89a54beefde53a9e9f3b5720ff766b5c815d16fbe2a2e4dc",
+    "comparison_module": "AppendixG.RAM.Poly2Scan",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Scan.lean",
+    "comparison_source_sha256": "90b08b600ec55ffeea1ddfd160e7e4d00bc0cbea974f878142c72ad091486424"
+  },
+  "Outerplanar.RAM.Poly2Seg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Seg.lean",
+    "source_sha256": "82f0e87b35a70408026926d9758d2e0159229793b40ae9dced376ecfb6749507",
+    "comparison_module": "AppendixG.RAM.Poly2Seg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Seg.lean",
+    "comparison_source_sha256": "146a8750bd3320e75be819344ffacbfd1d9872bc1022fd869691d9710cdf5df7"
+  },
+  "Outerplanar.RAM.Poly2Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2Spec.lean",
+    "source_sha256": "965ad86a3cff1fb040cce95fd77d81ea2593172a6dd2fb7b32e757d2e9933b06",
+    "comparison_module": "AppendixG.RAM.Poly2Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2Spec.lean",
+    "comparison_source_sha256": "b0ce3e72bd6f67476ca618a39d2349d36aedb5eb2c53862d2676ea42d51e9846"
+  },
+  "Outerplanar.RAM.Poly2StB": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly2StB.lean",
+    "source_sha256": "6ba19a829ceafa4af598397a5193cbd6fce1aa219a821c113ad3cbf604d78f69",
+    "comparison_module": "AppendixG.RAM.Poly2StB",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly2StB.lean",
+    "comparison_source_sha256": "b3699ab2398860e31b3f48436b7876643fbca00588dbe8bd7052df6059553763"
+  },
+  "Outerplanar.RAM.Poly3": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3.lean",
+    "source_sha256": "88ed7e70e161b1a0907641a03decf5018d284739d77592340a2f9031c8714a75",
+    "comparison_module": "AppendixG.RAM.Poly3",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3.lean",
+    "comparison_source_sha256": "6c0a8c1e381214fda9ec723e19e4a27a38bc83e54a8484b883c1f5550264c2a6"
+  },
+  "Outerplanar.RAM.Poly3Alpha": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Alpha.lean",
+    "source_sha256": "8f6320397b3b23e0e73e59bab5f8013c8fbf3630cf9d7b4f2dab09a8b1909c72",
+    "comparison_module": "AppendixG.RAM.Poly3Alpha",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Alpha.lean",
+    "comparison_source_sha256": "624c7a352a63d6f8eea19c7fc0eb4a932422cd36f98239891ba8c9e9f08e8842"
+  },
+  "Outerplanar.RAM.Poly3Child": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Child.lean",
+    "source_sha256": "c458f406c00f0a50217201910fd54b80fcec1cf7c6160f8d0a1f1b5908574e21",
+    "comparison_module": "AppendixG.RAM.Poly3Child",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Child.lean",
+    "comparison_source_sha256": "9c6607374772902b4d1d2ecb35bca0d3e81f17312f38c69873ad871ef681d018"
+  },
+  "Outerplanar.RAM.Poly3Main": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Main.lean",
+    "source_sha256": "c3876339bc3ede6304824c46896afc1a1ca0f5422c354e716d17aa0cbe6c8e06",
+    "comparison_module": "AppendixG.RAM.Poly3Main",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Main.lean",
+    "comparison_source_sha256": "dd2ef47bfde4a377bc3f37eda5ca3e5c702ca89b35b5ba16e605eb42a3c59d26"
+  },
+  "Outerplanar.RAM.Poly3Odo": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Odo.lean",
+    "source_sha256": "f50bcc47b0f0cb97aece001e73eec8c3175bfff2b20576d4c9a3d81194a0c07a",
+    "comparison_module": "AppendixG.RAM.Poly3Odo",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Odo.lean",
+    "comparison_source_sha256": "8841304e2fe60487db17d04660d16ffad7cd7b92cfd7ba21b25a617ad51587f8"
+  },
+  "Outerplanar.RAM.Poly3Pre": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Pre.lean",
+    "source_sha256": "7f82fa339e78302dac503e057e05605c9c247e31bf47eaf438091f46236b44c6",
+    "comparison_module": "AppendixG.RAM.Poly3Pre",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Pre.lean",
+    "comparison_source_sha256": "cea8b01d2c7688fac9b1c663df9dac6bb281df9dea816101199d7a131cc56b10"
+  },
+  "Outerplanar.RAM.Poly3Prog": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Prog.lean",
+    "source_sha256": "9e5be320cdf8347f8e6e5eca92244df8e96d0ad96c75f9a16afe575e18f0747b",
+    "comparison_module": "AppendixG.RAM.Poly3Prog",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Prog.lean",
+    "comparison_source_sha256": "dae1ad4e5965d7f9204cccc5944b6587462bdcdb5346ac4a4a3e9ea09a798a14"
+  },
+  "Outerplanar.RAM.Poly3Seg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Seg.lean",
+    "source_sha256": "a16a5e4ddb0f2df1a0f2b08a7d4cbb27affe365d0f596d90d3f20adcefd0f031",
+    "comparison_module": "AppendixG.RAM.Poly3Seg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Seg.lean",
+    "comparison_source_sha256": "03424aca099ee57b6873af508d1270120513c388c7f144f910f3a6ba52498e56"
+  },
+  "Outerplanar.RAM.Poly3Sel": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Sel.lean",
+    "source_sha256": "9f77d1876a56d3ec4e0bf5618071d4cb6777deed4f82352b812280f076d50fb4",
+    "comparison_module": "AppendixG.RAM.Poly3Sel",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Sel.lean",
+    "comparison_source_sha256": "8fd0a24cc5b3a7425e333f92078f321b0d9778e47eabc5eb098e48b55755908b"
+  },
+  "Outerplanar.RAM.Poly3Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Spec.lean",
+    "source_sha256": "f3b3a2279e169bd3ef824517d423b7772b4e17a0e43392f6021bbc7ab06c64cd",
+    "comparison_module": "AppendixG.RAM.Poly3Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Spec.lean",
+    "comparison_source_sha256": "32983a7443104f7aa463678c876d6f11c3b87457fae7169dc698eacf38a21d22"
+  },
+  "Outerplanar.RAM.Poly3Total": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly3Total.lean",
+    "source_sha256": "8c17e8901f937663039fc03321f93b05a9238ebd4e7eb9d9e2e5c2bc68d09a8d",
+    "comparison_module": "AppendixG.RAM.Poly3Total",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly3Total.lean",
+    "comparison_source_sha256": "da3988ef6d863d6ea5711c045cec727b97baf88669ab52530a79832062f5497b"
+  },
+  "Outerplanar.RAM.Poly4": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly4.lean",
+    "source_sha256": "f36cbef7b8a2a49aff6dbb937cec21a9fe6106c4e27ad5ceee43bf122f7b4399",
+    "comparison_module": "AppendixG.RAM.Poly4",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly4.lean",
+    "comparison_source_sha256": "8949d27f2b9f8c7b1f7f3a39b6bc0e9e18b8502cb02bddcd7b8e3ef91099d8b3"
+  },
+  "Outerplanar.RAM.Poly4Bt": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly4Bt.lean",
+    "source_sha256": "cdfd1ebda4274353ba2f71dafd279f4b3ab2c4390c0de2651cea67549b22ba05",
+    "comparison_module": "AppendixG.RAM.Poly4Bt",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly4Bt.lean",
+    "comparison_source_sha256": "434f58c68b2d2f290be09e6ef97034f57c03e7cac019ad4071ac5c7f7dfd5b60"
+  },
+  "Outerplanar.RAM.Poly4Seg": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly4Seg.lean",
+    "source_sha256": "bd2d29fe415b8e0047de7792db745ccbed357c91c2d7eff5f35e83387e9beb2d",
+    "comparison_module": "AppendixG.RAM.Poly4Seg",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly4Seg.lean",
+    "comparison_source_sha256": "0f8dbcb4b0200e7d4cda59c2b72af656d556f95009f594c8cb0b7bd7d78bd945"
+  },
+  "Outerplanar.RAM.Poly4Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly4Spec.lean",
+    "source_sha256": "e401c440b8658616814dff35ac37c7132203115408dfcdb474e208f28a38c37c",
+    "comparison_module": "AppendixG.RAM.Poly4Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly4Spec.lean",
+    "comparison_source_sha256": "dd91eec2d529b2ec9d173abebf066d8112d8d18f82dd3a0b413af5f031bd218a"
+  },
+  "Outerplanar.RAM.Poly4Sub": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Poly4Sub.lean",
+    "source_sha256": "61863c39f8c39a379034732f97490eb1a6eeff8b08f2e41a571e5920fda6cd9d",
+    "comparison_module": "AppendixG.RAM.Poly4Sub",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Poly4Sub.lean",
+    "comparison_source_sha256": "d04ae783e2f8bbb4bc1ce1186d3fcecc7537101fe445393eea404299c33cac88"
+  },
+  "Outerplanar.RAM.PolyIface": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PolyIface.lean",
+    "source_sha256": "d767fc107a13c89260bf34788d61037618eadfd85b83f4f6b7f2f2fdef624335",
+    "comparison_module": "AppendixG.RAM.PolyIface",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PolyIface.lean",
+    "comparison_source_sha256": "9db76abd0a7ddf4c6f301e62b5556aed469b98791cd1ffd6c879a70d4f346bb7"
+  },
+  "Outerplanar.RAM.PolySolver": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/PolySolver.lean",
+    "source_sha256": "eef03043040aa9266683e1597d771413a0b421433be2cad0d748d29ba9939eda",
+    "comparison_module": "AppendixG.RAM.PolySolver",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/PolySolver.lean",
+    "comparison_source_sha256": "92ae3bb298fedc9c30e286ae7c560ffa36f5d2c3f656ce1b89fb8dd84c69dfa6"
+  },
+  "Outerplanar.RAM.R0": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R0.lean",
+    "source_sha256": "b51debbc7174e7616b75066d23ff6eeacf42b23e90e8758f661edcae088b1d43",
+    "comparison_module": "AppendixG.RAM.R0",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R0.lean",
+    "comparison_source_sha256": "3f27e662c4cf579d5ff95ddd842b07df5d413b89d62f567ce36ed94829cd6915"
+  },
+  "Outerplanar.RAM.R0Edges": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R0Edges.lean",
+    "source_sha256": "739ea445deb7b14e2841164874f2d53c33068afe6fd903fa2862f2a3fa51103e",
+    "comparison_module": "AppendixG.RAM.R0Edges",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R0Edges.lean",
+    "comparison_source_sha256": "27e8e6212a0e30276f4564b89c2bd0c77d46beebe934b25d50d46838d5560849"
+  },
+  "Outerplanar.RAM.R0Prog": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R0Prog.lean",
+    "source_sha256": "0d9b8e43148563caed7b6f6754947d5c68d38dad8a5cb5da9a48987df5a8a02d",
+    "comparison_module": "AppendixG.RAM.R0Prog",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R0Prog.lean",
+    "comparison_source_sha256": "d41a290ac44babd3f5391ccc27066876c59b2704acf08f4e2386ee10815425c9"
+  },
+  "Outerplanar.RAM.R0Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R0Spec.lean",
+    "source_sha256": "c2c7d4c3b17bfeb64349473edebb8f43a0992fdb4eb25485eb4f9adda710a888",
+    "comparison_module": "AppendixG.RAM.R0Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R0Spec.lean",
+    "comparison_source_sha256": "6bdbcd395113ace70a431693fc8a2048bb717b3d7bbc85e242faeb377983daac"
+  },
+  "Outerplanar.RAM.R1": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R1.lean",
+    "source_sha256": "8a0581025cec80cc7de2e561313d67d0c00ca4349e02f26757960dd46cbb0c83",
+    "comparison_module": "AppendixG.RAM.R1",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R1.lean",
+    "comparison_source_sha256": "3d30aab51e6db83ba735a01a9f58682279b3873683e4bd31d2ab83a5a8006d8d"
+  },
+  "Outerplanar.RAM.R1Dfs": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R1Dfs.lean",
+    "source_sha256": "10f369de310e4b18d437a15ea045b68dc648c4345eb6a5f667fa5326c76dc898",
+    "comparison_module": "AppendixG.RAM.R1Dfs",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R1Dfs.lean",
+    "comparison_source_sha256": "ee3761e2ce1221607a00081908ac840cdf4ae9f74daa589bbf1a887f81ea3cd6"
+  },
+  "Outerplanar.RAM.R1Prog": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R1Prog.lean",
+    "source_sha256": "78dc67e4f39f68a12c7adf7b3137a38f75799289a88ebb433d7f410f615c8007",
+    "comparison_module": "AppendixG.RAM.R1Prog",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R1Prog.lean",
+    "comparison_source_sha256": "7f9e30eddf1ae8be35f33e8f4adf48b284ab87ac686b5dbcb38bfe5e1d0cbd10"
+  },
+  "Outerplanar.RAM.R1Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R1Spec.lean",
+    "source_sha256": "38defb82638daf6fba056c6e704104de28d8049e2e914fb99786424730dac659",
+    "comparison_module": "AppendixG.RAM.R1Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R1Spec.lean",
+    "comparison_source_sha256": "62bab947cd7c28a0b18465b80fc7cfa436d030dd67e8bf925305a0d3001208d3"
+  },
+  "Outerplanar.RAM.R2": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R2.lean",
+    "source_sha256": "501d3e267a77eed04e8d33a200270068be029ca9a65610a2da369553291272ae",
+    "comparison_module": "AppendixG.RAM.R2",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R2.lean",
+    "comparison_source_sha256": "fda80b902668d6bf6f46677f335ec3b46c2938cf8fe609982f1e4a199c9e0177"
+  },
+  "Outerplanar.RAM.R2Prog": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R2Prog.lean",
+    "source_sha256": "efe9d72036c3c1314468a93688e480a0d50db928ef87c5064095f65a17092562",
+    "comparison_module": "AppendixG.RAM.R2Prog",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R2Prog.lean",
+    "comparison_source_sha256": "97d488187f49f04b02aad390330c5c8bf303f9491534acce2931a4da67f33c04"
+  },
+  "Outerplanar.RAM.R2Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R2Spec.lean",
+    "source_sha256": "440537560ea20cf619f995d70bd2498ea1dc69d6b954ef817ee79af58e715a78",
+    "comparison_module": "AppendixG.RAM.R2Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R2Spec.lean",
+    "comparison_source_sha256": "42050e5caa47f7712fc614743bdf606135afc6a1af7b72b7c7df118a464669b1"
+  },
+  "Outerplanar.RAM.R3": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R3.lean",
+    "source_sha256": "d082fc2b2f8a233c9bdbef8f28a2d4fdebcf35a030b03c814a5e08065ea5b139",
+    "comparison_module": "AppendixG.RAM.R3",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R3.lean",
+    "comparison_source_sha256": "95846cff7d3d8750c58de15810d97cd6af68ef4916422eb2da3031171e0d5ec3"
+  },
+  "Outerplanar.RAM.R3Prog": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R3Prog.lean",
+    "source_sha256": "579cf21ac9f0ff91a9a0e5297c797deae1286aada2d51517cbb74005c17b8520",
+    "comparison_module": "AppendixG.RAM.R3Prog",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R3Prog.lean",
+    "comparison_source_sha256": "0503b4ea774c3bc6a662ba0e165dbd31168d67a202abdae71641c73a4d915d26"
+  },
+  "Outerplanar.RAM.R3Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/R3Spec.lean",
+    "source_sha256": "201c2156c5ec847f7138735c22422d551c62d1dbdc3a410417f1b5c50df3ebac",
+    "comparison_module": "AppendixG.RAM.R3Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/R3Spec.lean",
+    "comparison_source_sha256": "21f61ed9449b4c82778f7439345c8df4bff914ca2d86a26b977f01d063c1a282"
+  },
+  "Outerplanar.RAM.SortSpec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/SortSpec.lean",
+    "source_sha256": "b298b6a9e9462db0070dbe7054cad340c0e083b14961b0f23859642b4246304e",
+    "comparison_module": "AppendixG.RAM.SortSpec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/SortSpec.lean",
+    "comparison_source_sha256": "2e6bf393ccbc8288bd29bda56c4182899a1a1cff0e7ee7b36b7b8c57dd741631"
+  },
+  "Outerplanar.RAM.Spec": {
+    "source": "cpap-outerplanar/Outerplanar/RAM/Spec.lean",
+    "source_sha256": "a82d99a2c4cb76370dacc06cc0f08fe268ab14148431bb5d1c147d1183a17308",
+    "comparison_module": "AppendixG.RAM.Spec",
+    "comparison_source": "stacs-appendixG/AppendixG/RAM/Spec.lean",
+    "comparison_source_sha256": "93989a3bde998416774e4a7730e103881ac37bb99dc074436e1ba30f71d5624d"
+  },
+  "Outerplanar.Reach": {
+    "source": "cpap-outerplanar/Outerplanar/Reach.lean",
+    "source_sha256": "1f059528024e944162792768e0fbf42e66b7fd5626cbec622f3c5181e71d1287",
+    "comparison_module": "AppendixG.Reach",
+    "comparison_source": "stacs-appendixG/AppendixG/Reach.lean",
+    "comparison_source_sha256": "acc40599db4482e845e914896d63491f9c337c24adddf92217d1e68db39ca2ea"
+  },
+  "Outerplanar.RegionPaths": {
+    "source": "cpap-outerplanar/Outerplanar/RegionPaths.lean",
+    "source_sha256": "c4a26e5c7b96b89428e45a13b74e9d2a34fa96cdd81c5d0112a6b4e8b934542b",
+    "comparison_module": "AppendixG.RegionPaths",
+    "comparison_source": "stacs-appendixG/AppendixG/RegionPaths.lean",
+    "comparison_source_sha256": "e8d8df3b0d457e5b952ba173aca6f2bdfcee80f248fc15ab54ad29100c168be3"
+  },
+  "Outerplanar.RootLeaf": {
+    "source": "cpap-outerplanar/Outerplanar/RootLeaf.lean",
+    "source_sha256": "6da90d38c093e750f62e37ed170501aa43bf07c72cf659a6c44ca918d3a8946d",
+    "comparison_module": "AppendixG.RootLeaf",
+    "comparison_source": "stacs-appendixG/AppendixG/RootLeaf.lean",
+    "comparison_source_sha256": "17c0e25913966349454f3287b93b031ef5df4cfca41f8a3d4e861f1354dbdc1c"
+  },
+  "Outerplanar.Segments": {
+    "source": "cpap-outerplanar/Outerplanar/Segments.lean",
+    "source_sha256": "26892c95d2590f264c835db0de985f7eb9cf55381e61f5a3b6f655d864e022d9",
+    "comparison_module": "AppendixG.Segments",
+    "comparison_source": "stacs-appendixG/AppendixG/Segments.lean",
+    "comparison_source_sha256": "c491f4963ec54d458c4787756a350341cad6e9532e94f312aa517b7d5d7d7f81"
+  },
+  "Outerplanar.Transfer": {
+    "source": "cpap-outerplanar/Outerplanar/Transfer.lean",
+    "source_sha256": "490099172659a6f00d598878e8b7c457df2631a03f024377697df60177f9d5c9",
+    "comparison_module": "AppendixG.Transfer",
+    "comparison_source": "stacs-appendixG/AppendixG/Transfer.lean",
+    "comparison_source_sha256": "485ae86b182c87ad338a94427cebceecfcdb2885a1ef36c198c0f1a800e41c8f"
+  },
+  "Outerplanar.TreeDP": {
+    "source": "cpap-outerplanar/Outerplanar/TreeDP.lean",
+    "source_sha256": "af0494e1e2d945a54375ee1f9dc01d94e0b303a73747dea7152b5c5787d9cad1",
+    "comparison_module": "AppendixG.TreeDP",
+    "comparison_source": "stacs-appendixG/AppendixG/TreeDP.lean",
+    "comparison_source_sha256": "af0494e1e2d945a54375ee1f9dc01d94e0b303a73747dea7152b5c5787d9cad1"
+  },
+  "Outerplanar.TriangleContractionBounds": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleContractionBounds.lean",
+    "source_sha256": "7a8437856124869eb317d4e360399ea72fe12ac19bd5dcdfd1467063d9460ff1",
+    "comparison_module": "AppendixG.TriangleContractionBounds",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleContractionBounds.lean",
+    "comparison_source_sha256": "ce13738e7bb666795012ef7a0127564fccba0026d910180f84846fe9bc2bbb7c"
+  },
+  "Outerplanar.TriangleEdgeCount": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleEdgeCount.lean",
+    "source_sha256": "6a6bd8d8b1256c48d32ea226f20c7ac6f36418b138d58b46d5f77ff51d698c9c",
+    "comparison_module": "AppendixG.TriangleEdgeCount",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleEdgeCount.lean",
+    "comparison_source_sha256": "dd2d57d7a764c188b6a14cb79b646a6ccdb5ac2b35998160712612999718addd"
+  },
+  "Outerplanar.TriangleFamily": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleFamily.lean",
+    "source_sha256": "3527367de7b3387c8aab4125a15f2bbe60e4f0c7c4f8401a7d3e8aeaa8998cfd",
+    "comparison_module": "AppendixG.TriangleFamily",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleFamily.lean",
+    "comparison_source_sha256": "6332845b46c99b415a5ec60500fbe7640d2074c8c2f682f6507f1ca222051d9f"
+  },
+  "Outerplanar.TriangleImageCard": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleImageCard.lean",
+    "source_sha256": "bc65c44d39c34415a30a5be068f8c3ac4f5c861935e8b0174a29377686310182",
+    "comparison_module": "AppendixG.TriangleImageCard",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleImageCard.lean",
+    "comparison_source_sha256": "bc65c44d39c34415a30a5be068f8c3ac4f5c861935e8b0174a29377686310182"
+  },
+  "Outerplanar.TriangleMatching": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleMatching.lean",
+    "source_sha256": "d74297f6179b021c5e18d7ae0dba2d169821acff7cb737acc986819b97151cc5",
+    "comparison_module": "AppendixG.TriangleMatching",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleMatching.lean",
+    "comparison_source_sha256": "5495d1332d8c9733c7af3e7d9b96e261470d9582e46a844ea36ef34b6fbf9200"
+  },
+  "Outerplanar.TrianglePlanarContract": {
+    "source": "cpap-outerplanar/Outerplanar/TrianglePlanarContract.lean",
+    "source_sha256": "b9d6a4b80f34f27c96942866022394d589fff6e8c758fe2c6cdbe02219fa46c5",
+    "comparison_module": "AppendixG.TrianglePlanarContract",
+    "comparison_source": "stacs-appendixG/AppendixG/TrianglePlanarContract.lean",
+    "comparison_source_sha256": "54cb70d10bb27511fdd469080d9d7746bc94ad4fe90732271706da344f485a95"
+  },
+  "Outerplanar.TriangleRepresentation": {
+    "source": "cpap-outerplanar/Outerplanar/TriangleRepresentation.lean",
+    "source_sha256": "6ab7228761d6163ff2a94a236978b216bada9318768ced2a761300b4d6990765",
+    "comparison_module": "AppendixG.TriangleRepresentation",
+    "comparison_source": "stacs-appendixG/AppendixG/TriangleRepresentation.lean",
+    "comparison_source_sha256": "b36d6967a9c38975c2e5c75fa5233c31491c306f7656a3092d566eb1e3767332"
+  },
+  "Outerplanar.TwoConnectedK23Cycles": {
+    "source": "cpap-outerplanar/Outerplanar/TwoConnectedK23Cycles.lean",
+    "source_sha256": "ee5bc24be66879b54392f733f2a59f54904451833b03b3392ab0ee2d4297f108",
+    "comparison_module": "AppendixG.TwoConnectedK23Cycles",
+    "comparison_source": "stacs-appendixG/AppendixG/TwoConnectedK23Cycles.lean",
+    "comparison_source_sha256": "4f39250e84f6af7da6c82c86c867ccefe3cedda1d013b2c7e0fdfc37813eba21"
+  },
+  "Outerplanar.TwoConnectedK23Structure": {
+    "source": "cpap-outerplanar/Outerplanar/TwoConnectedK23Structure.lean",
+    "source_sha256": "6794b22354dcd72f2e72bd038068471edc98b687559de4fa01867395d4eaff47",
+    "comparison_module": "AppendixG.TwoConnectedK23Structure",
+    "comparison_source": "stacs-appendixG/AppendixG/TwoConnectedK23Structure.lean",
+    "comparison_source_sha256": "f2675ddac779e72ba1d690ec65f1b8c480bca3fd99be2a7cbba673e241a388a9"
+  },
+  "Outerplanar.WeakDual": {
+    "source": "cpap-outerplanar/Outerplanar/WeakDual.lean",
+    "source_sha256": "05a45aaae20fff3b4f088c0cdbf3520670b0225dd2caf24deeb0370c82d95158",
+    "comparison_module": "AppendixG.WeakDual",
+    "comparison_source": "stacs-appendixG/AppendixG/WeakDual.lean",
+    "comparison_source_sha256": "0ec9e38f84abfca1ea87a67f293fdef3593283e2730e246884842446b62dae92"
+  },
+  "Outerplanar.WeakDualBij": {
+    "source": "cpap-outerplanar/Outerplanar/WeakDualBij.lean",
+    "source_sha256": "ad8e7bb30254d6d2304358a866a4dc9fcfecc89a023ba4eec8252deff49ab882",
+    "comparison_module": "AppendixG.WeakDualBij",
+    "comparison_source": "stacs-appendixG/AppendixG/WeakDualBij.lean",
+    "comparison_source_sha256": "744d72730aa68d76874a7dc72bfd142dad5727b1882d6ff2aef6c9dca2223a4e"
+  },
+  "Outerplanar.WeakDualCount": {
+    "source": "cpap-outerplanar/Outerplanar/WeakDualCount.lean",
+    "source_sha256": "72e44ce6230728c725d9e20a1b64e218eb275b1eb36da38e3328ec436d65655a",
+    "comparison_module": "AppendixG.WeakDualCount",
+    "comparison_source": "stacs-appendixG/AppendixG/WeakDualCount.lean",
+    "comparison_source_sha256": "fafab7ec4c914acc10b836475f2e390ee48472ed26a416650eebacf036c2db2b"
+  },
+  "Outerplanar.WeakDualFacts": {
+    "source": "cpap-outerplanar/Outerplanar/WeakDualFacts.lean",
+    "source_sha256": "3d0acc01af513e69f74fcebb0e008a926094104f8a7730dc30c9b8407715e8fc",
+    "comparison_module": "AppendixG.WeakDualFacts",
+    "comparison_source": "stacs-appendixG/AppendixG/WeakDualFacts.lean",
+    "comparison_source_sha256": "9a15ad6d6bf5d7829c392f942f2e8b789f1b14f1cc04bb0e94aa6075beb0fa2b"
+  },
+  "OuterplanarAudit": {
+    "source": "cpap-outerplanar/OuterplanarAudit.lean",
+    "source_sha256": "6c09f9cad7e16eede8aa5ab4815b5860423ba83d7c3a4615818cb5b74f18db6b",
+    "comparison_module": "AppendixGAudit",
+    "comparison_source": "stacs-appendixG/AppendixGAudit.lean",
+    "comparison_source_sha256": "73eb33b6e935b0c0d612616030319bd0349b01c5a00fa09f79e24c41bc097a94"
+  },
+  "OuterplanarAudit.Guards000": {
+    "source": "cpap-outerplanar/OuterplanarAudit/Guards000.lean",
+    "source_sha256": "a13a5c3aba7a18f24c8244c8076a3ba780a692e952e3ee0ab84d5b3e3576353e",
+    "comparison_module": "AppendixGAudit.Guards000",
+    "comparison_source": "stacs-appendixG/AppendixGAudit/Guards000.lean",
+    "comparison_source_sha256": "deb43a2a03af35666f270a7e27d236ea929fcb9c15cf17494ca1d234b40179eb"
+  },
+  "OuterplanarAudit.Guards001": {
+    "source": "cpap-outerplanar/OuterplanarAudit/Guards001.lean",
+    "source_sha256": "d709cd71682338c8fa683e5f33e7dd4c866c0c214d6fcd6f73a5325a61c9ad2e",
+    "comparison_module": "AppendixGAudit.Guards001",
+    "comparison_source": "stacs-appendixG/AppendixGAudit/Guards001.lean",
+    "comparison_source_sha256": "0842f88ac35385d19e614d8cda3eaadf3180c3f380ca7c89885742aed9bf4154"
+  },
+  "OuterplanarAudit.Guards002": {
+    "source": "cpap-outerplanar/OuterplanarAudit/Guards002.lean",
+    "source_sha256": "00180f2fd8a3fdd68600b0aab4c8c734d4c11fa88f345da630da2698ccd1ef30",
+    "comparison_module": "AppendixGAudit.Guards002",
+    "comparison_source": "stacs-appendixG/AppendixGAudit/Guards002.lean",
+    "comparison_source_sha256": "04792d51725a800e7924baf4b3c6b825352080eaee765d1cb983b0b82511e723"
+  },
+  "OuterplanarAudit.Guards003": {
+    "source": "cpap-outerplanar/OuterplanarAudit/Guards003.lean",
+    "source_sha256": "3d3b1d3612efbc22392ee86fce832891898433a03a317e3b550eeb6c1cb9b954",
+    "comparison_module": "AppendixGAudit.Guards003",
+    "comparison_source": "stacs-appendixG/AppendixGAudit/Guards003.lean",
+    "comparison_source_sha256": "ce233bd66351838b47529f778ff35e01fb010f5f86f7fd171c987ca28ddd9883"
+  },
+  "Challenge": {
+    "source": "cpap-outerplanar/Challenge.lean",
+    "source_sha256": null,
+    "comparison_module": "Challenge",
+    "comparison_source": "stacs-appendixG/Challenge.lean",
+    "comparison_source_sha256": "41b7252b9ada608a14e60e2ad98b1c673aae44660c0ea14ea69c86fee5a9bf07",
+    "distribution_status": "Generated comparison statement; not distributed."
+  },
+  "NPHardness.Acyclic": {
+    "source": "cpap-np-hardness/NPHardness/Acyclic.lean",
+    "source_sha256": "2573f72123642fdf3c48b54fcba6587151523d037c05c0cc95113a215b236c47",
+    "comparison_module": "Section5.Acyclic",
+    "comparison_source": "stacs-section5/Section5/Acyclic.lean",
+    "comparison_source_sha256": "c342af9c6575dfaf1ddf57b1f39dde385907cca657f6b4792e373e526df1b045"
+  },
+  "NPHardness.AssignmentFamilies": {
+    "source": "cpap-np-hardness/NPHardness/AssignmentFamilies.lean",
+    "source_sha256": "b9f035a019738283050f16bca57e313fb8802ebf82e14c79171268f5f04e7038",
+    "comparison_module": "Section5.AssignmentFamilies",
+    "comparison_source": "stacs-section5/Section5/AssignmentFamilies.lean",
+    "comparison_source_sha256": "613c0e86dcd7e7ded7f6436b9d350219ffaefff2950b0a9bc7dc78a3b4927adb"
+  },
+  "NPHardness.AssignmentRelabel": {
+    "source": "cpap-np-hardness/NPHardness/AssignmentRelabel.lean",
+    "source_sha256": "0fa252b7b2f2f73ac10f5141214c0f29606c18a3b0110426742f82c8edca95c1",
+    "comparison_module": "Section5.AssignmentRelabel",
+    "comparison_source": "stacs-section5/Section5/AssignmentRelabel.lean",
+    "comparison_source_sha256": "cc363ef622cec1d7b6ef43c365395d04aa038e1259a12ec8e5400ae440c731b0"
+  },
+  "NPHardness.AttachmentEdges": {
+    "source": "cpap-np-hardness/NPHardness/AttachmentEdges.lean",
+    "source_sha256": "e8ea0b748fb3217d41146a8523b2f61b975eb3824e55ef72483196d08094622b",
+    "comparison_module": "Section5.AttachmentEdges",
+    "comparison_source": "stacs-section5/Section5/AttachmentEdges.lean",
+    "comparison_source_sha256": "dfaeee6c9a471179eefe231ce26dc5dbd403c9ddd24c8cce18faecf7ae76266f"
+  },
+  "NPHardness.BoundedSAT": {
+    "source": "cpap-np-hardness/NPHardness/BoundedSAT.lean",
+    "source_sha256": "58ea7fa890c3132a8b738517ebef6d72c907986022de75c7f0e6fba898937210",
+    "comparison_module": "Section5.BoundedSAT",
+    "comparison_source": "stacs-section5/Section5/BoundedSAT.lean",
+    "comparison_source_sha256": "be4e9e96acaf1f34773b0838a63339206412a94d9ed0838f3f7f4a181685e02f"
+  },
+  "NPHardness.CPAP": {
+    "source": "cpap-np-hardness/NPHardness/CPAP.lean",
+    "source_sha256": "50c1ef6e485377e9d93e77f65c4f725844478dff6d5ccdf6364b0fbde6eec7f0",
+    "comparison_module": "Section5.CPAP",
+    "comparison_source": "stacs-section5/Section5/CPAP.lean",
+    "comparison_source_sha256": "f20320464bacb32118e0aadf480a461080e55cb31cf685e8a9db0bc40e9cd29e"
+  },
+  "NPHardness.ClausePadding": {
+    "source": "cpap-np-hardness/NPHardness/ClausePadding.lean",
+    "source_sha256": "9ee1296d6f2fbe8b8a78e9edaf56ac74ebeb76b7a9f73ec1d1d32216bef53a19",
+    "comparison_module": "Section5.ClausePadding",
+    "comparison_source": "stacs-section5/Section5/ClausePadding.lean",
+    "comparison_source_sha256": "779584ce42325cecade227fdb4913cd88de678a2d93aa5cd3bbc9e02f43d0524"
+  },
+  "NPHardness.ClauseRegions": {
+    "source": "cpap-np-hardness/NPHardness/ClauseRegions.lean",
+    "source_sha256": "f7441f3b387b53f99dd2f95451f641d1972e33aca161db307abf31bf5393ad5d",
+    "comparison_module": "Section5.ClauseRegions",
+    "comparison_source": "stacs-section5/Section5/ClauseRegions.lean",
+    "comparison_source_sha256": "886e3056f0c417078d3680c5a2d8490c4144b03302261b6ae7b1e134511239ea"
+  },
+  "NPHardness.ClauseThree5": {
+    "source": "cpap-np-hardness/NPHardness/ClauseThree5.lean",
+    "source_sha256": "d24c3ca86dc43bae6068716e8559553a08c8f30de2fabb8f38b939a47bbcc200",
+    "comparison_module": "Section5.ClauseThree5",
+    "comparison_source": "stacs-section5/Section5/ClauseThree5.lean",
+    "comparison_source_sha256": "dced965817c3799896f3518b520d2d8ffebcd0a05a6e2af28ddb6016fdea39b0"
+  },
+  "NPHardness.ClauseThreeGeneral": {
+    "source": "cpap-np-hardness/NPHardness/ClauseThreeGeneral.lean",
+    "source_sha256": "a64e5d68a1d27a0c4713458e07641b9143f22932373bc51a1e32f935f2c5fe9e",
+    "comparison_module": "Section5.ClauseThreeGeneral",
+    "comparison_source": "stacs-section5/Section5/ClauseThreeGeneral.lean",
+    "comparison_source_sha256": "607c7c1ee94251647afe28c37f19a824a1a78af52b4bfad9d02f9b3db7eb7c3b"
+  },
+  "NPHardness.ClauseTwo5": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwo5.lean",
+    "source_sha256": "49c0ca131a9839dd5f410accd9016f874fb05e87176daa132d87a89b1de96faa",
+    "comparison_module": "Section5.ClauseTwo5",
+    "comparison_source": "stacs-section5/Section5/ClauseTwo5.lean",
+    "comparison_source_sha256": "5aa2ad5e9f333ed8a07670aa72ccdd736d62fc5138c680babd905552ddb19653"
+  },
+  "NPHardness.ClauseTwo6": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwo6.lean",
+    "source_sha256": "98c941e4f6df4a6487ac03b434a3075586cf95ed57f3874b4bd359f3e7a1cf6a",
+    "comparison_module": "Section5.ClauseTwo6",
+    "comparison_source": "stacs-section5/Section5/ClauseTwo6.lean",
+    "comparison_source_sha256": "e6948ccc1560ef82c27a90d635581b04f5e91816941f519883565eb8ce7ee263"
+  },
+  "NPHardness.ClauseTwoGeneral": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoGeneral.lean",
+    "source_sha256": "08d708fab00826b4cd25ce19de6dd39e45aacd11a99ab0753b05be2b6714a150",
+    "comparison_module": "Section5.ClauseTwoGeneral",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoGeneral.lean",
+    "comparison_source_sha256": "613629eca04847d0027ff83ec69ae306f0199c06ea4370d16cc2ce764223ae72"
+  },
+  "NPHardness.ClauseTwoProfileArithmetic": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfileArithmetic.lean",
+    "source_sha256": "c2980bf0c68a7ed2fb61f0968c4ec9bdf5e8567213366f52e698a3c622502fe0",
+    "comparison_module": "Section5.ClauseTwoProfileArithmetic",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfileArithmetic.lean",
+    "comparison_source_sha256": "e2eec0be3074075a7ac790bfd8fe7f9aff2f0196dd95b8a46cf3684a9f697c9e"
+  },
+  "NPHardness.ClauseTwoProfileCertificates": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfileCertificates.lean",
+    "source_sha256": "87fa04ba61a1b5bd5443d8275d36ac6490527930bf37a7f98d06a432453eddde",
+    "comparison_module": "Section5.ClauseTwoProfileCertificates",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfileCertificates.lean",
+    "comparison_source_sha256": "c205a6759eeb52c662d7a4ad1b2f7d4a25082121cab197ab5e575926fbb797f4"
+  },
+  "NPHardness.ClauseTwoProfiles": {
+    "source": "cpap-np-hardness/NPHardness/ClauseTwoProfiles.lean",
+    "source_sha256": "80e7fc86b7adb202021e5e181023c306a2bd245dcda6c639fc4ab519e04849d6",
+    "comparison_module": "Section5.ClauseTwoProfiles",
+    "comparison_source": "stacs-section5/Section5/ClauseTwoProfiles.lean",
+    "comparison_source_sha256": "030776b6226de3c802e6bc8ddfa5340371d6ac912413c896db089faf6d172e1a"
+  },
+  "NPHardness.ClauseWitnessInterface": {
+    "source": "cpap-np-hardness/NPHardness/ClauseWitnessInterface.lean",
+    "source_sha256": "350974c4849c0aa690f2863eba52bd888da8804a183a0045311f82ae88ede1cc",
+    "comparison_module": "Section5.ClauseWitnessInterface",
+    "comparison_source": "stacs-section5/Section5/ClauseWitnessInterface.lean",
+    "comparison_source_sha256": "ca6c0eef152fff12377d96aa8996ff063f1a16b2253f1c7b7d5eb0f7e6a9ad15"
+  },
+  "NPHardness.CombineAssignments": {
+    "source": "cpap-np-hardness/NPHardness/CombineAssignments.lean",
+    "source_sha256": "996799a791180c4f4fc18a9b012060e8f47b090c515dfb7dc7045df53adf766e",
+    "comparison_module": "Section5.CombineAssignments",
+    "comparison_source": "stacs-section5/Section5/CombineAssignments.lean",
+    "comparison_source_sha256": "4f56c27fa5028349efdbab0d73799354fdcfbd627cc6e20c81dc61005a4ea15e"
+  },
+  "NPHardness.CostSearch": {
+    "source": "cpap-np-hardness/NPHardness/CostSearch.lean",
+    "source_sha256": "628520546a7b62b991cbcb9ccc59bbb3a3bb289a5505bbd05c7c8f2197b7f3db",
+    "comparison_module": "Section5.CostSearch",
+    "comparison_source": "stacs-section5/Section5/CostSearch.lean",
+    "comparison_source_sha256": "dce96f8312a0ac53a42cde54b37b31ffa6cbb77bb28d1557ceb970a7aba6fc80"
+  },
+  "NPHardness.CycleExcursions": {
+    "source": "cpap-np-hardness/NPHardness/CycleExcursions.lean",
+    "source_sha256": "deea703d31f91d5dd85da879c674da1350657a846e906c9683edc211c33771ca",
+    "comparison_module": "Section5.CycleExcursions",
+    "comparison_source": "stacs-section5/Section5/CycleExcursions.lean",
+    "comparison_source_sha256": "b0f2eb9b3a19ac37afd789256b65b138ff9a983077e07c0b0dc5cddc8b179fe0"
+  },
+  "NPHardness.CycleRepresentatives": {
+    "source": "cpap-np-hardness/NPHardness/CycleRepresentatives.lean",
+    "source_sha256": "bac0b671c03c7d9db4a73300984c2562654365b413c22e0047c09da30e4f136b",
+    "comparison_module": "Section5.CycleRepresentatives",
+    "comparison_source": "stacs-section5/Section5/CycleRepresentatives.lean",
+    "comparison_source_sha256": "ddf34308c5b95d696fef44f5822a17006eaabd05cf7c5316c2abe3d6259a290d"
+  },
+  "NPHardness.CycleStructure": {
+    "source": "cpap-np-hardness/NPHardness/CycleStructure.lean",
+    "source_sha256": "cc07c6e369ca619d3cf576b3e8bfcba965369b88efcb126d2908c464d5a3997a",
+    "comparison_module": "Section5.CycleStructure",
+    "comparison_source": "stacs-section5/Section5/CycleStructure.lean",
+    "comparison_source_sha256": "2de7aff9122ccaff399bbdfd7f92e961f4353eac4794a89aad57e788e0f7d176"
+  },
+  "NPHardness.DuplicatePreprocess": {
+    "source": "cpap-np-hardness/NPHardness/DuplicatePreprocess.lean",
+    "source_sha256": "6b883e8cac1ace9493953274bfd6e2175eb84cefcaeb549e65084104083a7512",
+    "comparison_module": "Section5.DuplicatePreprocess",
+    "comparison_source": "stacs-section5/Section5/DuplicatePreprocess.lean",
+    "comparison_source_sha256": "fc5a9c5729ea560d987e1c09adb95154208a061c7142cbd15347d33629c3438b"
+  },
+  "NPHardness.Enumerate": {
+    "source": "cpap-np-hardness/NPHardness/Enumerate.lean",
+    "source_sha256": "9629600a393803695ef055fdae2e18094c59662b9c3ee2460a73811a7a79d77e",
+    "comparison_module": "Section5.Enumerate",
+    "comparison_source": "stacs-section5/Section5/Enumerate.lean",
+    "comparison_source_sha256": "221cf3f52f7d874b83b68da68f26a9555e25b7565f5d9fdd3cf85fd063d5e673"
+  },
+  "NPHardness.ExcursionDistances": {
+    "source": "cpap-np-hardness/NPHardness/ExcursionDistances.lean",
+    "source_sha256": "1e12375c5fd476f85977c4cbc65f118651574f1c0ecfc701b773e89457fc7b00",
+    "comparison_module": "Section5.ExcursionDistances",
+    "comparison_source": "stacs-section5/Section5/ExcursionDistances.lean",
+    "comparison_source_sha256": "bd5ae979345d65071a10a3946e48bd044a5440de6d8c16ab38c8f6856de8a4f7"
+  },
+  "NPHardness.ExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionCost.lean",
+    "source_sha256": "da92231756dbc7f48fd6b42cdaaccc4c55cf9f861f557c1ed4b914be20ebb8fc",
+    "comparison_module": "Section5.ExpansionCost",
+    "comparison_source": "stacs-section5/Section5/ExpansionCost.lean",
+    "comparison_source_sha256": "1ad3fa27030f09e12b025cb8181df75abf918b972e6c33a96aba1446219cdf8b"
+  },
+  "NPHardness.ExpansionDisjoint": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionDisjoint.lean",
+    "source_sha256": "584c4b6f2b762b16b7e0342372c68d03e907f86ae8c556272f418202b36e4783",
+    "comparison_module": "Section5.ExpansionDisjoint",
+    "comparison_source": "stacs-section5/Section5/ExpansionDisjoint.lean",
+    "comparison_source_sha256": "eaddb7b307c5764cbe7ed06701f2fd24b76c8915dc7af901fdef476caf950e49"
+  },
+  "NPHardness.ExpansionPorts": {
+    "source": "cpap-np-hardness/NPHardness/ExpansionPorts.lean",
+    "source_sha256": "78027d9e78eb3f1f9b9e66bfb946f64629f7cad35e151cb82d6d5e89a91686eb",
+    "comparison_module": "Section5.ExpansionPorts",
+    "comparison_source": "stacs-section5/Section5/ExpansionPorts.lean",
+    "comparison_source_sha256": "17003c76554a8ab927094f6baad15834d86cf4f06bb21a129492a2f3a90422fd"
+  },
+  "NPHardness.FamilyCost": {
+    "source": "cpap-np-hardness/NPHardness/FamilyCost.lean",
+    "source_sha256": "b411bcd41d5eba9f5aa14a1ecf5506b560d2a4ad26e9d2f01e0394d74f0ea915",
+    "comparison_module": "Section5.FamilyCost",
+    "comparison_source": "stacs-section5/Section5/FamilyCost.lean",
+    "comparison_source_sha256": "7fb1a250bd6c068d19cc0ae580fa1bff273d26772d5841c01d68fbb2e7c0c721"
+  },
+  "NPHardness.FiniteCycles": {
+    "source": "cpap-np-hardness/NPHardness/FiniteCycles.lean",
+    "source_sha256": "6fb172cd5556296260addcf9d90665f88a0e2177644c6df6defdc853e4479527",
+    "comparison_module": "Section5.FiniteCycles",
+    "comparison_source": "stacs-section5/Section5/FiniteCycles.lean",
+    "comparison_source_sha256": "6fb172cd5556296260addcf9d90665f88a0e2177644c6df6defdc853e4479527"
+  },
+  "NPHardness.GadgetExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/GadgetExpansionCost.lean",
+    "source_sha256": "0bea9563d230fe51c5af3d975f87e02c736cea12180fb717a520248aa219b276",
+    "comparison_module": "Section5.GadgetExpansionCost",
+    "comparison_source": "stacs-section5/Section5/GadgetExpansionCost.lean",
+    "comparison_source_sha256": "bfa0cf0fbbdead6c1b7cc80755ea0eba63a578268f7629dbb00f54a2a4824316"
+  },
+  "NPHardness.GadgetFamilies": {
+    "source": "cpap-np-hardness/NPHardness/GadgetFamilies.lean",
+    "source_sha256": "db3bc7d3058ef08d0e7a1ed8e18fa608dff11cdf3997ba69343c9a56f06ecaf5",
+    "comparison_module": "Section5.GadgetFamilies",
+    "comparison_source": "stacs-section5/Section5/GadgetFamilies.lean",
+    "comparison_source_sha256": "6fb6e793a34debdade57a40aea0ef968ebadf03f565f73fbd2b09a6ed51129b3"
+  },
+  "NPHardness.GadgetPortCost": {
+    "source": "cpap-np-hardness/NPHardness/GadgetPortCost.lean",
+    "source_sha256": "8fb248c61218c3c938f1295a1219cd17005bf3671dae8aea25e8e75f119baed9",
+    "comparison_module": "Section5.GadgetPortCost",
+    "comparison_source": "stacs-section5/Section5/GadgetPortCost.lean",
+    "comparison_source_sha256": "564918613c9a1b15397c4cbca356885e3f73dc0183299d96cae7222be9df0815"
+  },
+  "NPHardness.GadgetPrivateEdges": {
+    "source": "cpap-np-hardness/NPHardness/GadgetPrivateEdges.lean",
+    "source_sha256": "25c892145657188f8dac5544e13918705e21bbfcece1d580bc6ef35ea89fd740",
+    "comparison_module": "Section5.GadgetPrivateEdges",
+    "comparison_source": "stacs-section5/Section5/GadgetPrivateEdges.lean",
+    "comparison_source_sha256": "88bc4e795d0c70098dd673adf39d928b4d1cb8138d4a792a43ccd2e333a21682"
+  },
+  "NPHardness.GadgetProjection": {
+    "source": "cpap-np-hardness/NPHardness/GadgetProjection.lean",
+    "source_sha256": "c3fe6037cf2091ad6f29b9c07e9d3f5643d33c9fe877e6f724cecad43b529ad2",
+    "comparison_module": "Section5.GadgetProjection",
+    "comparison_source": "stacs-section5/Section5/GadgetProjection.lean",
+    "comparison_source_sha256": "df0b66fdddc9598187b9192f0dd29df8a3c7815d7e6d72306417d3fa43319ad2"
+  },
+  "NPHardness.GadgetRelabel": {
+    "source": "cpap-np-hardness/NPHardness/GadgetRelabel.lean",
+    "source_sha256": "5d8237bdc67a4be09f750fa6136f03025500235c3b4899fe883122ff7bc149dd",
+    "comparison_module": "Section5.GadgetRelabel",
+    "comparison_source": "stacs-section5/Section5/GadgetRelabel.lean",
+    "comparison_source_sha256": "9f95abcafbc313f950c945f4ed241e9d5bea38ba1468410edd1018a1fc4b7cf8"
+  },
+  "NPHardness.Gadgets": {
+    "source": "cpap-np-hardness/NPHardness/Gadgets.lean",
+    "source_sha256": "6622297a22f4ce581c820bf479170b926bb7dc9f8bd19ac4823ca2a280b2c995",
+    "comparison_module": "Section5.Gadgets",
+    "comparison_source": "stacs-section5/Section5/Gadgets.lean",
+    "comparison_source_sha256": "4a36554638b4aa4bdff21970f18db5a77a26c8b278dd884289f857f075c6946c"
+  },
+  "NPHardness.GlobalCompleteness": {
+    "source": "cpap-np-hardness/NPHardness/GlobalCompleteness.lean",
+    "source_sha256": "19656a9e66613a43ce393e852b0086325317505402b9af6b105a2e824974c617",
+    "comparison_module": "Section5.GlobalCompleteness",
+    "comparison_source": "stacs-section5/Section5/GlobalCompleteness.lean",
+    "comparison_source_sha256": "6b220fb155d5fb028a5aa9ec84707a6fc002c0d58a371e03157e5b6e2a644716"
+  },
+  "NPHardness.GlobalCost": {
+    "source": "cpap-np-hardness/NPHardness/GlobalCost.lean",
+    "source_sha256": "27699fbb1a2889f5ed636a92ae126b671e62f6ab118d833eb4097c057a01a2df",
+    "comparison_module": "Section5.GlobalCost",
+    "comparison_source": "stacs-section5/Section5/GlobalCost.lean",
+    "comparison_source_sha256": "178718ea2cf90339f08fac232ba3c2a57e41e6dc9b48a9886c8a22efb89fbb04"
+  },
+  "NPHardness.GlobalCycles": {
+    "source": "cpap-np-hardness/NPHardness/GlobalCycles.lean",
+    "source_sha256": "73b0a7804f71a4d728c0cb71f8b8015724d8b60aa180c2e1e10275f35166fb75",
+    "comparison_module": "Section5.GlobalCycles",
+    "comparison_source": "stacs-section5/Section5/GlobalCycles.lean",
+    "comparison_source_sha256": "fda6ece61222d8ca0f1673a90467b63682d7209f8453d02f3498bd77ea0f49b3"
+  },
+  "NPHardness.GlobalExcursions": {
+    "source": "cpap-np-hardness/NPHardness/GlobalExcursions.lean",
+    "source_sha256": "f03dc379637e01342169e747aa7be4606a58c6df7de283e3b859d361b0984c3c",
+    "comparison_module": "Section5.GlobalExcursions",
+    "comparison_source": "stacs-section5/Section5/GlobalExcursions.lean",
+    "comparison_source_sha256": "d52e4517c804265c190a0afec86b6902785aa8008632e27e3f6d96b82f4c4cc1"
+  },
+  "NPHardness.GlobalFamilies": {
+    "source": "cpap-np-hardness/NPHardness/GlobalFamilies.lean",
+    "source_sha256": "38875789c60082f9f2e34cefc223574b45704eacd9fc120587f176a522f45dee",
+    "comparison_module": "Section5.GlobalFamilies",
+    "comparison_source": "stacs-section5/Section5/GlobalFamilies.lean",
+    "comparison_source_sha256": "92b614694bbfc98651c2bdfcc162ef4ede34858a68e4e2e82c28b1c6a20e76b7"
+  },
+  "NPHardness.GlobalFamilyUnique": {
+    "source": "cpap-np-hardness/NPHardness/GlobalFamilyUnique.lean",
+    "source_sha256": "faef1a97b4e0aa33706c4aa2f8e81fb3ed0cb9caffcb93bbfbf2899d0987bcab",
+    "comparison_module": "Section5.GlobalFamilyUnique",
+    "comparison_source": "stacs-section5/Section5/GlobalFamilyUnique.lean",
+    "comparison_source_sha256": "1464facfc056ab20f7e6b6e6d7de51da510607aedb94e060b201b416c825e776"
+  },
+  "NPHardness.GlobalGraph": {
+    "source": "cpap-np-hardness/NPHardness/GlobalGraph.lean",
+    "source_sha256": "64efb7af171f8b2a08a75af867d2f83d30d9e431894c269e2c6b7888be5f4636",
+    "comparison_module": "Section5.GlobalGraph",
+    "comparison_source": "stacs-section5/Section5/GlobalGraph.lean",
+    "comparison_source_sha256": "2120cbaa1f6d9b152af04a5a9df9da4ff3f0aee93737aa1792a7f7c634863fb2"
+  },
+  "NPHardness.GlobalPorts": {
+    "source": "cpap-np-hardness/NPHardness/GlobalPorts.lean",
+    "source_sha256": "6f7d85220d847b9f18bcd538ff0f04ff2986f8be9d899c1266ea8e0076f98b0b",
+    "comparison_module": "Section5.GlobalPorts",
+    "comparison_source": "stacs-section5/Section5/GlobalPorts.lean",
+    "comparison_source_sha256": "8258847ab8fb4aa1c8fa1940bc480f89d0e46951ab1f7e5830a987cd587c060a"
+  },
+  "NPHardness.GlobalReduction": {
+    "source": "cpap-np-hardness/NPHardness/GlobalReduction.lean",
+    "source_sha256": "ffb99837de7e48abbfa1d03c43e58ba38bd5f6c48fe8ebc6f71a07e455d9f241",
+    "comparison_module": "Section5.GlobalReduction",
+    "comparison_source": "stacs-section5/Section5/GlobalReduction.lean",
+    "comparison_source_sha256": "7f408f493165326c91e6276ca3907a3a282154ac9dfcb5d3791b5ddcf17c6c64"
+  },
+  "NPHardness.GlobalSeparation": {
+    "source": "cpap-np-hardness/NPHardness/GlobalSeparation.lean",
+    "source_sha256": "12e444abc94230eacb29211e14152d81f444f6089c1e99e850875af88fe3da3e",
+    "comparison_module": "Section5.GlobalSeparation",
+    "comparison_source": "stacs-section5/Section5/GlobalSeparation.lean",
+    "comparison_source_sha256": "78c3940e24e73e38b9b8c29a3f8646dfc2d2e415bcc1f3be255e927587be250b"
+  },
+  "NPHardness.GlobalSoundness": {
+    "source": "cpap-np-hardness/NPHardness/GlobalSoundness.lean",
+    "source_sha256": "fee507c2014d30b17ac1c73dacaf3beb03639b659f2bd100d7b70c890b08ac18",
+    "comparison_module": "Section5.GlobalSoundness",
+    "comparison_source": "stacs-section5/Section5/GlobalSoundness.lean",
+    "comparison_source_sha256": "5bfc0d84bc4d0fa15db7ac7195641e51f722067758a9cb0e3ba541c02a30b08b"
+  },
+  "NPHardness.GlobalVertices": {
+    "source": "cpap-np-hardness/NPHardness/GlobalVertices.lean",
+    "source_sha256": "abc8b190ad86ace158737346a5ab75be21415662adb03d476bdc9139686db6ed",
+    "comparison_module": "Section5.GlobalVertices",
+    "comparison_source": "stacs-section5/Section5/GlobalVertices.lean",
+    "comparison_source_sha256": "44c694b5379d1b6099560d78420da91a942761e3c8860c086f1cf1462f210909"
+  },
+  "NPHardness.GraphEncoding": {
+    "source": "cpap-np-hardness/NPHardness/GraphEncoding.lean",
+    "source_sha256": "781d249fda2419a65a69892cd72413064d5af1a85ea5dd56d1c13d58b165422a",
+    "comparison_module": "Section5.GraphEncoding",
+    "comparison_source": "stacs-section5/Section5/GraphEncoding.lean",
+    "comparison_source_sha256": "8737ebbdc0efe0225ddd9af8ada474d658b03000daa689d72acc13c53c61a5bb"
+  },
+  "NPHardness.GraphRelabel": {
+    "source": "cpap-np-hardness/NPHardness/GraphRelabel.lean",
+    "source_sha256": "0de729ded6619792c713aca0168c0d32e659a9ce84371c3d0e371cc22587f6ca",
+    "comparison_module": "Section5.GraphRelabel",
+    "comparison_source": "stacs-section5/Section5/GraphRelabel.lean",
+    "comparison_source_sha256": "acc8571e171e13ef5a4b059600168a6ca7c72844e880c20ea8d59a5c23f5b49f"
+  },
+  "NPHardness.LoadCost": {
+    "source": "cpap-np-hardness/NPHardness/LoadCost.lean",
+    "source_sha256": "14df837e30eec44889723bd1dfba3130da8740095fe6170a7537435a0513ac67",
+    "comparison_module": "Section5.LoadCost",
+    "comparison_source": "stacs-section5/Section5/LoadCost.lean",
+    "comparison_source_sha256": "4dc1ae7acc3e0749152a5116346f129fdb92fee7ea4a5d2fae99efd8d7a499cd"
+  },
+  "NPHardness.LocalAssignmentInterface": {
+    "source": "cpap-np-hardness/NPHardness/LocalAssignmentInterface.lean",
+    "source_sha256": "67e4841b90db54909e6881af399baaab7cbbfa59bb0d3bf8f5e5823becabf45c",
+    "comparison_module": "Section5.LocalAssignmentInterface",
+    "comparison_source": "stacs-section5/Section5/LocalAssignmentInterface.lean",
+    "comparison_source_sha256": "7d64e88dadd3004052e25f06e3c4328fb37776c96497da84c62d1ed721aec251"
+  },
+  "NPHardness.MappedAssignments": {
+    "source": "cpap-np-hardness/NPHardness/MappedAssignments.lean",
+    "source_sha256": "191c230f6afab50f5795a283ccb924a9208583a6444ec3311da25bf93cdd4fa0",
+    "comparison_module": "Section5.MappedAssignments",
+    "comparison_source": "stacs-section5/Section5/MappedAssignments.lean",
+    "comparison_source_sha256": "871fcdb560dd154e810c7aeb27f07306d19cbeee2740ee11572b15f65bcc9982"
+  },
+  "NPHardness.OccurrencePorts": {
+    "source": "cpap-np-hardness/NPHardness/OccurrencePorts.lean",
+    "source_sha256": "5c226f307674b851efd2efc72e6ef6b9b8db97bc62cb6467664e77d118621ca1",
+    "comparison_module": "Section5.OccurrencePorts",
+    "comparison_source": "stacs-section5/Section5/OccurrencePorts.lean",
+    "comparison_source_sha256": "537e511141177408b8defd9110ff7798de9d082c0a0a2a8be2fa7e4d9d6d86a5"
+  },
+  "NPHardness.OmittedVertex": {
+    "source": "cpap-np-hardness/NPHardness/OmittedVertex.lean",
+    "source_sha256": "600fcc5a507e0d689f57366348823b55b78416cd1f24efeabf2019481acae159",
+    "comparison_module": "Section5.OmittedVertex",
+    "comparison_source": "stacs-section5/Section5/OmittedVertex.lean",
+    "comparison_source_sha256": "0a45443a4de740c4fe8bb2441eb4a8509f8da885a1ef983ae77ab00cd88010de"
+  },
+  "NPHardness.PathProjection": {
+    "source": "cpap-np-hardness/NPHardness/PathProjection.lean",
+    "source_sha256": "861a77c47aa6cf799825034e016cb1aa78424706539d42732c2556027ce71e43",
+    "comparison_module": "Section5.PathProjection",
+    "comparison_source": "stacs-section5/Section5/PathProjection.lean",
+    "comparison_source_sha256": "5745e0d95f290cdc7921a6cf42503d2bb51449bb9f5574c4e608504d1976866e"
+  },
+  "NPHardness.PathRegions": {
+    "source": "cpap-np-hardness/NPHardness/PathRegions.lean",
+    "source_sha256": "a351d47e0b4b9bb1e050cb96b0ba9e3587134afc80833680f947c99393d9e3b5",
+    "comparison_module": "Section5.PathRegions",
+    "comparison_source": "stacs-section5/Section5/PathRegions.lean",
+    "comparison_source_sha256": "834cc179cd7d9ded379a3c1a978a5fd52143234ba2367b8a075e886c08b81d3f"
+  },
+  "NPHardness.PlacedWitnesses": {
+    "source": "cpap-np-hardness/NPHardness/PlacedWitnesses.lean",
+    "source_sha256": "54080efa733411a6b8958c9f8e5d0d12c09861a8ee0650f41c7adb69897752d0",
+    "comparison_module": "Section5.PlacedWitnesses",
+    "comparison_source": "stacs-section5/Section5/PlacedWitnesses.lean",
+    "comparison_source_sha256": "187ddef8c122ce365ad175fc0990dc929331cf571b890bd891ab76011197168a"
+  },
+  "NPHardness.PlanarFoundation": {
+    "source": "cpap-np-hardness/NPHardness/PlanarFoundation.lean",
+    "source_sha256": "b09a0eda56d23fc51f7feca2b131653a4c30429c5e2ac2d725b54bba198672f2",
+    "comparison_module": "Section5.PlanarFoundation",
+    "comparison_source": "stacs-section5/Section5/PlanarFoundation.lean",
+    "comparison_source_sha256": "29b5d3d09493d589fbe6604920175e1e4a6e58865ac28c2c45a400caedcb83c0"
+  },
+  "NPHardness.PlanarGluingCut": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingCut.lean",
+    "source_sha256": "22fe886b0ec95b9af627dada72c74f46b396359a1d80c5008b61448f66cf45ee",
+    "comparison_module": "Section5.PlanarGluingCut",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingCut.lean",
+    "comparison_source_sha256": "1ceb32be90a8f4c85023dc136b847dddf513c7741905a077f102ddb947fdcf3d"
+  },
+  "NPHardness.PlanarGluingCycles": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingCycles.lean",
+    "source_sha256": "b3b3d531261a4ecaa16bf6cc1a34a4ec93c4dbfd670b5c2bbf9ff5ca3494061e",
+    "comparison_module": "Section5.PlanarGluingCycles",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingCycles.lean",
+    "comparison_source_sha256": "b3b3d531261a4ecaa16bf6cc1a34a4ec93c4dbfd670b5c2bbf9ff5ca3494061e"
+  },
+  "NPHardness.PlanarGluingCyclesEmbedding": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingCyclesEmbedding.lean",
+    "source_sha256": "a87f85f015292bdfa222db95f03313e63e31eac74d28a80799c10cf32f348ecc",
+    "comparison_module": "Section5.PlanarGluingCyclesEmbedding",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingCyclesEmbedding.lean",
+    "comparison_source_sha256": "0bd9d0815a6c291a0bba9ed776c4ab300a6ff27c17cc4c5c7c4341d368cc4e58"
+  },
+  "NPHardness.PlanarGluingJoin": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingJoin.lean",
+    "source_sha256": "9ae1c55b4fd93e97868a307dda7fb7f4565b14580b3b00b05ed26cb1811d31f1",
+    "comparison_module": "Section5.PlanarGluingJoin",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingJoin.lean",
+    "comparison_source_sha256": "3bb4ab223fd7450cab9648acc71536e692c3316d9e673dc70c23fb28e3fb9c17"
+  },
+  "NPHardness.PlanarGluingLists": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingLists.lean",
+    "source_sha256": "d6a9493683f7a271977b5d58866faecb042e1923cf874a2f58a97ac71a66d0ef",
+    "comparison_module": "Section5.PlanarGluingLists",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingLists.lean",
+    "comparison_source_sha256": "54bef556cb580cc64fac05672396131c542c0e989294bbc95a9e006c870f1d52"
+  },
+  "NPHardness.PlanarGluingOrientation": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingOrientation.lean",
+    "source_sha256": "ae3c5d1926b2385455e12c683c05c55e01d67550a6cac27867a1a2e1f169ab6e",
+    "comparison_module": "Section5.PlanarGluingOrientation",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingOrientation.lean",
+    "comparison_source_sha256": "1387f05290cd9816a0347ffaaca5fbc2cb5be4b45abef0b2cf0153a23e144bf5"
+  },
+  "NPHardness.PlanarGluingSpherical": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingSpherical.lean",
+    "source_sha256": "25035146fee158fbcae55515d7ed8a81c54bb0a85e5165e71ab5f43af224be69",
+    "comparison_module": "Section5.PlanarGluingSpherical",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingSpherical.lean",
+    "comparison_source_sha256": "d0f0212f7efbc83c6195c5f536e9f1bef05c68f08ca2212c815ad3de5a4aa379"
+  },
+  "NPHardness.PlanarGluingTransport": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingTransport.lean",
+    "source_sha256": "411aa06967f57c8614f5f82f54edf05fbed73753c2ca141570696b08ac5f2d91",
+    "comparison_module": "Section5.PlanarGluingTransport",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingTransport.lean",
+    "comparison_source_sha256": "27b3caa3329848a8c752ec430b1177758b24ae0934887da887839cfd369c89b9"
+  },
+  "NPHardness.PlanarGluingTransposition": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingTransposition.lean",
+    "source_sha256": "af2540a6edc37fb62176545a3c30d7d452940c5a118cbd8b6801cfc1d4baef19",
+    "comparison_module": "Section5.PlanarGluingTransposition",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingTransposition.lean",
+    "comparison_source_sha256": "0e1cfd8ee6f724837dbb46fd757f05fbcf74112b84862faa48e26225daedc1d2"
+  },
+  "NPHardness.PlanarGluingUnion": {
+    "source": "cpap-np-hardness/NPHardness/PlanarGluingUnion.lean",
+    "source_sha256": "ece09ec40bb199dbf22bdd3d1c5cf08808664e50ef019b4d26864c6457bc86ed",
+    "comparison_module": "Section5.PlanarGluingUnion",
+    "comparison_source": "stacs-section5/Section5/PlanarGluingUnion.lean",
+    "comparison_source_sha256": "ec04bf2e59f9dcbafdda03f652a032d1456446cf95180f015173a87781cdb2c8"
+  },
+  "NPHardness.PlanarPreprocessDeletionComponents": {
+    "source": "cpap-np-hardness/NPHardness/PlanarPreprocessDeletionComponents.lean",
+    "source_sha256": "83fc6c26832f66273dae339ba70c46c0417900ba9184edc95bc9da8a48a988eb",
+    "comparison_module": "Section5.PlanarPreprocessDeletionComponents",
+    "comparison_source": "stacs-section5/Section5/PlanarPreprocessDeletionComponents.lean",
+    "comparison_source_sha256": "6591cea604cb42f6785cbdc8b879dfe60011afeef4d44378247339651e186160"
+  },
+  "NPHardness.PlanarPreprocessDeletionGraph": {
+    "source": "cpap-np-hardness/NPHardness/PlanarPreprocessDeletionGraph.lean",
+    "source_sha256": "b0c0d68c9f97e8539bc53f7eb607f1fdff9792880e628f24b3c085d2ded2e408",
+    "comparison_module": "Section5.PlanarPreprocessDeletionGraph",
+    "comparison_source": "stacs-section5/Section5/PlanarPreprocessDeletionGraph.lean",
+    "comparison_source_sha256": "840bf841cd3b68dba2a18e5d91da0c76bf35aaaf7c3649cf3ae73f9107195883"
+  },
+  "NPHardness.PlanarPreprocessDeletionMap": {
+    "source": "cpap-np-hardness/NPHardness/PlanarPreprocessDeletionMap.lean",
+    "source_sha256": "91d7cd95bd8ab164207f393075f044be9789011f8569985bd32e25dc26bd44fb",
+    "comparison_module": "Section5.PlanarPreprocessDeletionMap",
+    "comparison_source": "stacs-section5/Section5/PlanarPreprocessDeletionMap.lean",
+    "comparison_source_sha256": "cd8315d5dd6f865f573a94fd390aafd00d3791087841317ff8daf546c4729694"
+  },
+  "NPHardness.PlanarPreprocessDeletionPerm": {
+    "source": "cpap-np-hardness/NPHardness/PlanarPreprocessDeletionPerm.lean",
+    "source_sha256": "702d5502bcfc163a92072b9601c106e5dbb42efa65f5f8f9e1f577bd54fb5c32",
+    "comparison_module": "Section5.PlanarPreprocessDeletionPerm",
+    "comparison_source": "stacs-section5/Section5/PlanarPreprocessDeletionPerm.lean",
+    "comparison_source_sha256": "addbd4e0277115d986500720f7e2fc2b821261cd5d99b6e536fcd58e12d617f6"
+  },
+  "NPHardness.PlanarPreprocessDeletionShrink": {
+    "source": "cpap-np-hardness/NPHardness/PlanarPreprocessDeletionShrink.lean",
+    "source_sha256": "97de55c8ecbe80a0c69b21308b6b33687295b188ef476154eb58f2b1a4bba966",
+    "comparison_module": "Section5.PlanarPreprocessDeletionShrink",
+    "comparison_source": "stacs-section5/Section5/PlanarPreprocessDeletionShrink.lean",
+    "comparison_source_sha256": "0fd1b373244d9f2f63e23f4aa7ce00d07d87a3959eee135a54902d6a63309ace"
+  },
+  "NPHardness.PlanarRelabel": {
+    "source": "cpap-np-hardness/NPHardness/PlanarRelabel.lean",
+    "source_sha256": "055540782bc8e9bebcbc7ed3b4dec5d5ddb5b1a58c5e9d25b2140cd166087fc6",
+    "comparison_module": "Section5.PlanarRelabel",
+    "comparison_source": "stacs-section5/Section5/PlanarRelabel.lean",
+    "comparison_source_sha256": "5511af2dc8d1d678950a2ad76d2c6e7f9eed1f17696f75a8725065b5aef9c2bc"
+  },
+  "NPHardness.Preprocess": {
+    "source": "cpap-np-hardness/NPHardness/Preprocess.lean",
+    "source_sha256": "8772b9445c69ec81d4c7a53f4033bd35720db54d8fe5b0c289d857875fb2d282",
+    "comparison_module": "Section5.Preprocess",
+    "comparison_source": "stacs-section5/Section5/Preprocess.lean",
+    "comparison_source_sha256": "d67dfd9814171c35e6aa3ba2a6a1bc530d2266d723a850906e84437f07b9ed83"
+  },
+  "NPHardness.RegisteredFoundation": {
+    "source": "cpap-np-hardness/NPHardness/RegisteredFoundation.lean",
+    "source_sha256": "e2dfd298cd99b646ce5023304aa9eb33d7a0cbdd61006101dcab3055e40ffbc9",
+    "comparison_module": "Section5.RegisteredFoundation",
+    "comparison_source": "stacs-section5/Section5/RegisteredFoundation.lean",
+    "comparison_source_sha256": "dd96dec1792e88a672d1a64787729acbf02cb47d527c5b3ad924541d9b98d65c"
+  },
+  "NPHardness.SelectedPaths": {
+    "source": "cpap-np-hardness/NPHardness/SelectedPaths.lean",
+    "source_sha256": "298381f3f6da8397a8d91e30f1d8c12327fa702cdda2895f3927ac4c6ff12e14",
+    "comparison_module": "Section5.SelectedPaths",
+    "comparison_source": "stacs-section5/Section5/SelectedPaths.lean",
+    "comparison_source_sha256": "ef58f548533f60d06d8188674c7ea14cf98d1295d0ea6841469e582b5466457a"
+  },
+  "NPHardness.SimplePaths": {
+    "source": "cpap-np-hardness/NPHardness/SimplePaths.lean",
+    "source_sha256": "0d438a1c1b647afc215785ace82ddd3fdf20a4445f9663d15760adde98605393",
+    "comparison_module": "Section5.SimplePaths",
+    "comparison_source": "stacs-section5/Section5/SimplePaths.lean",
+    "comparison_source_sha256": "2cf38b9b54819cd365159f1c95b6a8cd7622cfff64d0ff5c7e206665591a26fa"
+  },
+  "NPHardness.SourceCycle": {
+    "source": "cpap-np-hardness/NPHardness/SourceCycle.lean",
+    "source_sha256": "b4560c91e12ba41cebb6e549c27a30fd6719ac16083fffbd32737050f50cfc1e",
+    "comparison_module": "Section5.SourceCycle",
+    "comparison_source": "stacs-section5/Section5/SourceCycle.lean",
+    "comparison_source_sha256": "fcb2968bb265d43f473ada2ffd0fd0f37ec136c59fc96b2ea6e76f1cde591b61"
+  },
+  "NPHardness.SourceOccurrences": {
+    "source": "cpap-np-hardness/NPHardness/SourceOccurrences.lean",
+    "source_sha256": "79c2083a8395d1d5ae1847a58718429a4b9f6a8645d470368c89eb9a436e0d5b",
+    "comparison_module": "Section5.SourceOccurrences",
+    "comparison_source": "stacs-section5/Section5/SourceOccurrences.lean",
+    "comparison_source_sha256": "f8bc5170f196855672e44b7d0b27faa729e58525b4ffb142b941ee27db614529"
+  },
+  "NPHardness.SourceReduction": {
+    "source": "cpap-np-hardness/NPHardness/SourceReduction.lean",
+    "source_sha256": "20828e62c63cfea66e4386ebc0d96e9ee281f1d3b68343cb20adfe885ee39fd3",
+    "comparison_module": "Section5.SourceReduction",
+    "comparison_source": "stacs-section5/Section5/SourceReduction.lean",
+    "comparison_source_sha256": "b66d2f1f0aa80fc306096607f816d8d73942ac905cf34ddfd9f46f260f6b569c"
+  },
+  "NPHardness.SourceSemantics": {
+    "source": "cpap-np-hardness/NPHardness/SourceSemantics.lean",
+    "source_sha256": "8cfc8e76a260ac72fe6e03b049fe210ae5201f3776590b11c2253e07be5ef7f8",
+    "comparison_module": "Section5.SourceSemantics",
+    "comparison_source": "stacs-section5/Section5/SourceSemantics.lean",
+    "comparison_source_sha256": "ee20de4f1380927ac898fd9d1b1bb3fe1dddd9e859fae09af160797eab75cf8b"
+  },
+  "NPHardness.Subdivision": {
+    "source": "cpap-np-hardness/NPHardness/Subdivision.lean",
+    "source_sha256": "e44b2d28ddad5126ca0f8753045a413547e786467e993bb1662af2514b71785e",
+    "comparison_module": "Section5.Subdivision",
+    "comparison_source": "stacs-section5/Section5/Subdivision.lean",
+    "comparison_source_sha256": "01f969da21486b0c47197408f0adaa386e3e8a042d4ba58edfa3aa7d6e066fd2"
+  },
+  "NPHardness.SubdivisionPrograms": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionPrograms.lean",
+    "source_sha256": "24c28919c0d052d80369b9443e2f38b6ae51db6f5a9f7066405530fe75e3a3d6",
+    "comparison_module": "Section5.SubdivisionPrograms",
+    "comparison_source": "stacs-section5/Section5/SubdivisionPrograms.lean",
+    "comparison_source_sha256": "9b6a46878d943a9f76f469862ac09b09bafdfc9aa70048a02f7b61e75a176f74"
+  },
+  "NPHardness.SubdivisionProjection": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionProjection.lean",
+    "source_sha256": "93a0bc1c20192decd7163e0e8366beafa90cd8b983d00a114d5c0e4b4d96de2e",
+    "comparison_module": "Section5.SubdivisionProjection",
+    "comparison_source": "stacs-section5/Section5/SubdivisionProjection.lean",
+    "comparison_source_sha256": "84c843b1f6fdbd745947d27d53215093500e93f26943c7582666d0f0608b30f2"
+  },
+  "NPHardness.SubdivisionSequence": {
+    "source": "cpap-np-hardness/NPHardness/SubdivisionSequence.lean",
+    "source_sha256": "f006e9572a3612c8d4ec20a0689446d21504614dceaf1d62085e495c1b7eb3aa",
+    "comparison_module": "Section5.SubdivisionSequence",
+    "comparison_source": "stacs-section5/Section5/SubdivisionSequence.lean",
+    "comparison_source_sha256": "ffae91d4ba654296057f482db00c8b0313f29a8586526e86f3b3953fde69a7bf"
+  },
+  "NPHardness.TaggedGraph": {
+    "source": "cpap-np-hardness/NPHardness/TaggedGraph.lean",
+    "source_sha256": "aeb344af1d924ef997c020e54a5f52aed23d5adc39e3f6e4903a9dfe745f89b8",
+    "comparison_module": "Section5.TaggedGraph",
+    "comparison_source": "stacs-section5/Section5/TaggedGraph.lean",
+    "comparison_source_sha256": "07a3478ac5b66ced5e289747c643cba882e45fbf678a60058966e1788886df77"
+  },
+  "NPHardness.UnitPreprocess": {
+    "source": "cpap-np-hardness/NPHardness/UnitPreprocess.lean",
+    "source_sha256": "7b43fec06b2438d0f57adeecffd73c44d8b1fed422f1ba5c17c221e0e5ae60eb",
+    "comparison_module": "Section5.UnitPreprocess",
+    "comparison_source": "stacs-section5/Section5/UnitPreprocess.lean",
+    "comparison_source_sha256": "93a645c91963789440949833ae8f46f3c61c82df59f5bd3ffa4d61543f3232a6"
+  },
+  "NPHardness.UnitSimplify": {
+    "source": "cpap-np-hardness/NPHardness/UnitSimplify.lean",
+    "source_sha256": "4ce4130be96455f2749140017b484b5adb9678a1b4a8efc6f2783cb8c8db53eb",
+    "comparison_module": "Section5.UnitSimplify",
+    "comparison_source": "stacs-section5/Section5/UnitSimplify.lean",
+    "comparison_source_sha256": "d37ebfda50298419cc28a988b498fc1d70688e444002b8c6869997623554a8f4"
+  },
+  "NPHardness.VariableDistances": {
+    "source": "cpap-np-hardness/NPHardness/VariableDistances.lean",
+    "source_sha256": "6cf617425dce6b34fecb1761ce96255c20493938cf0b82e1bb78a8caa3ff43fa",
+    "comparison_module": "Section5.VariableDistances",
+    "comparison_source": "stacs-section5/Section5/VariableDistances.lean",
+    "comparison_source_sha256": "c49c9e892c0f778300c1d8d36f850d87ed8225dc1027c3faff1aadd6aeb76d1f"
+  },
+  "NPHardness.VariableExpansionCost": {
+    "source": "cpap-np-hardness/NPHardness/VariableExpansionCost.lean",
+    "source_sha256": "9adc69f396bed15a84c14de17d22cb91b443c951ff14c3f471d19f4e551c0842",
+    "comparison_module": "Section5.VariableExpansionCost",
+    "comparison_source": "stacs-section5/Section5/VariableExpansionCost.lean",
+    "comparison_source_sha256": "57960edce4f14648815380582a85146817cf9f21d6332f7c5b9f5d74f1aa9a4b"
+  },
+  "NPHardness.VariableGeneral": {
+    "source": "cpap-np-hardness/NPHardness/VariableGeneral.lean",
+    "source_sha256": "dc8e801a1b6edaa1a868b07deaff3f47a46ef743d8d09fd87db6d723a818800c",
+    "comparison_module": "Section5.VariableGeneral",
+    "comparison_source": "stacs-section5/Section5/VariableGeneral.lean",
+    "comparison_source_sha256": "9809fa93ef5abc6d8fa09a0b6d4d3677cc8f3df9ef97171ff44397df4406217a"
+  },
+  "NPHardness.VertexGluing": {
+    "source": "cpap-np-hardness/NPHardness/VertexGluing.lean",
+    "source_sha256": "5e4800699af15445514d41ca331ab0083b5c64729a02efc061f64c9f45222452",
+    "comparison_module": "Section5.VertexGluing",
+    "comparison_source": "stacs-section5/Section5/VertexGluing.lean",
+    "comparison_source_sha256": "420408470e899973576d857f35bb063ca512f50514dbae66b8e336c5c4dfc6ce"
+  },
+  "MinorFree.Blocks": {
+    "source": "cpap-minor-free/MinorFree/Blocks.lean",
+    "source_sha256": "4b16fbe57fd1926afaa7b3da26b10814830d194d76cf8347868ca6392650d4aa",
+    "comparison_module": "Section8.Blocks",
+    "comparison_source": "stacs-section8/Section8/Blocks.lean",
+    "comparison_source_sha256": "b5cdbd528c8bea04e5625f26cf8d17abbe144efe1f82903b68c92fbd76a81fc7"
+  },
+  "MinorFree.Elimination": {
+    "source": "cpap-minor-free/MinorFree/Elimination.lean",
+    "source_sha256": "7e9a1b16fd943f35e5230bbe511660c682a169b265a0ce3fec8d16f034d58a1e",
+    "comparison_module": "Section8.Elimination",
+    "comparison_source": "stacs-section8/Section8/Elimination.lean",
+    "comparison_source_sha256": "711f312ebcff3202a7a5acd7febde022d2acde72b802440b09096bf7023ac888"
+  },
+  "MinorFree.FourCycles": {
+    "source": "cpap-minor-free/MinorFree/FourCycles.lean",
+    "source_sha256": "c24a9b8ed0ee1196d7b876055d12313b040ff93445187118db9ab75329e39e24",
+    "comparison_module": "Section8.FourCycles",
+    "comparison_source": "stacs-section8/Section8/FourCycles.lean",
+    "comparison_source_sha256": "4112f4e0f34319d19b40a887b81f007e046f33f3c23559b730eb2c711d47fabf"
+  },
+  "MinorFree.K4": {
+    "source": "cpap-minor-free/MinorFree/K4.lean",
+    "source_sha256": "ba550801b761b0a9bf33e1a915868e0c32acc82728671b7e43645d74f1142cad",
+    "comparison_module": "Section8.K4",
+    "comparison_source": "stacs-section8/Section8/K4.lean",
+    "comparison_source_sha256": "8f63b4910f8e936fa7455c76b55b3d5c7f60d021519633aa9472f4e8c1a7cdc4"
+  },
+  "Solution": {
+    "source": "cpap-outerplanar/Solution.lean",
+    "source_sha256": "3881857ff00c9962bc8aeca0b0663c3ae232c3f3887d7c3943dfe016fb45d7de",
+    "comparison_module": "Solution",
+    "comparison_source": "stacs-appendixG/Solution.lean",
+    "comparison_source_sha256": "3441690934ab09bae430c4581f332697508fdb12a38f162da6c6646fda01fd91"
+  }
+}

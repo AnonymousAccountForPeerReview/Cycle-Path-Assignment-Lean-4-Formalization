@@ -1,0 +1,212 @@
+version: v0.4
+project:
+  name: Executed CPAP algorithms, running time, and memory in Lean 4
+  description: 'Executed general-graph algorithms behind Sections 3, 4, and 7, Appendix A, and Appendix
+    B: flow construction and extraction, complete Corollary 3 four-cycle composition, Theorem 4 bounded-cost
+    programs, Corollary 5 zero-cost execution, Algorithm 3 optimum search, and Lemmas 15 and 16. Supporting
+    programs implement linear 2-SAT, four-cycle listing, fixed-length cycle enumeration, sorting, an Almost
+    2-SAT iterative-compression compiler, and exact convex-relaxation solving. The compiler, FPT, and
+    optimum-search bounds have explicit F+ premises; construction and listing alone are unconditional.
+    Structural Section 8 results are supplied by cpap-minor-free and cpap-outerplanar. The almost-linear
+    minimum-cost-flow implementation and resource analysis are the sole excluded algorithmic contract.
+    Flow.MinCostFlowSolver F T is an explicit correctness and resource premise; Flow.AlmostLinear T adds
+    the almost-linear bound. These are theorem hypotheses, not additional Lean axioms.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - cs.CC
+  msc2020:
+  - 68W40
+  - 68Q25
+  - 68R10
+  - 90C20
+  - 05C38
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: 'the accompanying paper: Section 3 (Theorem 2, Corollary 3), Section 4 (Theorem 4; the case
+    k = 3 by min-cost flow), Section 7 (Lemma 15, Lemma 16), Appendix A (the proof of Theorem 2), Appendix
+    B (Algorithm 3, the running time in the proof of Theorem 4, Corollary 5)'
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: A Deterministic Almost-Linear Time Algorithm for Minimum-Cost Flow
+  type: paper
+  id: doi:10.1109/FOCS57990.2023.00037
+  location: 2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS), Santa Cruz, CA,
+    USA, 2023, pp. 503-514
+  relationship: background
+  note: The almost-linear minimum-cost-flow implementation and resource analysis are the sole excluded
+    algorithmic contract. Flow.MinCostFlowSolver F T is an explicit correctness and resource premise;
+    Flow.AlmostLinear T adds the almost-linear bound. These are theorem hypotheses, not additional Lean
+    axioms.
+- title: Almost 2-SAT is fixed-parameter tractable
+  type: paper
+  id: doi:10.1016/j.jcss.2009.04.002
+  location: Journal of Computer and System Sciences 75(8), 435-450, 2009
+  relationship: background
+  note: Cited by Theorem 4 for O(15^Ψ Ψ m³). The iterative-compression strategy, annotated ternary search,
+    least-cut backend, prefix loop and normalized certificate output are formalized as one executed RAM
+    program in Runtimes/BoundedCost/ActualCompilerRAM.lean. actualCompilerRAM_fpt proves the Almost2SatSolver
+    interface and its FPTBound T Ψ N ≤ C 15^Ψ (Ψ + 1) (N + 1)³. The least-cut backend retains only the
+    cited almost-linear min-cost flow contract. boundedCost_ram_all_from_citedFlow instantiates the reduction
+    for all k ≥ 3 without a separate Almost 2-SAT hypothesis.
+- title: A linear-time algorithm for testing the truth of certain quantified Boolean formulas
+  type: paper
+  id: doi:10.1016/0020-0190(79)90002-4
+  location: Information Processing Letters 8(3), 121-123, 1979
+  relationship: background
+  note: The manuscript's linear 2-SAT citation remains. TwoSat.exists_linear_twoSat proves an executed
+    solver using path-based strongly connected components with no solver hypothesis.
+- title: Listing 4-cycles
+  type: paper
+  id: doi:10.4230/LIPIcs.FSTTCS.2023.25
+  location: Proc. FSTTCS 2023, 25:1-25:16
+  relationship: background
+  note: Cited by Corollary 3 for the O(|V|² + t) listing. Not the algorithm formalized; the formalized
+    listing (C4.fourCycles_ram_semantic and its paper forms) meets this bound and the next one with one
+    algorithm.
+- title: Removing additive structure in 3SUM-based reductions
+  type: paper
+  id: doi:10.1145/3564246.3585157
+  location: Proc. 55th Annual Symposium on Theory of Computing (STOC 2023), 405-418
+  relationship: background
+  note: Cited by Corollary 3 for the O((|E|^{4/3} + t) log² |V|) listing. The formalized listing is an
+    offline, deterministic, hashing-free variant of the listing of its Theorem 7.2 (degeneracy order,
+    2-paths grouped by their endpoint pair by sorting), with its own analysis (a supersaturation bound),
+    and meets both of Corollary 3's bounds without the log² factor.
+- title: The polynomial solvability of convex quadratic programming
+  type: paper
+  location: USSR Computational Mathematics and Mathematical Physics 20(5), 223-228, 1980
+  relationship: background
+  note: 'Cited by Lemma 16. Not the procedure formalized: the relaxation is solved by a rational central-cut
+    ellipsoid method on the reduced coordinates, followed by exact rounding through the KKT system with
+    bordered adjugates, within C (|input| + 2)^10 steps and addresses (QPRam.relaxSolver_ram_optimal).'
+related_formalizations:
+- id: cpap-outerplanar
+  relationship: builds-on
+  note: Direct Lake path dependency ../cpap-outerplanar, covering Section 8 and Appendices E/F structural
+    and exact-algorithm results and supplying the shared RAM model, bounded execution and Hoare logic,
+    graph input, relabeling, and PairIds infrastructure.
+- id: cpap-tractability, cpap-bounded-cost and cpap-approximation (the Section 3, 4 and 7 formalizations
+    of the same manuscript)
+  relationship: builds-on
+  note: Direct Lake sibling dependencies at ../cpap-tractability, ../cpap-bounded-cost, and ../cpap-approximation,
+    supplying the flow, CNF, greedy, and relaxation models.
+- id: cpap-np-hardness and cpap-minor-free (the Section 5 and 8 formalizations of the same manuscript)
+  relationship: builds-on
+  note: Inherited Lake sibling dependencies supplying common CPAP definitions and minor-free structure;
+    imported models do not make their structural result proofs local runtime results.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: 'Through the others: the CNF formulas of 2-SAT and Almost 2-SAT.'
+status:
+  scope: 'The 31 comparison endpoints and supporting programs are checked under the permitted axiom boundary.
+    Linear 2-SAT, k >= 4 zero-cost execution, four-cycle and general fixed-length enumeration, greedy
+    execution, and the exact convex-relaxation solver require no excluded solver. Flow-dependent programs
+    prove implications: F endpoints assume a correct supplied flow program and explicit T bound; F+ endpoints
+    also assume AlmostLinear T, including the concrete Almost 2-SAT compiler, fixed-parameter bounded-cost
+    programs and increasing-budget optimum search. Generic modular Almost 2-SAT interfaces remain available
+    and are instantiated by that compiler. Input cycles are charged separately except where a complete
+    enumeration/assignment program is exhibited. Bounds count RAM steps and maximum read/write addresses;
+    label-dependent memory is retained where used. The almost-linear minimum-cost-flow implementation
+    and resource analysis are the sole excluded algorithmic contract. Flow.MinCostFlowSolver F T is an
+    explicit correctness and resource premise; Flow.AlmostLinear T adds the almost-linear bound. These
+    are theorem hypotheses, not additional Lean axioms.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.Runtimes.BoundedCost.almostTwoSatFptSolverExists_of_citedFlow
+    kind: theorem
+    statement: A concrete Almost 2-SAT RAM solver with the fixed-parameter bound; the cited flow algorithm
+      is its sole algorithmic hypothesis.
+  - declaration: STACS2027.Runtimes.TwoSat.exists_linear_twoSat
+  - declaration: STACS2027.Runtimes.ZeroCost.zeroCost_ram
+  - declaration: STACS2027.Runtimes.C4.fourCycles_ram_semantic
+  - declaration: STACS2027.Runtimes.C4.fourCycles_ram_paper_semantic
+  - declaration: STACS2027.Runtimes.C4.fourCycles_ram_simple_semantic
+  - declaration: STACS2027.Runtimes.Flow.cpap4_flow_ram_semantic
+  - declaration: STACS2027.Runtimes.Flow.sortedNetworkConstruction
+  - declaration: STACS2027.Runtimes.Flow.cpap4_flow_ram_almostLinear
+  - declaration: STACS2027.Runtimes.Flow.cpap4_flow_single
+  - declaration: STACS2027.Runtimes.Flow.cpap4_flow_single_almostLinear
+  - declaration: STACS2027.Runtimes.Flow.triangle_ram_semantic
+  - declaration: STACS2027.Runtimes.Flow.triangle_ram_almostLinear
+  - declaration: STACS2027.Runtimes.Flow.triangle_single
+  - declaration: STACS2027.Runtimes.Flow.triangle_single_almostLinear
+  - declaration: STACS2027.Runtimes.cpap4_enum_ram_explicit_semantic
+  - declaration: STACS2027.Runtimes.cpap4_enum_ram_semantic
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_ram
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_ram_fpt
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_triangle
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_triangle_almostLinear
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_ram_all
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_ram_all_almostLinear
+  - declaration: STACS2027.Runtimes.Greedy.greedy_ram
+  - declaration: STACS2027.Runtimes.Greedy.greedy_guarantee_ram
+  - declaration: STACS2027.Runtimes.QPRam.relaxSolver_ram_optimal
+  - declaration: STACS2027.Runtimes.generalCycleEnumerationRam
+    file: Runtimes/GeneralCycles/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.Runtimes.Flow.polynomialMinCostFlowSolverExists_of_almostLinear
+    file: Runtimes/Flow/PolynomialBound.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.Runtimes.fourCycleAssignment_single
+    file: Runtimes/CpapSingle/Complete.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.Runtimes.BoundedCost.boundedCost_ram_all_from_citedFlow
+    file: Runtimes/BoundedCost/ActualFPT.lean
+    statement: One executed bounded-cost RAM program for every k at least three, with the manuscript fixed-parameter
+      bound and only the cited almost-linear flow contract.
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.Runtimes.BoundedCost.optimalCost_ram_fpt_from_citedFlow
+    file: Runtimes/BoundedCost/OptMain.lean
+    statement: One executed RAM program for every k at least three constructs the occurrence core once,
+      returns OPT with a certified assignment, and satisfies the last successful budget's manuscript bound;
+      only the cited almost-linear flow contract remains external.
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: The RAM model and verification infrastructure come from cpap-outerplanar/Outerplanar. Natural-number
+    addition/subtraction, access, and control have unit cost; cells are unbounded and the proved space
+    quantity bounds read/write addresses, not bit complexity. Most assignment programs take the canonical
+    cycle list as input; the complete Corollary 3 program includes enumeration. Label dictionaries add
+    a labelBound term; sorted construction proves label-independent bounds but does not erase the full
+    four-cycle lister's dictionary. Generic modular endpoints can take Almost2SatSolver and FPTBound premises;
+    the final compiler instantiates these conditionally on the sole F+ flow contract. The k >= 4 decision
+    program uses the encoding without a second 2-SAT call; optimum search constructs a compact occurrence
+    core once. Four-cycle listing, 2-SAT and convex optimization use separately verified procedures meeting
+    the required guarantees, rather than assuming the cited implementations.

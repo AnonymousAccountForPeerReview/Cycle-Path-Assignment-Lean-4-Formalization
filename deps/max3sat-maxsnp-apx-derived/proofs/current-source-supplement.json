@@ -1,0 +1,306 @@
+{
+  "axiom_records": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.stripOnes_add_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.length_leadingOnes_add_afterOnes"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.listStep"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.parseList"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.parseList_writeList"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Complexity.ReadBound"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.listStep_iterate_bound"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.parseList_bound"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_parseList"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.natItem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.natItem_enc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_natItem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.natItem_bound"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.tupleItem"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.relItem"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.parseRelations"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.tupleItem_bound"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.relItem_bound"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_tupleItem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_relItem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_parseRelations"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.PT.parseRelations"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.parseRelations_encode"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.nodupB"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.fitsB"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.nodupB_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.fitsB_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_fitsB"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.PT.fitsB"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_eval"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.PT.eval"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.snpFeas"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.snpFeas_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_snpFeas"
+    },
+    {
+      "axioms": [],
+      "declaration": "Complexity.fullRel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.pt_fullRel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.size_le_of_subperm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.size_le_fullRel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Complexity.npo_maxSNP0"
+    }
+  ],
+  "date": "2026-10-12",
+  "dependency_input_records": 374,
+  "isolated_stage_deleted": true,
+  "note": "These two retained modules lie outside the selected paper target closures. Their 39 axiom queries supplement, rather than alter, the per-package exact guard totals.",
+  "original_result_sha256": "409f3c776b69f580c7ffe7ba8e83a1aa0b6049a6e373b9cc0a54f45a29427932",
+  "post_checks_passed": true,
+  "record_kind": "Supplementary current-source and transitive-axiom checks",
+  "source_modules": {
+    "deps/max3sat-maxsnp-apx-derived/Hardness/MaxSNP/NPO.lean": {
+      "compile_exit_code": 0,
+      "fresh_artifact_sha256": {
+        ".ilean": "04454da77313ee3768120e3b08b8e3b33416d443aa11da331c20f12c7cd05815",
+        ".ir": "bf5a686b2f62da70995ac48a9cf4be9db915f7178ac7f54dfd26a352d7d63752",
+        ".ir.sig": "050b97d3fca816c119d149a5686a14cde1c32e735f6c76346b741d8c437aad8b",
+        ".olean": "15cefd2fe496abad5d4636ac67945cb7f6516e1162a1893d70e48ba0d83d7e9d",
+        ".olean.private": "9f1d721fe898b0101346450ab9488e49ff11cb1aa8d630888f42770181447f6c",
+        ".olean.server": "cfdefce9114f28e32df3196f30af1f2fdeba386b4b67f4550bbf153aaffeb115"
+      },
+      "source_sha256": "61735e149666b4380b24e32989bf42cdbd045174aa59b29b4659559b3d779f9a"
+    },
+    "deps/max3sat-maxsnp-apx-derived/Solution.lean": {
+      "compile_exit_code": 0,
+      "fresh_artifact_sha256": {
+        ".ilean": "3c7ab8e1afe134a7628d56b79482105bfc4b50e852da5d4f17d83a4505e60e91",
+        ".ir": "909aa94939c1d2e54a54ce17e9b690525ee731998ede301768b9fe75858b1f0f",
+        ".ir.sig": "330f176d1fd451d38755cb0d1cacf6bbc14921af93dd1f691115135e5a8341cf",
+        ".olean": "7a206fd882ac67f3e7eb6cf4aa648c4b4384ea2da99f0f6ed2ea463292b94276",
+        ".olean.private": "27d2c3abf56938628a8691701a2523edd14c3c6a77a03cf7a62c5abb874f476e",
+        ".olean.server": "67b33cbadeddc50eabf3d50ebf228ba87c1acc8eb54d2ad57402286a6c1038e2"
+      },
+      "source_sha256": "f276b593c8c7c0132029fee2d1be5933d0844f423861a745b1cdef56fd6a0151"
+    }
+  }
+}

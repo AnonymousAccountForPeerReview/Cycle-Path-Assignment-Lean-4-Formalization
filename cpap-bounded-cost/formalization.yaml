@@ -1,0 +1,342 @@
+version: v0.4
+project:
+  name: Bounded-cost and zero-cost CPAP encodings in Lean 4
+  description: 'Section 4 and Appendix B: Theorem 4''s Almost 2-SAT encoding, Corollary 5''s zero-cost
+    prefix encoding, exact encoding sizes, and Algorithm 3''s cycle-core preservation, deletion recovery,
+    and functional optimum search, for k >= 4. Local correctness theorems quantify over correct solver
+    outputs. cpap-runtimes supplies executed 2-SAT, an Almost 2-SAT compiler, the all-k >= 3 decision
+    program and optimum search. The compiler, fixed-parameter, and optimum-search runtime endpoints explicitly
+    require both flow correctness and the almost-linear bound. The almost-linear minimum-cost-flow implementation
+    and resource analysis are the sole excluded algorithmic contract. Flow.MinCostFlowSolver F T is an
+    explicit correctness and resource premise; Flow.AlmostLinear T adds the almost-linear bound. These
+    are theorem hypotheses, not additional Lean axioms.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - cs.CC
+  msc2020:
+  - 68Q25
+  - 68Q27
+  - 05C38
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: 'the accompanying paper: Section 4 (Theorem 4, Corollary 5) and Appendix B (the k-cycle core,
+    Algorithm 3, proof of Theorem 4, computing OPT, proof of Corollary 5)'
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: Almost 2-SAT is fixed-parameter tractable
+  type: paper
+  id: doi:10.1016/j.jcss.2009.04.002
+  location: Journal of Computer and System Sciences 75(8), 435-450, 2009
+  relationship: background
+  note: The manuscript citation remains. This package proves the encoding and recovery; cpap-runtimes
+    supplies the executed iterative-compression compiler. Its actualCompilerRAM_fpt endpoint has explicit
+    MinCostFlowSolver and AlmostLinear premises (F+), rather than an extra external Almost 2-SAT premise.
+- title: A linear-time algorithm for testing the truth of certain quantified boolean formulas
+  type: paper
+  id: doi:10.1016/0020-0190(79)90002-4
+  location: Information Processing Letters 8(3), 121-123, 1979
+  relationship: background
+  note: The linear-time 2-SAT citation used for Ψ = 0 and Corollary 5 remains. The companion cpap-runtimes
+    theorem TwoSat.exists_linear_twoSat supplies an executed linear-time solver using a path-based strongly
+    connected component procedure.
+related_formalizations:
+- id: cpap-np-hardness
+  relationship: builds-on
+  note: Lake path dependency ../cpap-np-hardness (Apache-2.0), supplying common CPAP definitions.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: Lake git dependency at commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925 (Apache-2.0), supplying
+    Complexity.SAT CNF formulas. Temporary Challenge specifications reproduce required definitions and
+    are omitted from the distribution.
+- id: cpap-tractability (the Section 3 formalization of the same manuscript)
+  relationship: other
+  note: Companion package proving the four-cycle and triangle flow reductions. It is not a direct Lake
+    dependency of this package; the encoding here applies to every k >= 4.
+status:
+  scope: 'The 21 comparison endpoints and supporting lemmas are proved: encoding equivalences and sizes,
+    exact prefix counts, cycle-core preservation, deletion and path recovery, Algorithm 3 correctness
+    for k >= 4, and functional optimum search with a correct decision procedure. cpap-runtimes supplies
+    unconditional linear 2-SAT and k >= 4 zero-cost execution, and flow-conditional FPT and optimum-search
+    programs for all k >= 3. The almost-linear minimum-cost-flow implementation and resource analysis
+    are the sole excluded algorithmic contract. Flow.MinCostFlowSolver F T is an explicit correctness
+    and resource premise; Flow.AlmostLinear T adds the almost-linear bound. These are theorem hypotheses,
+    not additional Lean axioms.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.almostSatisfiable_iff_hasAssignment
+    file: BoundedCost/Equivalence.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.almostFormula_size
+    file: BoundedCost/Sizes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.zeroCostFormula_satisfiable_iff
+    file: BoundedCost/ZeroCost.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.zeroCostFormula_size
+    file: BoundedCost/Sizes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.prefixClauses_length
+    file: BoundedCost/Sizes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.prefixAuxiliaryVariables_count
+    file: BoundedCost/Sizes.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.mem_kCycleCore_iff
+    file: BoundedCost/Algorithm3Core.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.mem_vertices_kCycleCore_iff
+    file: BoundedCost/Algorithm3Core.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.isCycle_kCycleCore_iff
+    file: BoundedCost/Algorithm3Core.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cycles_kCycleCore
+    file: BoundedCost/Algorithm3Core.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.hasAssignment_kCycleCore_iff
+    file: BoundedCost/Algorithm3Core.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.deletedOverlaps_spec
+    file: BoundedCost/Algorithm3Recovery.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.recoveredPath_spec
+    file: BoundedCost/Algorithm3Recovery.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.recoverAssignment_correct
+    file: BoundedCost/Algorithm3Recovery.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.recoverAssignment_zeroCost
+    file: BoundedCost/ZeroCost.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.permittedFormula_nil_satisfiable_iff
+    file: BoundedCost/Algorithm3Search.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.algorithm3_correct
+    file: BoundedCost/Algorithm3.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.almostSatisfiable_mono
+    file: BoundedCost/Algorithm3Search.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.exists_almostSatisfiable
+    file: BoundedCost/Algorithm3Search.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.isOptimalCost_iff_least_accepted
+    file: BoundedCost/Algorithm3Search.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.searchOptimum_correct
+    file: BoundedCost/Algorithm3Search.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: The common CPAP model uses one representative per cycle edge set and one omitted vertex
+    per path. CNF formulas are lists, so repeated clauses are distinct occurrences. Variables use natural-number
+    indices; candidate overlaps are ordered triples (i, i', e) with i < i'. Recovery chooses the first
+    vertex incident to every marked edge. Local algorithm correctness quantifies over solver outputs;
+    local optimum search quantifies over a correct Boolean decision procedure. The executed companion
+    compiler and timed optimum search have F+ premises. The triangle branch is supplied by the flow packages,
+    while the 2-CNF encoding here includes k = 4.
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Proof of Corollary 5: an edge in p ≥ 2 cycles uses p − 1 auxiliary variables and 3p − 4 clauses'
+    lean: STACS2027.prefixAuxiliaryVariables_count, STACS2027.prefixClauses_length, STACS2027.prefixEncodingClauseCount
+    module: Solution
+    status: proved
+    note: The auxiliary variables are listed once; the clause total counts occurrences, including repetitions.
+      The retained proposition PrefixEncodingClauseCount is proved.
+  - source: 'Theorem 4 and Appendix B: Almost 2-SAT accepts Γ'' exactly when an assignment of cost at
+      most Ψ exists'
+    lean: 'STACS2027.almostSatisfiable_iff_hasAssignment : 4 ≤ k → (AlmostSatisfiable (almostFormula g
+      k Ψ) Ψ ↔ HasAssignment g k Ψ)'
+    module: Solution
+    status: proved
+    note: Both directions, through the correctness of Γ_𝓘 (STACS2027.permittedFormula_satisfiable_iff)
+      and the survival of every path constraint under at most Ψ deletions.
+  - source: 'Appendix B, running time: kt variables, k(k-3)t/2 path constraints, |𝒰| ≤ kt²/2, O((Ψ+1)k²t
+      + kt²) clause occurrences'
+    lean: STACS2027.almostFormula_size
+    module: Solution
+    status: proved
+    note: 'Exact counts: 2|Γ₁| = k(k-3)t, 2|𝒰| ≤ kt(t-1), |Γ''| = (Ψ+1)|Γ₁| + |𝒰|; every clause has two
+      literals on variables below kt.'
+  - source: 'Corollary 5: the prefix encoding is satisfiable exactly when a zero-cost assignment exists'
+    lean: 'STACS2027.zeroCostFormula_satisfiable_iff : 4 ≤ k → (Satisfiable (zeroCostFormula g k) ↔ HasAssignment
+      g k 0)'
+    module: Solution
+    status: proved
+    note: Both directions, through the prefix indicators 'some earlier b is false'.
+  - source: 'Corollary 5: O(kt) variables and O(k²t) clauses'
+    lean: STACS2027.zeroCostFormula_size
+    module: Solution
+    status: proved
+    note: Every variable index is below 2kt, with at most |Γ₁| + 3kt two-literal clause occurrences and
+      2|Γ₁| = k(k-3)t. The empty-cycle instance is included.
+  - source: 'Appendix B and Algorithm 3: restricting G to its k-cycle core (the vertices and edges on
+      k-cycles) changes neither the feasible assignments nor their costs'
+    lean: STACS2027.mem_kCycleCore_iff, STACS2027.mem_vertices_kCycleCore_iff, STACS2027.isCycle_kCycleCore_iff,
+      STACS2027.cycles_kCycleCore, STACS2027.hasAssignment_kCycleCore_iff
+    module: Solution
+    status: proved
+    note: The enumerated k-cycles of the core are those of G, in the same order, so every formula built
+      from them is unchanged (STACS2027.encodings_kCycleCore).
+  - source: 'Algorithm 3: 𝓘 ← {u ∈ 𝒰 : λ_u deleted by 𝒟}; σ ← Solve-2-SAT(Γ_𝓘)'
+    lean: STACS2027.deletedOverlaps_spec
+    module: Solution
+    status: proved
+    note: '|𝓘| ≤ Ψ, and every truth assignment satisfying the clauses kept by 𝒟 satisfies Γ_𝓘, so the
+      2-SAT call does not fail.'
+  - source: 'Algorithm 3, last loop: W_C, ρ(C) with W_C ⊆ E(C, ρ(C)), τ(C) = E(C) \ E(C, ρ(C)); Appendix
+      B: c(τ) ≤ |𝓘|'
+    lean: STACS2027.recoveredPath_spec, STACS2027.recoverAssignment_correct
+    module: Solution
+    status: proved
+    note: The recovery is a computable function of σ; for every σ satisfying Γ_𝓘 (k ≥ 4) it is a valid
+      assignment of cost at most |𝓘|.
+  - source: 'Corollary 5: from a satisfying truth assignment we recover paths as in the proof of Theorem
+      4'
+    lean: STACS2027.recoverAssignment_zeroCost
+    module: Solution
+    status: proved
+  - source: 'Algorithm 3 and Appendix B: for Ψ = 0, ordinary 2-SAT on Γ_∅ suffices'
+    lean: STACS2027.permittedFormula_nil_satisfiable_iff
+    module: Solution
+    status: proved
+  - source: 'Algorithm 3 (k ≥ 4): returns an assignment τ with c(τ) ≤ Ψ, or ⊥ if none exists'
+    lean: STACS2027.algorithm3_correct
+    module: Solution
+    status: proved
+    note: Run on the k-cycle core, with the outputs of the cited Almost 2-SAT and 2-SAT solvers quantified
+      over.
+  - source: 'Appendix B: the same algorithm computes OPT by testing Ψ = 0, 1, 2, … until an assignment
+      is returned'
+    lean: STACS2027.almostSatisfiable_mono, STACS2027.exists_almostSatisfiable, STACS2027.isOptimalCost_iff_least_accepted,
+      STACS2027.searchOptimum_correct
+    module: Solution
+    status: proved
+    note: The test is monotone and eventually succeeds; the first accepted Ψ is OPT; searchOptimum, run
+      with any correct decision procedure for the test, returns OPT.
+  - source: 'Theorem 4 and Algorithm 3: companion executed all-k decision and optimum search'
+    lean: STACS2027.Runtimes.BoundedCost.boundedCost_ram_all_from_citedFlow, STACS2027.Runtimes.BoundedCost.optimalCost_ram_fpt_from_citedFlow
+    module: Runtimes.BoundedCost.ActualFPT, Runtimes.BoundedCost.OptMain
+    status: proved
+    note: 'The companion all-k decision and optimum-search conclusions have dependency F+: explicit flow
+      correctness and almost-linear resource premises. The Almost 2-SAT compiler instantiates the required
+      solver interface; there is no additional external Almost 2-SAT oracle.'

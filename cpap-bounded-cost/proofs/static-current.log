@@ -1,0 +1,3 @@
+Challenge.lean matches its selected source declarations.
+230 axiom guards cover every named BoundedCost declaration
+All static checks passed.

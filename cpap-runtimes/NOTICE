@@ -1,0 +1,63 @@
+Running times and memory of the cycle-path assignment algorithms on the unit-cost RAM:
+Theorems 2 and 4, Corollaries 3 and 5 and Lemmas 15 and 16 of the cycle-path
+assignment paper, with linear-time 2-SAT and four-cycle listing (Lean 4)
+Author and maintainer: ANONYMIZED
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+This project depends on, and does not contain, the Lean developments
+
+  Exact algorithms on outerplanar and K_{2,3}-minor-free graphs: Theorems 20
+  and 21, Lemmas 19, 24, and 25, and Appendices E and F of the cycle-path assignment paper
+  (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-outerplanar
+  License: Apache-2.0
+
+  The min-cost flow reduction for four-cycle path assignment (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-tractability
+  License: Apache-2.0
+
+  The bounded-cost FPT algorithm for cycle-path assignment: 2-CNF encodings and
+  Algorithm 3 (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-bounded-cost
+  License: Apache-2.0
+
+  Approximation algorithms for cycle-path assignment: Lemma 13 and Theorems 14, 17,
+  18 (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-approximation
+  License: Apache-2.0
+
+  Cycle-path assignment is NP-hard for every fixed k >= 5 (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-np-hardness
+  License: Apache-2.0
+
+  Cycle-path assignment on minor-free graphs: Algorithm 4, Lemmas 23 and 25,
+  Theorem 20's block-combination proof, and Theorem 21's K4/block support
+  (Lean 4)
+  Author and maintainer: ANONYMIZED
+  Lake package name: cpap-minor-free
+  License: Apache-2.0
+
+  NP-completeness of SAT, 3-SAT and their variants (the Cook–Levin theorem) in
+  Lean 4: the NP-completeness foundation NPCompleteness-Lean4
+  Author and maintainer: ANONYMIZED
+  Commit: 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  License: Apache-2.0
+
+  Mathlib (The Lean mathematical library)
+  The Mathlib contributors
+  https://github.com/leanprover-community/mathlib4
+  Tag v4.35.0-rc2, commit 065356127b1dc0016f66b7283ce0ce2c4055aa55
+  License: Apache-2.0
+
+Lake resolves the outerplanar, tractability, bounded-cost, and approximation
+developments at their sibling paths in lakefile.toml. The common CPAP and
+minor-free packages and the NP-completeness foundation are inherited
+dependencies. Temporary Challenge specifications reproduce the required
+CNF, CPAP, flow, encoding, greedy, relaxation, and RAM definitions from
+those dependencies and import the pinned Mathlib module. They are generated
+for comparison and omitted from the distribution and default proof build.

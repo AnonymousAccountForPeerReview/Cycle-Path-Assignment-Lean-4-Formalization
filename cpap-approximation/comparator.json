@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "STACS2027.greedy_is_assignment",
+    "STACS2027.greedy_sq_load_bound",
+    "STACS2027.greedy_cost_bound",
+    "STACS2027.greedy_cost_integer_bound",
+    "STACS2027.rounding_is_assignment",
+    "STACS2027.randomized_rounding_cost_bound",
+    "STACS2027.conditional_rounding_cost_bound"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}

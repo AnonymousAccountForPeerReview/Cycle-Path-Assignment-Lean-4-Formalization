@@ -1,0 +1,332 @@
+version: v0.4
+project:
+  name: MaxSNP-completeness and APX-completeness of MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT (the PCP theorem
+    and hardness of approximation) in Lean 4
+  description: 'A Lean 4 proof of the PCP theorem and of its consequences for approximation, for an explicit
+    single-tape Turing machine model. The compared theorems are: the PCP theorem in gap form, that for
+    a fixed fraction num/den > 0 every NP language reduces in polynomial time to 3-SAT so that members
+    give satisfiable formulas and non-members give formulas of which every assignment leaves at least
+    that fraction of the clauses unsatisfied (Complexity.pcp_gap); the PCP theorem in verifier form, NP
+    = PCP(O(log n), O(1)) (Complexity.pcp_theorem); that the problems of the syntactic class MaxSNP0 are
+    in NPO (Complexity.npo_maxSNP0); that MaxSNP-hard problems have no polynomial-time approximation scheme
+    unless P = NP (Complexity.maxSNPHard_not_hasPTAS), even when a separate algorithm is allowed for each
+    precision (Complexity.maxSNPHard_no_ptas); that MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT are MaxSNP-complete
+    (Complexity.max3SAT_maxSNPComplete, Complexity.max3SAT3_maxSNPComplete); and that both are APX-complete
+    (Complexity.max3SAT_apxComplete, Complexity.max3SAT3_apxComplete). The statement, Challenge.lean,
+    imports only Lean core and defines everything it uses: the machine model, P, NP and polynomial-time
+    functions; probabilistically checkable proofs and gap reductions; optimization problems, approximation
+    algorithms and schemes; NPO; L-reductions, the syntactic class MaxSNP0 of ANONYMIZED and ANONYMIZED
+    (structures of fixed input and solution signatures on a finite universe, and a well-formed quantifier-free
+    formula) and the class MaxSNP of NPO problems L-reducible to it; APX and PTAS-reductions in the sense
+    of ANONYMIZED and ANONYMIZED; and the two problems.
+
+    The gap form of the PCP theorem is proved by ANONYMIZED''s gap amplification: the 3-CNF gap map, its
+    soundness and its implementation as a polynomial-time multi-stack Turing machine are taken from the
+    Lean formalization of the Unique Games theorem in the OpenAI mathematics repository (194 files,
+    adapted to the Lean module system and to Lean v4.35.0-rc2), and composed with the ANONYMIZED-ANONYMIZED
+    reduction of the NP-completeness foundation NPCompleteness-Lean4 (whose library is included). A simulation
+    theorem carries polynomial time from Mathlib''s multi-stack machines to the single-tape model. The
+    verifier form samples clauses of the gap formula with O(log n) random bits. MaxSNP-hard problems have
+    no approximation scheme because MAX-3-SAT L-reduces to them and an approximation scheme for MAX-3-SAT
+    would decide the gap. MAX-3-SAT is put in MaxSNP0 by an explicit quantifier-free formula, and every
+    MaxSNP0 problem L-reduces to it by the ANONYMIZED-ANONYMIZED clause construction (one clause per falsifying
+    pattern of atoms, split into 3-clauses with fresh variables, with an averaging bound for the constant;
+    assignments are mapped back to structures of the solution signature). The MaxSNP0 problems are in
+    NPO by an explicit polynomial-time parser and feasibility check, and a size bound for structures of
+    a fixed signature. 3-OCCURRENCE MAX-3-SAT is reached in two L-reductions: copies of each variable
+    linked along an explicit constant-degree expander (from the same ANONYMIZED development), and then
+    a torus gadget of implications. APX-hardness under PTAS-reductions needs a witness-recovering PCP
+    theorem, which is proved here: an explicit deterministic decoder, shown polynomial-time, turns every
+    assignment of the gap formula that satisfies more than the fraction 1 - num/den of its clauses into
+    an assignment of the original formula and then into an NP certificate. With it every APX problem reduces
+    to MAX-3-SAT by a threshold construction. Membership in APX uses a 2-approximation. The proof uses
+    only the axioms propext, Classical.choice and Quot.sound.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.CC
+  - cs.LO
+  msc2020:
+  - 68Q17
+  - 68Q25
+  - 68W25
+  - 68Q15
+  - 68V20
+sources:
+- title: 'Probabilistic checking of proofs: a new characterization of NP'
+  type: paper
+  id: doi:10.1145/273865.273901
+  location: Journal of the ACM 45(1) (1998), 70-122
+  relationship: formalizes
+  note: The PCP theorem in its verifier form, NP = PCP(O(log n), O(1)) (with the companion paper below).
+    The statement is formalized (Complexity.pcp_theorem); the proof here is not the original algebraic
+    one but ANONYMIZED's.
+- title: Proof verification and the hardness of approximation problems
+  type: paper
+  id: doi:10.1145/278298.278306
+  location: Journal of the ACM 45(3) (1998), 501-555
+  relationship: formalizes
+  note: The PCP theorem with constant query complexity, its gap form for 3-SAT, and the consequence that
+    MaxSNP-hard problems have no polynomial-time approximation scheme unless P = NP. All three statements
+    are formalized (pcp_theorem, pcp_gap, maxSNPHard_no_ptas and maxSNPHard_not_hasPTAS).
+- title: The PCP theorem by gap amplification
+  type: paper
+  id: doi:10.1145/1236457.1236459
+  location: Journal of the ACM 54(3) (2007), Article 12
+  relationship: adapts
+  note: The proof of the gap form follows OpenAI's gap amplification (preprocessing with expanders,
+    powering, alphabet reduction by an assignment tester), as formalized in the ANONYMIZED repository
+    listed under related_formalizations. The explicit decoder that makes the reduction witness-recovering
+    is new to this development; it follows the soundness arguments of the rounds.
+- title: Optimization, approximation, and complexity classes
+  type: paper
+  id: doi:10.1016/0022-0000(91)90023-X
+  location: Journal of Computer and System Sciences 43(3) (1991), 425-440
+  relationship: formalizes
+  note: 'L-reductions, the classes MaxSNP0 and MaxSNP, the MaxSNP-completeness of MAX-3-SAT and of its
+    bounded-occurrence version. Formalized: max3SAT_maxSNPComplete and max3SAT3_maxSNPComplete. The occurrence
+    reduction uses copies of each variable linked by an expander and then a torus gadget, as in the paper
+    and in ANONYMIZED''s book.'
+- title: Computational Complexity
+  type: book
+  location: Addison-Wesley (1994), Chapter 13 (Approximability), Theorem 13.10 and Corollary
+  relationship: formalizes
+  note: Textbook statement that 3-OCCURRENCE MAX-3-SAT is MaxSNP-complete, and definitions of L-reductions
+    and MaxSNP followed by the statement.
+- title: On approximation scheme preserving reducibility and its applications
+  type: paper
+  id: doi:10.1007/s002249910001
+  location: Theory of Computing Systems 33(1) (2000), 1-16; preliminary version FSTTCS 1994
+  relationship: formalizes
+  note: PTAS-reductions, the reducibility under which APX-hardness and APX-completeness are defined in
+    the statement (PTASReducible, APXHard, APXComplete).
+- title: On syntactic versus computational views of approximability
+  type: paper
+  id: https://eccc.weizmann.ac.il/report/1995/023
+  location: SIAM Journal on Computing 28(1) (1998), 164-191; ECCC TR95-023
+  relationship: adapts
+  note: 'APX-completeness of MAX-3-SAT: every APX problem reduces to MAX-3-SAT using a witness-recovering
+    PCP theorem and a threshold construction. The construction here is a variant (multiplicative thresholds,
+    blocks of balanced size), proved for PTAS-reductions.'
+- title: 'Complexity and Approximation: Combinatorial Optimization Problems and Their Approximability
+    Properties'
+  type: book
+  location: Springer (1999), Chapters 3 and 8
+  relationship: background
+  note: Textbook definitions of NPO, approximation schemes, APX and PTAS-reductions, used to check the
+    definitions of the statement.
+- title: Entropy waves, the zig-zag graph product, and new constant-degree expanders
+  type: paper
+  id: doi:10.2307/3062153
+  location: Annals of Mathematics 155(1) (2002), 157-187
+  relationship: background
+  note: The explicit expander family used in gap amplification and in the occurrence reduction is built
+    by zig-zag products in the ANONYMIZED development.
+related_formalizations:
+- id: https://github.com/openai/math
+  relationship: adapts
+  note: 'OpenAI mathematics repository, commit adc7f1241b42e322a6451854ab7e4b4c146bf78a, Lean formalization
+    of result 102 (the Unique Games theorem), Apache-2.0. Its 194 files under OAI/Computability/UniqueGames
+    (about 75,000 lines) are included in this repository: the closure of its 3-CNF gap map (ANONYMIZED''s
+    gap amplification, the explicit expander family and their multi-stack machines). Changes, recorded
+    in the header of every file: conversion to the Lean module system, removal of private modifiers and
+    of a duplicate lemma, small proof adjustments for the module system and for Lean v4.35.0-rc2, a count-form
+    restatement of one clause-gap theorem, an opaque wrapper for one large constant so that the NanoDa
+    checker does not unfold it, and a new statement file PCP/GapTheorem.lean extracted from TableGapReductionLemmas.lean.
+    OAI/LICENSE holds its licence; docs/PROVENANCE.md maps every adapted file to its upstream file.'
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: 'NP-completeness of SAT and 3-SAT (the ANONYMIZED-ANONYMIZED theorem) in Lean 4, at commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925.
+    Its machine model and definitions of P, NP and formula codes are reused verbatim in the statement,
+    and the part of its Complexity library needed for the ANONYMIZED-ANONYMIZED reduction is included:
+    75 files, byte-identical to that commit (one instance declaration in an unused file had to be fixed
+    and that file was then dropped). New modules are added under Complexity/Reg, Complexity/Witness, Complexity/PCP
+    and Complexity/Approx. docs/PROVENANCE.md lists the origin of every Lean file.'
+- id: https://github.com/ANONYMIZED/complexitylib
+  relationship: independent
+  note: Complexitylib, a Lean 4 library of computational complexity theory, proves the PCP theorem NP
+    = PCP[O(log n), O(1)] (Complexity.PCP_theorem in Complexitylib/Classes/PCP.lean, by ANONYMIZED, added
+    in commit a27b9885), also by OpenAI's gap amplification, for its own machine model and definitions.
+    Nothing from it is used or included here. At commit 3f4b5fee it contains nothing on MaxSNP, APX or
+    polynomial-time approximation schemes.
+status:
+  scope: 'Proved: the nine compared theorems for the definitions of Challenge.lean. On the way: a witness-recovering
+    ANONYMIZED-ANONYMIZED reduction (InNP.threeSAT_witness_explicit); a simulation of Mathlib''s polynomial-time
+    multi-stack machines by the single-tape model (Bridge.stack_of_tm2, Bridge.exists_polyTime_of_tm2);
+    a register language with calls and a framework (PT) for proving polynomial time of functions on coded
+    data; the deterministic gap decoder and its soundness (Decode.gapDecode_satisfies) and polynomial
+    time (Complexity.witnessGap); MAX-3-SAT in MaxSNP and MaxSNP-hard; a polynomial-time parser and feasibility
+    check for MaxSNP0 problems (Complexity.snpFeas); the expander and torus occurrence reductions; membership
+    of both problems in APX. Not included: invariance under other machine models; PCP statements with
+    other parameters (e.g. three queries, or near-optimal soundness); MaxSNP-completeness of other problems;
+    adaptive verifiers.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: Complexity.pcp_gap
+    file: Hardness/Final/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.pcp_theorem
+    file: Hardness/Final/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.npo_maxSNP0
+    file: Hardness/MaxSNP/NPO.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.maxSNPHard_no_ptas
+    file: Hardness/Final/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.maxSNPHard_not_hasPTAS
+    file: Hardness/Final/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.max3SAT_maxSNPComplete
+    file: Hardness/Final/Max3SAT.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.max3SAT3_maxSNPComplete
+    file: Hardness/Occ/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.max3SAT_apxComplete
+    file: Hardness/Witness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: Complexity.max3SAT3_apxComplete
+    file: Hardness/Witness/Main.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: '- Machine model, P, NP, polynomial-time functions and formula codes are those of the NP-completeness
+    foundation NPCompleteness-Lean4: deterministic single-tape Turing machines over {blank, 0, 1, separator},
+    time = number of steps, polynomial bounds c * (n + 1)^k, NP by polynomial-time verifiers with certificates
+    of length at most p(|x|), formulas with unary variable indices. P = NP (PEqNP) means that every NP
+    language is decided by a polynomial-time machine. Invariance under other machine models is not proved.
+
+    - PCP: a verifier is non-adaptive and given as a polynomial-time map from (input, random string) to
+    a CNF formula over the proof bits; the proof is accepted when it satisfies the formula, and the query
+    complexity is the number of distinct proof bits the formula mentions. Random strings are all words
+    of length c * log2(|x| + 2); soundness is 1/2. This is the usual non-adaptive formulation of PCP(O(log
+    n), O(1)) with perfect completeness.
+
+    - Gap reductions map to nonempty 3-CNF formulas (at most three literals per clause); the gap is stated
+    as den * sat + num * m <= den * m for every assignment of a non-member''s formula with m clauses.
+
+    - Optimization problems are relations Sol x y v on binary words with a direction. Only instances that
+    have an optimum are constrained by approximation algorithms, L-reductions and PTAS-reductions. Approximation
+    ratios are rationals a/b, opt <= (a/b) v for maximization; precision 1 + 1/(k + 1) for schemes. maxSNPHard_no_ptas
+    excludes even one algorithm per precision (non-uniform in k); HasPTAS is a uniform scheme whose running
+    time is polynomial in the instance for every fixed k.
+
+    - A MaxSNP0 problem is given by an input signature ga and a solution signature sa (lists of arities)
+    and a quantifier-free formula phi in k variables over input relations, solution relations and equality
+    that is well formed for them (every atom applies a relation of the signature to as many variables
+    as its arity, all variable indices below k). Instances are structures of signature ga on a universe
+    {0, ..., n - 1}, coded as n in unary followed by the lists of tuples; solutions are structures of
+    signature sa on the same universe (one relation per arity, each a list of distinct tuples of that
+    arity with entries below n); the value is the number of k-tuples of the universe satisfying phi. These
+    problems are in NPO (npo_maxSNP0). MaxSNP consists of the NPO problems L-reducible to a MaxSNP0 problem
+    (the class of ANONYMIZED and ANONYMIZED; ANONYMIZED et al. call it MaxSNP''s closure). L-reductions
+    have constants alpha, beta and map every solution of the image back.
+
+    - NPO requires solutions of polynomially bounded length and one polynomial-time function computing
+    feasibility and value (in binary); recognition of instances is implicit in that function. APX consists
+    of the NPO problems with a polynomial-time constant-ratio approximation. APX-hardness is with respect
+    to PTAS-reductions (ANONYMIZED-ANONYMIZED), with precisions 1/(k+1) and a computable precision map
+    c.
+
+    - MAX-3-SAT instances are codes of 3-CNF formulas (at most three literals per clause; empty and repeated
+    clauses allowed, empty clauses never satisfied); a solution is a word of length at most the instance
+    length read as an assignment (variable i is bit i, false beyond the end); the value is the number
+    of satisfied clauses, counted with multiplicity. 3-OCCURRENCE MAX-3-SAT adds that every variable occurs
+    at most three times in the whole formula.'
+alignment:
+  namespace: Complexity
+  statements:
+  - source: 'ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED (1998): gap form of the PCP theorem
+      for 3-SAT'
+    lean: Complexity.pcp_gap
+    module: Solution
+    status: proved
+    note: Gap num/den with num = 1, den = 40960 * (walk length of the amplification), a fixed but astronomically
+      large constant.
+  - source: 'ANONYMIZED-ANONYMIZED (1998); ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED (1998):
+      NP = PCP(O(log n), O(1))'
+    lean: Complexity.pcp_theorem
+    module: Solution
+    status: proved
+    note: Both inclusions; the query bound is 6 * den, a constant.
+  - source: 'ANONYMIZED-ANONYMIZED (1991): the problems of MaxSNP0 are NP optimization problems'
+    lean: Complexity.npo_maxSNP0
+    module: Solution
+    status: proved
+  - source: 'ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED (1998): MaxSNP-hard problems have
+      no PTAS unless P = NP'
+    lean: Complexity.maxSNPHard_no_ptas, Complexity.maxSNPHard_not_hasPTAS
+    module: Solution
+    status: proved
+  - source: 'ANONYMIZED-ANONYMIZED (1991): MAX-3-SAT is MaxSNP-complete'
+    lean: Complexity.max3SAT_maxSNPComplete
+    module: Solution
+    status: proved
+  - source: 'ANONYMIZED-ANONYMIZED (1991); ANONYMIZED (1994), Theorem 13.10: 3-OCCURRENCE MAX-3-SAT is
+      MaxSNP-complete'
+    lean: Complexity.max3SAT3_maxSNPComplete
+    module: Solution
+    status: proved
+  - source: 'ANONYMIZED-ANONYMIZED-ANONYMIZED-ANONYMIZED (1998); ANONYMIZED-ANONYMIZED (2000): MAX-3-SAT
+      is APX-complete'
+    lean: Complexity.max3SAT_apxComplete
+    module: Solution
+    status: proved
+  - source: 3-OCCURRENCE MAX-3-SAT is APX-complete (APX-hardness via the L-reduction from MAX-3-SAT)
+    lean: Complexity.max3SAT3_apxComplete
+    module: Solution
+    status: proved

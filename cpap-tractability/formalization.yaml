@@ -1,0 +1,141 @@
+version: v0.4
+project:
+  name: Four-cycle and triangle flow reductions in Lean 4
+  description: 'Mathematical flow reductions in Section 3 and Appendix A: Theorem 2''s four-cycle assignment/flow
+    equivalence and exact network sizes, and the triangle extension. The assignment-to-flow direction
+    preserves cost; the flow-to-assignment direction does not increase it. These proofs use only propext,
+    Classical.choice, and Quot.sound. Executed construction, extraction, enumeration, and the conditional
+    runtime claims are supplied by cpap-runtimes. The almost-linear minimum-cost-flow implementation and
+    resource analysis are the sole excluded algorithmic contract. Flow.MinCostFlowSolver F T is an explicit
+    correctness and resource premise; Flow.AlmostLinear T adds the almost-linear bound. These are theorem
+    hypotheses, not additional Lean axioms.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - cs.CC
+  msc2020:
+  - 68Q25
+  - 05C38
+  - 90C27
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: Section 3 (Theorem 2 and the triangle reduction), Appendix A
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: A Deterministic Almost-Linear Time Algorithm for Minimum-Cost Flow
+  type: paper
+  id: doi:10.1109/FOCS57990.2023.00037
+  location: FOCS 2023, 503-514
+  relationship: background
+  note: The almost-linear minimum-cost-flow implementation and resource analysis are the sole excluded
+    algorithmic contract. Flow.MinCostFlowSolver F T is an explicit correctness and resource premise;
+    Flow.AlmostLinear T adds the almost-linear bound. These are theorem hypotheses, not additional Lean
+    axioms.
+related_formalizations:
+- id: cpap-np-hardness
+  relationship: builds-on
+  note: Lake path dependency ../cpap-np-hardness (Apache-2.0), supplying the common graph, cycle, path,
+    assignment, and objective definitions. Temporary Challenge specifications reproduce the required definitions;
+    they are omitted from the distribution.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: other
+  note: Lake git dependency pinned to commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925 (Apache-2.0), also
+    required by the common CPAP foundation.
+status:
+  scope: The four comparison endpoints and supporting reduction lemmas are proved. The four-cycle network
+    has target value 2t, 10t arcs, and at most 6t + 2 nodes; the triangle network has target value t,
+    7t arcs, and at most 4t + 2 nodes. Mathematical optimality transfer needs no flow-algorithm premise.
+    cpap-runtimes supplies the executed programs and Corollary 3 pipeline with explicit flow hypotheses.
+    The almost-linear minimum-cost-flow implementation and resource analysis are the sole excluded algorithmic
+    contract. Flow.MinCostFlowSolver F T is an explicit correctness and resource premise; Flow.AlmostLinear
+    T adds the almost-linear bound. These are theorem hypotheses, not additional Lean axioms.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.cpap4_iff_flow
+    file: Tractability/FlowEquivalence.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.fourCycleNetwork_size
+    file: Tractability/NetworkSize.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cpap3_iff_flow
+    file: Tractability/TriangleEquivalence.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.triangleNetwork_size
+    file: Tractability/TriangleSize.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: Cycles are identified by edge set through the shared CPAP definitions. Networks and integral
+    unit-capacity flows are lists of arc occurrences; parallel sink arcs are distinguished by cost. Cost
+    is preserved in the forward direction and bounded from above by the flow cost in the reverse direction.
+    The package proves the mathematical reductions; executed runtime claims belong to cpap-runtimes and
+    retain their flow premises.
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Theorem 2 and Appendix A: the min-cost flow reduction for CPAP(G, 4)'
+    lean: 'STACS2027.cpap4_iff_flow : HasAssignment g 4 budget ↔ ∃ flow, IsFlow (fourCycleNetwork g) flow
+      ∧ flowValue flow = 2 * t ∧ flowCost flow ≤ budget'
+    module: Solution
+    status: proved
+    note: Both directions of the correspondence between assignments and integral flows of value 2t, with
+      equal cost from assignments to flows and no greater cost back; hence the optimum of CPAP(G, 4) is
+      the minimum cost of such a flow.
+  - source: 'Appendix A: |X| = 2t, |Y| ≤ 4t, |E_𝓕| = O(t), U = 1, Q ≤ t - 1'
+    lean: STACS2027.fourCycleNetwork_size
+    module: Solution
+    status: proved
+    note: Exactly 10t arcs; at most 6t + 2 nodes; every arc between two nodes with cost below t.
+  - source: 'Section 3 triangle reduction: the modified network and its correctness'
+    lean: 'STACS2027.cpap3_iff_flow : HasAssignment g 3 budget ↔ ∃ flow, IsFlow (triangleNetwork g) flow
+      ∧ flowValue flow = t ∧ flowCost flow ≤ budget'
+    module: Solution
+    status: proved
+    note: '"An integral flow of value t selects one edge per triangle and has minimum cost exactly when
+      the corresponding assignment is optimal": both directions, with equal cost from assignments to flows
+      and no greater cost back.'
+  - source: 'Section 3 triangle reduction: the network has O(t) vertices and arcs'
+    lean: STACS2027.triangleNetwork_size
+    module: Solution
+    status: proved
+    note: Exactly 7t arcs; at most 4t + 2 nodes; every arc between two nodes with cost below t.
+  - source: Theorem 2 and Section 3 triangle reduction (running times), Corollary 3
+    lean: STACS2027.Runtimes.Flow.cpap4_flow_ram_semantic, STACS2027.Runtimes.cpap4_enum_ram_semantic,
+      STACS2027.Runtimes.fourCycleAssignment_single
+    module: Runtimes.CpapSingle.Complete
+    status: proved
+    note: 'Companion cpap-runtimes proofs supply construction, extraction and Corollary 3 composition
+      conditionally on the explicit flow contract: F for a supplied resource bound and F+ for its almost-linear
+      variants.'

@@ -1,0 +1,894 @@
+{
+  "method": "Kernel #print axioms with exact #guard_msgs assertions",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "guard_modules": [
+    "MinorFreeAudit.Guards000"
+  ],
+  "declarations": [
+    {
+      "declaration": "STACS2027.biclique",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.pairs",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.canonicalCycles",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.mem_biclique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_nodup",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.edge_mem_biclique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.edge_zero_mem",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.edge_one_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.canonical_isCycle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sameCycle_shapes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_cycle_shape",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.mem_pairs",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pairs_succ",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pairs_length",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pairs_nodup",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.canonical_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.canonical_pairwise",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.canonical_cover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.canonical_isCycle'",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_cycles_perm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_cycle_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_cost_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_edge_cycles",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_cost_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.ed",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.nd",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.fc",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.ed_eq",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.ed_lt",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.nd_lt",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.fc_lt",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.nd_fc_ed",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.bicliqueMap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.biclique_succ",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.biclique_getElem?",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.vert",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.halfEdgeEnd_biclique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.vert_nd",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.iterate_nd_zero",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.iterate_nd_one",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.reach_trans",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.reach_zero",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.reach_one",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.nd_reach",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.iterate_node_val",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.iterate_nd_vert",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.dartOf",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.faceOf",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.faceOf_fc",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.countP_range_eq_zero",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.BicliqueEmbedding.bicliqueMap_planar",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_planar",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.biclique_planar_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycleEdges_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.hasAssignment_disjoint_union",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.EdgeDisjoint",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.CyclesInBlocks",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.mem_flatten_block",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.hasAssignment_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.OuterplanarOrK4",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.perfect_assignment_of_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.EliminationOrder",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.CommonNeighbourBound",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.earliestIndex",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.algorithm4",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.earliestIndex_spec",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.EarliestView",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.earliestView",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.algorithm4_disjoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.algorithm4_valid",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.algorithm4_cost",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.algorithm4_perfect",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.perfect_four_cycle_assignment",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cost_eq_zero_of_pairwise",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.overlap_eq_zero_of_disjoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.overlap_eq_zero_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.four_cycle_rotation",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cycleEdges_four",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.mem_cycleEdges_four",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.edge_has_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.edge_avoids",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.mem_selectedAt_four",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sameCycle_rotation",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.IsCycle.rotation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.nodup_four",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.k4Assignment",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.k4Assignment_valid",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4Assignment_cost",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.k4_perfect",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4_verticesBelow",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.k4_normalized",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.IsCycle.length_le_vertices",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4_cycles_nil",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4_perfect_large",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.k4_cycle_assignments",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.IsK4",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.IsK4.perfect",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.IsK4.perfect_large",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_add'",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_scale",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sum_map_ext",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.schwarz_two_term",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.schwarz_four_term",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.schwarz_inequality",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sq_sum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.two_pairCount_add_self",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.sq_load_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.load_total",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.assignment_total_load",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cost_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.load_le_cycle_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.pairCount_mono",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.cost_le_of_load_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.algorithm4_path",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.common_neighbours_hypothesis",
+      "axioms": []
+    },
+    {
+      "declaration": "STACS2027.Paper.outerplanar_algorithm4_perfect",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.outerplanar_algorithm4_disjoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.k4_assignment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.k4_no_long_cycles",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.blockwise_combination",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.k23_perfect_of_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.total_load_general",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.cauchy_schwarz_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.biclique_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.biclique_edge_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.biclique_planar'",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "STACS2027.Paper.biclique_planar_family'",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

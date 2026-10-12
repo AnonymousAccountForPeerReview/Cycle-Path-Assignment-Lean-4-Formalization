@@ -1,0 +1,22 @@
+name = "cpap-np-hardness"
+version = "0.0.0"
+defaultTargets = ["NPHardness", "Solution", "NPHardnessAudit"]
+
+# The NP-completeness foundation NPCompleteness-Lean4, pinned to commit
+# 3e603e795b44fedcf7d6dd65b7d1e30547ead925.
+[[require]]
+name = "np-completeness"
+git = "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4"
+rev = "3e603e795b44fedcf7d6dd65b7d1e30547ead925"
+
+[[lean_lib]]
+name = "NPHardness"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "NPHardnessAudit"
+
+[[lean_lib]]
+name = "Challenge"

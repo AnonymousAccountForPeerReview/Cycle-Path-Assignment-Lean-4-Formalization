@@ -1,0 +1,39 @@
+name = "cpap-approximation-hardness"
+version = "0.0.0"
+defaultTargets = ["ApproximationHardness", "Solution", "ApproximationHardnessAudit"]
+
+# The NP-completeness foundation NPCompleteness-Lean4, pinned to commit
+# 3e603e795b44fedcf7d6dd65b7d1e30547ead925.
+[[require]]
+name = "np-completeness"
+git = "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4"
+rev = "3e603e795b44fedcf7d6dd65b7d1e30547ead925"
+
+# The Section 5 formalization of the same manuscript (the cycle-path assignment
+# problem and the proofs of its NP-hardness), in this repository.
+[[require]]
+name = "cpap-np-hardness"
+path = "../cpap-np-hardness"
+
+# The PCP theorem, the MaxSNP- and APX-completeness of MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT and
+# the inapproximability of MaxSNP-hard problems: Max3SAT-MaxSNP-APX-Lean4 at commit
+# 10079b2a14bd0df47d2a24364133f6008b9c207f, in its derived packaging sharing np-completeness
+# (DERIVED.md in that package: the 75 `Complexity/` files byte-identical to np-completeness are
+# taken from np-completeness, and the 12 other `Complexity/` modules are moved under the module
+# prefix `ComplexityExt`, because Lake resolves imports by module name; `derive_pcp.sh`
+# reproduces the derivation and `verify_derived_pcp.sh` checks it), in this repository.
+[[require]]
+name = "pcp"
+path = "../deps/max3sat-maxsnp-apx-derived"
+
+[[lean_lib]]
+name = "ApproximationHardness"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "ApproximationHardnessAudit"
+
+[[lean_lib]]
+name = "Challenge"

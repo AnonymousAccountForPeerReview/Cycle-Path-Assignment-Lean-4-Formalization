@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "package": "cpap-tractability",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "record_kind": "Retained independent comparison evidence; current compilation recorded separately.",
+  "theorem_names": [
+    "STACS2027.cpap4_iff_flow",
+    "STACS2027.fourCycleNetwork_size",
+    "STACS2027.cpap3_iff_flow",
+    "STACS2027.triangleNetwork_size"
+  ],
+  "target_count": 4,
+  "accepted_kernels": [
+    "nanoda",
+    "Lean paranoid",
+    "lean4lean",
+    "con-leche",
+    "con-ron",
+    "Lean default"
+  ],
+  "comparator_exit_code": 0,
+  "additional_os_isolation_available": false,
+  "comparison_limitation": "All six checkers accepted independent exports within the existing managed sandbox; additional OS isolation was unavailable.",
+  "exact_axiom_guard_checks": 228,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "supporting_tests_passed": 5,
+  "fresh_compilation": {
+    "exit_code": 0,
+    "job_count": 27,
+    "default_targets": [
+      "Tractability",
+      "Solution",
+      "TractabilityAudit"
+    ],
+    "compiled_audit_modules": [
+      "TractabilityAudit",
+      "TractabilityAudit.Guards000"
+    ]
+  },
+  "fresh_independent_kernel_comparisons": false,
+  "fresh_compilation_record": "../../verification/compilation.json",
+  "comparison_export_sha256": {
+    "challenge": "99504ef9e53f591be29138cfd1cf7a138f82e7d6b60e6fc24e5e0844b4893c90",
+    "solution": "bbcc8db4b8c1e56958ab0a53be5ab774f9ee67628f0da54cf06e883ed523b550"
+  },
+  "comparison_output_sha256": "1ca5446aab04c0e8c795488c8092a600870cd3962198975f83219783908b653f"
+}

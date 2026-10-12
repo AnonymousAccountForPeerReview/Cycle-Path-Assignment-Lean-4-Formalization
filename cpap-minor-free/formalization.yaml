@@ -1,0 +1,185 @@
+version: v0.4
+project:
+  name: Minor-free assignments and planar cost bounds in Lean 4
+  description: 'Formalization support for Section 8 and Appendices E and F of the accompanying cycle-path
+    assignment paper. This package proves Algorithm 4''s zero-cost assignment under explicit elimination-order
+    and common-neighbour predicates, K₄ assignments and the absence of larger cycles in K₄, and assignment
+    composition over edge-disjoint cycle-containing blocks. Lemma 23 is proved completely: planarity of
+    K_{2,r}, its edge and cycle counts, and exact cubic cost bounds. The sibling cpap-outerplanar package
+    proves the drawing/minor characterization, elimination orders, common-neighbour bounds and block decomposition
+    that instantiate these interfaces, giving the full graph-class statements of Lemma 25 and Theorems
+    20 and 21. All delivered proofs use only propext, Classical.choice and Quot.sound.'
+  license: Apache-2.0
+  authors:
+  - ANONYMIZED
+  responsible_maintainers:
+  - ANONYMIZED
+classification:
+  arxiv:
+  - cs.DS
+  - math.CO
+  msc2020:
+  - 05C10
+  - 05C83
+  - 05C38
+  - 68V20
+sources:
+- title: 'Cycle-Path Assignment for Local Differential Privacy: Complexity and Approximation'
+  type: other
+  location: Section 8; Appendix E (Lemma 23, Lemma 25 and Algorithm 4); Appendix F (block-combination
+    and K₄ base cases for Theorem 21)
+  relationship: formalizes
+  note: The numbered paper results and supporting claims are mapped to Lean in README.md and docs/paper-map.md.
+    Source identity and result labels are recorded in docs/manuscript-provenance.json.
+- title: A characterization of K_{2,4}-minor-free graphs
+  type: paper
+  id: doi:10.1137/140986517
+  location: SIAM Journal on Discrete Mathematics 30(2), 955-975, 2016
+  relationship: background
+  note: The paper cites this structural alternative in Lemma 19. cpap-outerplanar proves it from the drawing/minor
+    definitions; this package uses the resulting OuterplanarOrK4 block interface.
+- title: Outerplanar graphs and weak duals
+  type: paper
+  location: Journal of the Indian Mathematical Society 38(1-4), 215-219, 1974
+  relationship: background
+  note: The paper cites the weak-dual tree fact in Appendix F. cpap-outerplanar proves it in the polygon
+    model; this package supplies the block and K₄ base cases used by its exact algorithm.
+related_formalizations:
+- id: cpap-np-hardness
+  relationship: builds-on
+  note: Required by Lake at sibling path ../cpap-np-hardness (Apache-2.0). Supplies the CPAP model, cycle
+    enumeration, relabelling and cost decomposition. The comparison generator reproduces the required
+    definitions from the resolved dependency.
+- id: NPCompleteness-Lean4 (the NP-completeness foundation), commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925
+  relationship: builds-on
+  note: The NP-completeness foundation, required by Lake at the commit 3e603e795b44fedcf7d6dd65b7d1e30547ead925,
+    as by cpap-np-hardness (Apache-2.0). Its planarity definition (Complexity.PlanarGraph, after ANONYMIZED's
+    hypermaps) states the planarity of K_{2,r} in Lemma 23 and is copied verbatim into the Challenge,
+    as the Section 5 Challenge copies it; its bounds on the Euler counts (Complexity/Planar/Hypermap.lean)
+    are used in the proof.
+- id: cpap-tractability, cpap-bounded-cost, cpap-approximation-hardness and cpap-approximation (the Section
+    3, 4, 6 and 7 formalizations of the same manuscript)
+  relationship: other
+  note: Companion projects on the same foundation; not required.
+- id: cpap-outerplanar
+  relationship: other
+  note: Uses this package by sibling path. Proves Lemmas 19, 24 and 25, the block decomposition, Theorems
+    20 and 21, the weak-dual and DP statements of Appendix F, and the contextual planar-triangle Hall
+    and assignment theorems. Its structural witnesses instantiate this package’s elimination and block
+    interfaces.
+status:
+  scope: 'Six comparison endpoints are proved: the elimination-order form of Lemma 25 and Algorithm 4;
+    the K₄ assignment and empty-cycle base cases for Theorems 20 and 21; composition of assignments over
+    edge-disjoint blocks containing all cycles; the zero-cost block interface used by Theorem 20; the
+    load inequality on duplicate-free edge lists; and Lemma 23''s planar K_{2,r} family with exact counts
+    and bounds r(r−1)(r−3) ≤ 4 c(τ), c(τ) ≤ r(r−1)(r−2). cpap-outerplanar proves the structural witnesses
+    and complete graph-class endpoints. The distribution omits the generated Challenge statement specification;
+    its proof libraries, Solution and axiom guards contain no sorry or additional logical axiom.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: STACS2027.algorithm4_perfect
+    file: MinorFree/Elimination.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.k4_cycle_assignments
+    file: MinorFree/K4.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.hasAssignment_blocks
+    file: MinorFree/Blocks.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.perfect_assignment_of_blocks
+    file: MinorFree/Blocks.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.cost_lower_bound
+    file: MinorFree/LoadBounds.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+  - declaration: STACS2027.biclique_planar_family
+    file: MinorFree/BicliquePlanar.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+fidelity:
+  divergences: The shared CPAP model enumerates simple cycles once per edge set and defines the manuscript's
+    load objective. EliminationOrder, CommonNeighbourBound, EdgeDisjoint, CyclesInBlocks and OuterplanarOrK4
+    are explicit interfaces; their witnesses for the paper's graph classes are proved in cpap-outerplanar.
+    Algorithm 4 is represented by its earliest-vertex assignment. K₄ uses vertex labels 0–3 and transports
+    to injectively relabelled copies. Lemma 23 uses r = n−2 and exact bounds; its planarity is a genus-zero
+    hypermap in the foundation's representation. This package also supplies the block/K₄ base cases for
+    the exact algorithm of Appendix F.
+alignment:
+  namespace: STACS2027
+  statements:
+  - source: 'Lemma 25 and Algorithm 4: elimination-order assignment interface'
+    lean: STACS2027.algorithm4_perfect
+    module: Solution
+    status: proved
+    note: Requires EliminationOrder and CommonNeighbourBound. cpap-outerplanar proves these from OuterplanarDrawing
+      and provides the full loop-free graph endpoint outerplanar_algorithm_perfect.
+  - source: 'Theorem 20''s proof: the K₄ assignment; Theorem 21''s proof: K₄ has no k-cycle for k ≥ 5'
+    lean: STACS2027.k4_cycle_assignments
+    module: Solution
+    status: proved
+    note: Transported to copies of K₄ by IsK4.perfect and IsK4.perfect_large.
+  - source: Every cycle lies in a unique block, and distinct blocks have disjoint edge sets, so assignments
+      and costs can be optimized independently
+    lean: STACS2027.hasAssignment_blocks
+    module: Solution
+    status: proved
+    note: For any list of pairwise edge-disjoint blocks within which every k-cycle lies.
+  - source: 'Theorem 20: zero-cost block-combination interface'
+    lean: STACS2027.perfect_assignment_of_blocks
+    module: Solution
+    status: proved
+    note: Requires EdgeDisjoint, CyclesInBlocks and OuterplanarOrK4 for each block. cpap-outerplanar proves
+      the witnesses and the full endpoint k23_perfect from K23MinorFree.
+  - source: Lemma 23, lower bound by Cauchy–Schwarz
+    lean: STACS2027.cost_lower_bound
+    module: Solution
+    status: proved
+    note: Q² ≤ m (2 c(τ)+Q), with Q=(k−2)t, on duplicate-free graph edge lists and valid assignments.
+  - source: 'Lemma 23: there is a family of planar graphs on n vertices whose optimal four-cycle assignment
+      cost is Θ(n³) (K_{2,n−2})'
+    lean: STACS2027.biclique_planar_family
+    module: Solution
+    status: proved
+    note: K_{2,r} is planar (Complexity.PlanarGraph, the NP-completeness foundation's definition), has
+      2r edges and binom(r, 2) four-cycles, and every assignment has cost between r(r−1)(r−3)/4 and r(r−1)(r−2),
+      with r = n − 2.
+  - source: 'Theorem 21 and Appendix F: O(n)-time exact algorithm on K_{2,3}-minor-free graphs'
+    lean: STACS2027.k23_linear_ram, STACS2027.outerplanar_linear_ram
+    module: Outerplanar
+    status: proved
+    note: The full RAM endpoints are proved in cpap-outerplanar. This package supplies block composition
+      and K₄ base cases used in their proof.

@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-12",
+  "foundation_owner": "ANONYMIZED",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "toolchain_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+  "official_compiler_archive_sha256": "b67d0e0ba959fc74e186f1b44aebca32d6ecb6a28f8e9a029fc4e9f73398a049",
+  "compiler_regular_files_matching_official_archive": 17918,
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "np_completeness_commit": "3e603e795b44fedcf7d6dd65b7d1e30547ead925",
+  "max3sat_derived_source_commit": "10079b2a14bd0df47d2a24364133f6008b9c207f",
+  "mathlib_cache_command": [
+    "lake",
+    "exe",
+    "cache",
+    "get"
+  ],
+  "mathlib_cache_exit_code": 0,
+  "build_command": [
+    "lake",
+    "build"
+  ],
+  "build_order": [
+    "cpap-np-hardness",
+    "cpap-minor-free",
+    "cpap-tractability",
+    "cpap-bounded-cost",
+    "cpap-approximation",
+    "cpap-approximation-hardness",
+    "cpap-outerplanar",
+    "cpap-runtimes"
+  ],
+  "packages": {
+    "cpap-np-hardness": {
+      "exit_code": 0,
+      "job_count": 442,
+      "default_targets": [
+        "NPHardness",
+        "Solution",
+        "NPHardnessAudit"
+      ],
+      "compiled_audit_modules": [
+        "NPHardnessAudit",
+        "NPHardnessAudit.Guards000",
+        "NPHardnessAudit.Guards001",
+        "NPHardnessAudit.Guards002"
+      ]
+    },
+    "cpap-minor-free": {
+      "exit_code": 0,
+      "job_count": 84,
+      "default_targets": [
+        "MinorFree",
+        "Solution",
+        "MinorFreeAudit"
+      ],
+      "compiled_audit_modules": [
+        "MinorFreeAudit",
+        "MinorFreeAudit.Guards000"
+      ]
+    },
+    "cpap-tractability": {
+      "exit_code": 0,
+      "job_count": 27,
+      "default_targets": [
+        "Tractability",
+        "Solution",
+        "TractabilityAudit"
+      ],
+      "compiled_audit_modules": [
+        "TractabilityAudit",
+        "TractabilityAudit.Guards000"
+      ]
+    },
+    "cpap-bounded-cost": {
+      "exit_code": 0,
+      "job_count": 37,
+      "default_targets": [
+        "BoundedCost",
+        "Solution",
+        "BoundedCostAudit"
+      ],
+      "compiled_audit_modules": [
+        "BoundedCostAudit",
+        "BoundedCostAudit.Guards000"
+      ]
+    },
+    "cpap-approximation": {
+      "exit_code": 0,
+      "job_count": 75,
+      "default_targets": [
+        "Approximation",
+        "Solution",
+        "ApproximationAudit"
+      ],
+      "compiled_audit_modules": [
+        "ApproximationAudit",
+        "ApproximationAudit.Guards000"
+      ]
+    },
+    "cpap-approximation-hardness": {
+      "exit_code": 0,
+      "job_count": 9793,
+      "default_targets": [
+        "ApproximationHardness",
+        "Solution",
+        "ApproximationHardnessAudit"
+      ],
+      "compiled_audit_modules": [
+        "ApproximationHardnessAudit",
+        "ApproximationHardnessAudit.Guards000",
+        "ApproximationHardnessAudit.Guards001",
+        "ApproximationHardnessAudit.Guards002",
+        "ApproximationHardnessAudit.Guards003"
+      ]
+    },
+    "cpap-outerplanar": {
+      "exit_code": 0,
+      "job_count": 3512,
+      "default_targets": [
+        "Outerplanar",
+        "Solution",
+        "OuterplanarAudit"
+      ],
+      "compiled_audit_modules": [
+        "OuterplanarAudit",
+        "OuterplanarAudit.Guards000",
+        "OuterplanarAudit.Guards001",
+        "OuterplanarAudit.Guards002",
+        "OuterplanarAudit.Guards003"
+      ]
+    },
+    "cpap-runtimes": {
+      "exit_code": 0,
+      "job_count": 3859,
+      "default_targets": [
+        "Runtimes",
+        "Solution",
+        "RuntimesAudit"
+      ],
+      "compiled_audit_modules": [
+        "RuntimesAudit",
+        "RuntimesAudit.Guards000",
+        "RuntimesAudit.Guards001",
+        "RuntimesAudit.Guards002",
+        "RuntimesAudit.Guards003",
+        "RuntimesAudit.Guards004"
+      ]
+    }
+  },
+  "all_eight_packages_passed": true,
+  "supporting_tests": {
+    "discovered": 86,
+    "passed": 86,
+    "skipped": 0
+  },
+  "distributed_lean_files_matching_compiled_source_bytes": 1448,
+  "permitted_proof_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "almost_linear_minimum_cost_flow": "Explicit theorem hypothesis; cited algorithm not formalized.",
+  "fresh_independent_kernel_comparisons": false,
+  "environment_adaptation": {
+    "scope": "Executable-path discovery on a host without /proc/self/exe; all other path queries delegated to the system library.",
+    "compiler_kernel_library_and_lean_source_bytes_changed": false,
+    "new_logical_axioms": false
+  },
+  "public_mathematical_declaration_names_preserved": true
+}

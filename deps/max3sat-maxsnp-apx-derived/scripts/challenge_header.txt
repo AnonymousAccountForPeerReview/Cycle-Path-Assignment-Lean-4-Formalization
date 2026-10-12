@@ -1,0 +1,48 @@
+module
+
+public import Init
+
+/-!
+# The PCP theorem, MaxSNP and APX
+
+The theorems at the end of this file state, for one explicit machine model and concrete binary
+codes:
+
+* the PCP theorem (ANONYMIZED–ANONYMIZED; ANONYMIZED–ANONYMIZED–ANONYMIZED–ANONYMIZED–ANONYMIZED), in its gap form — for some
+  constant fraction `num / den`, every NP language reduces in polynomial time to 3-SAT so that
+  members give satisfiable formulas and non-members give formulas of which every assignment
+  leaves at least that fraction of the clauses unsatisfied (`pcp_gap`) — and in its verifier
+  form `NP = PCP(O(log n), O(1))` (`pcp_theorem`);
+* the problems of the syntactic class MaxSNP₀ are in NPO (`npo_maxSNP0`);
+* MaxSNP-hard problems have no polynomial-time approximation scheme unless `P = NP`
+  (`maxSNPHard_no_ptas`, for any family of approximation algorithms, one per precision, and
+  `maxSNPHard_not_hasPTAS` for a uniform scheme);
+* MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT are MaxSNP-complete (ANONYMIZED–ANONYMIZED) and
+  APX-complete (`max3SAT_maxSNPComplete`, `max3SAT3_maxSNPComplete`, `max3SAT_apxComplete`,
+  `max3SAT3_apxComplete`).
+
+Conventions:
+
+* Machines: deterministic single-tape Turing machines over {blank, 0, 1, separator}; time is
+  the number of steps, the halting step included. Polynomial bounds are `c * (n + 1) ^ k`. A
+  computed function leaves its output from the head onward. NP is defined by polynomial-time
+  verifiers that get instance and certificate as `pairWords x w`; `P = NP` means that every
+  NP language is decided by a polynomial-time machine.
+* Formulas: variables are natural numbers, a clause is a list of literals, a formula a list of
+  clauses; `SAT.encode` writes indices and lengths in unary. An assignment is written as a word
+  (bit `i` is the value of variable `i`; variables beyond the end are false).
+* Optimization problems are relations `Sol x y v` (`y` is a solution of the instance `x`, of
+  value `v`) on binary words, with a direction. MaxSNP is the class of NPO problems
+  L-reducible to the syntactic class MaxSNP₀ of ANONYMIZED and ANONYMIZED (maximize, over
+  structures `S` of a fixed signature on the universe of the instance, the number of tuples
+  satisfying a fixed well-formed quantifier-free formula), APX the class of NPO problems
+  approximable within a constant factor, and APX-hardness is with respect to PTAS-reductions
+  (ANONYMIZED–ANONYMIZED).
+
+Only Lean core is imported. `scripts/generate_challenge.py` generates this file from the
+library; `Solution.lean` proves the theorems without importing it.
+-/
+
+@[expose] public section
+
+namespace Complexity

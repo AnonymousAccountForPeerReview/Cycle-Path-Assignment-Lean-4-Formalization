@@ -1,0 +1,41 @@
+name = "cpap-outerplanar"
+version = "0.0.0"
+defaultTargets = ["Outerplanar", "Solution", "OuterplanarAudit"]
+
+# The NP-completeness foundation NPCompleteness-Lean4, pinned to commit
+# 3e603e795b44fedcf7d6dd65b7d1e30547ead925 (its hypermaps and planar embeddings).
+[[require]]
+name = "np-completeness"
+git = "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4"
+rev = "3e603e795b44fedcf7d6dd65b7d1e30547ead925"
+
+# The Section 5 formalization of the same manuscript (the cycle-path assignment
+# problem and the proofs of its NP-hardness), in this repository.
+[[require]]
+name = "cpap-np-hardness"
+path = "../cpap-np-hardness"
+
+# The Section 8 formalization of the same manuscript (Algorithm 4 and Lemma 25, K4, the
+# blockwise combination), in this repository.
+[[require]]
+name = "cpap-minor-free"
+path = "../cpap-minor-free"
+
+# Mathlib, for the proofs only (finite sums, `Finset`, tactics), pinned to the
+# release tag of the toolchain; lake-manifest.json records its commit.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0-rc2"
+
+[[lean_lib]]
+name = "Outerplanar"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "OuterplanarAudit"
+
+[[lean_lib]]
+name = "Challenge"
